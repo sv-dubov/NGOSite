@@ -41,8 +41,9 @@ class CategoriesController extends Controller
     		'title'	=>	'required'
     	]);
 
-    	$category = Category::find($id);
-    	$category->update($request->all());
+        $category = Category::find($id);
+        $category->slug = null; //change slug in DB
+        $category->update($request->all());
     	return redirect()->route('categories.index');
     }
 
