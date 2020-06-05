@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/post/{slug}', 'HomeController@show')->name('post.show');
+Route::get('/tag/{slug}', 'HomeController@tag')->name('tag.show');
+Route::get('/category/{slug}', 'HomeController@category')->name('category.show');
 
 Route::get('/admin', 'Admin\DashboardController@index');
 Route::resource('/admin/categories', 'Admin\CategoriesController');
