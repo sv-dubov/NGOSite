@@ -56,18 +56,17 @@ class User extends Authenticatable
         return $this->hasMany(Comment::class);
     }
 
-    public static function add($fileds)
+    public static function add($fields)
     {
         $user = new static;
-        $user->fill($fileds);
+        $user->fill($fields);
         $user->save();
-
         return $user;
     }
 
-    public function edit($fileds)
+    public function edit($fields)
     {
-        $this->fill($fileds);
+        $this->fill($fields);
         $this->save();
     }
 
@@ -113,7 +112,6 @@ class User extends Authenticatable
         if ($this->avatar == null) {
             return '/img/no-image.png';
         }
-
         return '/uploads/' . $this->avatar;
     }
 
@@ -134,7 +132,6 @@ class User extends Authenticatable
         if ($value == null) {
             return $this->makeNormal();
         }
-
         return $this->makeAdmin();
     }
 
@@ -155,7 +152,6 @@ class User extends Authenticatable
         if ($value == null) {
             return $this->unban();
         }
-
         return $this->ban();
     }
 }
