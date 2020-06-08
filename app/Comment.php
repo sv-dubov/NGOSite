@@ -39,7 +39,6 @@ class Comment extends Model
     	{
     		return $this->allow();
     	}
-
     	return $this->disAllow();
     }
 

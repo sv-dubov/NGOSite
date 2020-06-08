@@ -12,7 +12,7 @@
         <a href="/admin/comments">
             <i class="fa fa-commenting"></i> <span>Comments</span>
             <span class="pull-right-container">
-                <small class="label pull-right bg-red">5</small>
+                <small class="label pull-right bg-red">{{$newCommentsCount}}</small>
             </span>
         </a>
     </li>
