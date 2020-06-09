@@ -27,6 +27,11 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     public function tags()
     {
         return $this->belongsToMany(
@@ -50,8 +55,7 @@ class Post extends Model
     {
         $post = new static;
         $post->fill($fileds);
-        $post->user_id = 1;
-        //$post->user_id = Auth::user()->id;
+        $post->user_id = Auth::user()->id;
         $post->save();
 
         return $post;
@@ -91,7 +95,7 @@ class Post extends Model
     public function getImage()
     {
         if($this-> image == null)
-        { 
+        {
             return '/img/no-image.png';
         }
 
@@ -173,7 +177,7 @@ class Post extends Model
 
     public function getCategoryTitle()
     {
-        return ($this->category != null) 
+        return ($this->category != null)
                 ?   $this->category->title
                 :   'No category';
     }
