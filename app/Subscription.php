@@ -12,7 +12,6 @@ class Subscription extends Model
     	$sub = new static;
     	$sub->email = $email;
     	$sub->save();
-
     	return $sub;
     }
 

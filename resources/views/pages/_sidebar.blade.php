@@ -56,7 +56,7 @@
             </div>
             @endforeach
         </aside>
-        <!-- <aside class="widget border pos-padding">
+        <aside class="widget border pos-padding">
             <h3 class="widget-title text-center">Categories</h3>
             <ul>
                 @foreach($categories as $category)
@@ -66,6 +66,6 @@
                 </li>
                 @endforeach
             </ul>
-        </aside> -->
+        </aside>
     </div>
 </div>
