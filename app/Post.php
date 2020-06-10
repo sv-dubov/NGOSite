@@ -57,7 +57,6 @@ class Post extends Model
         $post->fill($fileds);
         $post->user_id = Auth::user()->id;
         $post->save();
-
         return $post;
     }
 
@@ -76,7 +75,6 @@ class Post extends Model
     public function uploadImage($image)
     {
         if($image == null) { return; }
-
         $this->removeImage();
         $filename = Str::random(10) . '.' . $image->extension();
         $image->storeAs('uploads', $filename);
@@ -98,14 +96,12 @@ class Post extends Model
         {
             return '/img/no-image.png';
         }
-
         return '/uploads/' . $this->image;
     }
 
     public function setCategory($id)
     {
         if($id == null) { return; }
-
         $this->category_id = $id;
         $this->save();
     }
@@ -113,7 +109,6 @@ class Post extends Model
     public function setTags($ids)
     {
         if($ids == null) { return; }
-
         $this->tags()->sync($ids);
     }
 
@@ -137,7 +132,6 @@ class Post extends Model
         {
             return $this->setDraft();
         }
-
         return $this->setPublic();
     }
 
@@ -159,7 +153,6 @@ class Post extends Model
         {
             return $this->setStandart();
         }
-
         return $this->setFeatured();
     }
 
@@ -180,6 +173,13 @@ class Post extends Model
         return ($this->category != null)
                 ?   $this->category->title
                 :   'No category';
+    }
+
+    public function getAuthorName()
+    {
+        return ($this->author != null)
+            ?   $this->author->name
+            :   'No Author';
     }
 
     public function getTagsTitles()
@@ -234,6 +234,11 @@ class Post extends Model
     public function hasCategory()
     {
         return $this->category != null ? true : false;
+    }
+
+    public function hasAuthor()
+    {
+        return $this->author != null ? true : false;
     }
 
     public static function getPopularPosts()

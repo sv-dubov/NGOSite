@@ -32,7 +32,9 @@
                                 @endforeach
                             </div>
                             <div class="social-share">
-                                <span class="social-share-title pull-left text-capitalize">By {{$post->author->name}} on {{$post->getDate()}}</span>
+                                @if($post->hasAuthor())
+                                    <span class="social-share-title pull-left text-capitalize">By {{$post->getAuthorName()}} {{$post->getDate()}}</span>
+                                @endif
                                 <ul class="text-center pull-right">
                                     <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="s-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -45,8 +47,12 @@
                     </article>
                     <div class="top-comment">
                         <!--top comment-->
-                        <img src="{{$post->author->getImage()}}" class="pull-left img-circle" alt="" width="75" height="75">
-                        <h4>{{$post->author->name}}</h4>
+                        @if($post->hasAuthor())
+                            <img src="{{$post->author->getImage()}}" class="pull-left img-circle" alt="" width="75" height="75">
+                        @endif
+                        @if($post->hasAuthor())
+                            <h4>{{$post->getAuthorName()}}</h4>
+                        @endif
                     </div>
                     <!--top comment end-->
                     <div class="row">

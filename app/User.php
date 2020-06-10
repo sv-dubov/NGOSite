@@ -14,29 +14,14 @@ class User extends Authenticatable
     const IS_ACTIVE = 0;
     const IS_BANNED = 1;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'name', 'email', 'password',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
     protected $hidden = [
         'password', 'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
@@ -90,9 +75,7 @@ class User extends Authenticatable
         if ($image == null) {
             return;
         }
-
         $this->removeAvatar();
-
         $filename = Str::random(10) . '.' . $image->extension();
         $image->storeAs('uploads', $filename);
         $this->avatar = $filename;
