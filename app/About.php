@@ -23,17 +23,17 @@ class About extends Model
         ];
     }
 
-    public static function add($fileds)
+    public static function add($fields)
     {
-        $post = new static;
-        $post->fill($fileds);
-        $post->save();
-        return $post;
+        $about = new static;
+        $about->fill($fields);
+        $about->save();
+        return $about;
     }
 
-    public function edit($fileds)
+    public function edit($fields)
     {
-        $this->fill($fileds);
+        $this->fill($fields);
         $this->save();
     }
 
