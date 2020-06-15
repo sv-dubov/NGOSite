@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * TooManyRequestsHttpException.
  *
- * @publisher Ben Ramsey <ben@benramsey.com>
+ * @author Ben Ramsey <ben@benramsey.com>
  *
  * @see http://tools.ietf.org/html/rfc6585
  */

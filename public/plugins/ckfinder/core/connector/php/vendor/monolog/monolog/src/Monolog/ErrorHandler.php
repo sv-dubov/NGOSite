@@ -22,7 +22,7 @@ use Monolog\Handler\AbstractHandler;
  *
  * Quick setup: <code>ErrorHandler::register($logger);</code>
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class ErrorHandler
 {

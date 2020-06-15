@@ -16,7 +16,7 @@ use Monolog\Formatter\FormatterInterface;
 /**
  * Interface that all Monolog Handlers must implement
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 interface HandlerInterface
 {

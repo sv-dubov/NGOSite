@@ -22,8 +22,8 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  *
  * Saves session in test environment.
  *
- * @publisher Bulat Shakirzyanov <mallluhuct@gmail.com>
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Bulat Shakirzyanov <mallluhuct@gmail.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 abstract class TestSessionListener implements EventSubscriberInterface
 {

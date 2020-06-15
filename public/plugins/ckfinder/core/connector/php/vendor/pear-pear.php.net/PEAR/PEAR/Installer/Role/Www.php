@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  2007-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -16,7 +16,7 @@
 /**
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  2007-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

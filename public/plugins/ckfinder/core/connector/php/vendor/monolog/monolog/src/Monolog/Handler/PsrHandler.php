@@ -17,7 +17,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Proxies log messages to an existing PSR-3 compliant logger.
  *
- * @publisher Michael Moussa <michael.moussa@gmail.com>
+ * @author Michael Moussa <michael.moussa@gmail.com>
  */
 class PsrHandler extends AbstractHandler
 {

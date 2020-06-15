@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * Formats a log message according to the ChromePHP array format
  *
- * @publisher Christophe Coevoet <stof@notk.org>
+ * @author Christophe Coevoet <stof@notk.org>
  */
 class ChromePHPFormatter implements FormatterInterface
 {

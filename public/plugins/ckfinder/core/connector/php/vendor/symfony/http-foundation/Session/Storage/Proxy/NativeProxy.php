@@ -16,7 +16,7 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Proxy;
  *
  * This proxy is built-in session handlers in PHP 5.3.x
  *
- * @publisher Drak <drak@zikula.org>
+ * @author Drak <drak@zikula.org>
  */
 class NativeProxy extends AbstractProxy
 {

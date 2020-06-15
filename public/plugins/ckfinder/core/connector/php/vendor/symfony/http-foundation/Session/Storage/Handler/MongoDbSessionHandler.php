@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
 /**
  * MongoDB session handler.
  *
- * @publisher Markus Bachmann <markus.bachmann@bachi.biz>
+ * @author Markus Bachmann <markus.bachmann@bachi.biz>
  */
 class MongoDbSessionHandler implements \SessionHandlerInterface
 {

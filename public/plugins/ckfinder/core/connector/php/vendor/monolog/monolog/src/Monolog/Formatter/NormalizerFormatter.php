@@ -16,7 +16,7 @@ use Exception;
 /**
  * Normalizes incoming records to remove objects/resources so it's easier to dump to various targets
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class NormalizerFormatter implements FormatterInterface
 {

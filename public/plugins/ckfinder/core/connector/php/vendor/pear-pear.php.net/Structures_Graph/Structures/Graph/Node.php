@@ -49,7 +49,7 @@ require_once 'Structures/Graph.php';
  * Regular data is accessed via getData and setData. Key indexed data is accessed
  * via getMetadata and setMetadata.
  *
- * @publisher		S�rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @author		S�rgio Carvalho <sergio.carvalho@portugalmail.com>
  * @copyright	(c) 2004 by S�rgio Carvalho
  * @package Structures_Graph
  */

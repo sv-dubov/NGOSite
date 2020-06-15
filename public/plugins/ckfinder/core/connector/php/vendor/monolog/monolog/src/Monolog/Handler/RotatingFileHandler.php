@@ -19,8 +19,8 @@ use Monolog\Logger;
  * This rotation is only intended to be used as a workaround. Using logrotate to
  * handle the rotation is strongly encouraged when you can use it.
  *
- * @publisher Christophe Coevoet <stof@notk.org>
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Christophe Coevoet <stof@notk.org>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class RotatingFileHandler extends StreamHandler
 {

@@ -16,8 +16,8 @@ use Symfony\Component\HttpFoundation\Session\SessionBagInterface;
 /**
  * StorageInterface.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Drak <drak@zikula.org>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Drak <drak@zikula.org>
  */
 interface SessionStorageInterface
 {

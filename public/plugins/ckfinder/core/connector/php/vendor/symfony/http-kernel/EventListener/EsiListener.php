@@ -16,7 +16,7 @@ namespace Symfony\Component\HttpKernel\EventListener;
 /**
  * EsiListener adds a Surrogate-Control HTTP header when the Response needs to be parsed for ESI.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  *
  * @deprecated since version 2.6, to be removed in 3.0. Use SurrogateListener instead
  */

@@ -25,7 +25,7 @@ use Monolog\Logger;
  * You can find the various activation strategies in the
  * Monolog\Handler\FingersCrossed\ namespace.
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class FingersCrossedHandler extends AbstractHandler
 {

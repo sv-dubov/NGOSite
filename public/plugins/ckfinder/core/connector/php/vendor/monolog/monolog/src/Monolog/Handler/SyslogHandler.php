@@ -24,7 +24,7 @@ use Monolog\Logger;
  *   $syslog->setFormatter($formatter);
  *   $log->pushHandler($syslog);
  *
- * @publisher Sven Paulus <sven@karlsruhe.org>
+ * @author Sven Paulus <sven@karlsruhe.org>
  */
 class SyslogHandler extends AbstractSyslogHandler
 {

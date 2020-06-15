@@ -14,7 +14,7 @@ namespace Monolog\Formatter;
 /**
  * Formats a record for use with the MongoDBHandler.
  *
- * @publisher Florian Plattner <me@florianplattner.de>
+ * @author Florian Plattner <me@florianplattner.de>
  */
 class MongoDBFormatter implements FormatterInterface
 {

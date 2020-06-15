@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\CacheWarmer;
 /**
  * Abstract cache warmer that knows how to write a file to the cache.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 abstract class CacheWarmer implements CacheWarmerInterface
 {

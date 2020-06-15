@@ -17,9 +17,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Lazily loads listeners and subscribers from the dependency injection
  * container.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Bernhard Schussek <bschussek@gmail.com>
- * @publisher Jordan Alliot <jordan.alliot@gmail.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
+ * @author Jordan Alliot <jordan.alliot@gmail.com>
  */
 class ContainerAwareEventDispatcher extends EventDispatcher
 {

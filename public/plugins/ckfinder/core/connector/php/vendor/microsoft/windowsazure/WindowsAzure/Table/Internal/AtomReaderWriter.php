@@ -16,7 +16,7 @@
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Internal
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -33,7 +33,7 @@ use WindowsAzure\Table\Models\Entity;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Internal
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -133,7 +133,7 @@ class AtomReaderWriter implements IAtomReaderWriter
         );
         $xmlw->writeElement('title');
         $xmlw->writeElement('updated', Utilities::isoDate());
-        $xmlw->startElement('publisher');
+        $xmlw->startElement('author');
         $xmlw->writeElement('name');
         $xmlw->endElement();
         $xmlw->writeElement('id');

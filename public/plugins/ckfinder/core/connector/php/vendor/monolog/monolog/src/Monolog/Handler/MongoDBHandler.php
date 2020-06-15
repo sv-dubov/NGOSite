@@ -23,7 +23,7 @@ use Monolog\Formatter\NormalizerFormatter;
  *   $mongodb = new MongoDBHandler(new \Mongo("mongodb://localhost:27017"), "logs", "prod");
  *   $log->pushHandler($mongodb);
  *
- * @publisher Thomas Tourlourat <thomas@tourlourat.com>
+ * @author Thomas Tourlourat <thomas@tourlourat.com>
  */
 class MongoDBHandler extends AbstractProcessingHandler
 {

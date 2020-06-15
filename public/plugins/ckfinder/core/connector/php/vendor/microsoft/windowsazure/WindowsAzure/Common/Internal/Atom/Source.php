@@ -16,7 +16,7 @@
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
@@ -31,7 +31,7 @@ use WindowsAzure\Common\Internal\Resources;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -43,7 +43,7 @@ class Source extends AtomBase
     // @codingStandardsIgnoreStart
 
     /**
-     * The publisher the source.
+     * The author the source.
      *
      * @var array
      */
@@ -212,7 +212,7 @@ class Source extends AtomBase
     }
 
     /**
-     * Gets the publisher of the source.
+     * Gets the author of the source.
      *
      * @return array
      */
@@ -222,7 +222,7 @@ class Source extends AtomBase
     }
 
     /**
-     * Sets the publisher of the source.
+     * Sets the author of the source.
      *
      * @param array $author An array of authors of the sources.
      *

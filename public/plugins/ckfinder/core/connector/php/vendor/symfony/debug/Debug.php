@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug;
 /**
  * Registers all the debug tools.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class Debug
 {

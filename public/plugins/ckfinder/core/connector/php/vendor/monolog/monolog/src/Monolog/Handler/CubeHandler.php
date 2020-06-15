@@ -17,7 +17,7 @@ use Monolog\Logger;
  * Logs to Cube.
  *
  * @link http://square.github.com/cube/
- * @publisher Wan Chen <kami@kamisama.me>
+ * @author Wan Chen <kami@kamisama.me>
  */
 class CubeHandler extends AbstractProcessingHandler
 {

@@ -14,7 +14,7 @@ namespace Monolog\Processor;
 /**
  * Adds a unique identifier into records
  *
- * @publisher Simon Mönch <sm@webfactory.de>
+ * @author Simon Mönch <sm@webfactory.de>
  */
 class UidProcessor
 {

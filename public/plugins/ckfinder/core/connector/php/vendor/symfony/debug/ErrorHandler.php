@@ -42,7 +42,7 @@ use Symfony\Component\Debug\FatalErrorHandler\FatalErrorHandlerInterface;
  * As errors have a performance cost, repeated errors are all logged, so that the developer
  * can see them and weight them as more important to fix than others of the same level.
  *
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  */
 class ErrorHandler
 {
@@ -804,7 +804,7 @@ class ErrorHandler
 /**
  * Private class used to work around https://bugs.php.net/54275.
  *
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  *
  * @internal
  */

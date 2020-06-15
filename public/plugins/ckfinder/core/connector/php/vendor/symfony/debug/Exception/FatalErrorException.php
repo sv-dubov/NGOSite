@@ -14,9 +14,9 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * Fatal Error Exception.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Konstanton Myakshin <koc-dp@yandex.ru>
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Konstanton Myakshin <koc-dp@yandex.ru>
+ * @author Nicolas Grekas <p@tchwork.com>
  *
  * @deprecated Deprecated in 2.3, to be removed in 3.0. Use the same class from the Debug component instead.
  */
@@ -31,7 +31,7 @@ use Symfony\Component\HttpKernel\Exception\FatalErrorException as LegacyFatalErr
 /**
  * Fatal Error Exception.
  *
- * @publisher Konstanton Myakshin <koc-dp@yandex.ru>
+ * @author Konstanton Myakshin <koc-dp@yandex.ru>
  */
 class FatalErrorException extends LegacyFatalErrorException
 {

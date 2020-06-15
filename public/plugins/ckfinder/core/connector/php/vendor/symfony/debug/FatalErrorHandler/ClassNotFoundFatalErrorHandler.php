@@ -21,7 +21,7 @@ use Symfony\Component\ClassLoader\UniversalClassLoader as SymfonyUniversalClassL
 /**
  * ErrorHandler for classes that do not exist.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class ClassNotFoundFatalErrorHandler implements FatalErrorHandlerInterface
 {

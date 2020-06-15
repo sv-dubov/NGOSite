@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -20,7 +20,7 @@
  * adding configuration values to match.
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2006 The PHP Group
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

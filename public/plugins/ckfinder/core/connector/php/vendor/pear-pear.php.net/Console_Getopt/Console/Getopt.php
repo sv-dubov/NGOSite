@@ -15,7 +15,7 @@
  *
  * @category Console
  * @package  Console_Getopt
- * @publisher   Andrei Zmievski <andrei@php.net>
+ * @author   Andrei Zmievski <andrei@php.net>
  * @license  http://www.php.net/license/3_0.txt PHP 3.0
  * @version  CVS: $Id$
  * @link     http://pear.php.net/package/Console_Getopt
@@ -28,7 +28,7 @@ require_once 'PEAR.php';
  *
  * @category Console
  * @package  Console_Getopt
- * @publisher   Andrei Zmievski <andrei@php.net>
+ * @author   Andrei Zmievski <andrei@php.net>
  * @license  http://www.php.net/license/3_0.txt PHP 3.0
  * @link     http://pear.php.net/package/Console_Getopt
  */

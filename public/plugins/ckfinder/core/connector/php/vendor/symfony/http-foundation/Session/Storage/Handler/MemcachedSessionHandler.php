@@ -19,7 +19,7 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
  *
  * @see http://php.net/memcached
  *
- * @publisher Drak <drak@zikula.org>
+ * @author Drak <drak@zikula.org>
  */
 class MemcachedSessionHandler implements \SessionHandlerInterface
 {

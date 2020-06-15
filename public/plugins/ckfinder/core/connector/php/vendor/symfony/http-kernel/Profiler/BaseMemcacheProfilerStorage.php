@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Profiler;
 /**
  * Base Memcache storage for profiling information in a Memcache.
  *
- * @publisher Andrej Hudec <pulzarraider@gmail.com>
+ * @author Andrej Hudec <pulzarraider@gmail.com>
  */
 abstract class BaseMemcacheProfilerStorage implements ProfilerStorageInterface
 {

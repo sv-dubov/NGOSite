@@ -19,7 +19,7 @@ use Monolog\Logger;
  *
  * This also works out of the box with Firefox 43+
  *
- * @publisher Christophe Coevoet <stof@notk.org>
+ * @author Christophe Coevoet <stof@notk.org>
  */
 class ChromePHPHandler extends AbstractProcessingHandler
 {

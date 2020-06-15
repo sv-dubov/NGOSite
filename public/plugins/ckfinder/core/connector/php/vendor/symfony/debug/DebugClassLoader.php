@@ -18,9 +18,9 @@ namespace Symfony\Component\Debug;
  * and will throw an exception if a file is found but does
  * not declare the class.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Christophe Coevoet <stof@notk.org>
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Christophe Coevoet <stof@notk.org>
+ * @author Nicolas Grekas <p@tchwork.com>
  */
 class DebugClassLoader
 {

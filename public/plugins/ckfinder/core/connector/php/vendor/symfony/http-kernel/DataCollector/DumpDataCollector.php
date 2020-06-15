@@ -22,7 +22,7 @@ use Symfony\Component\VarDumper\Dumper\HtmlDumper;
 use Symfony\Component\VarDumper\Dumper\DataDumperInterface;
 
 /**
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  */
 class DumpDataCollector extends DataCollector implements DataDumperInterface
 {

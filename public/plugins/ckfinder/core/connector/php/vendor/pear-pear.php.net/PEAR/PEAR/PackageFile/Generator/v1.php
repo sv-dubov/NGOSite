@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -25,7 +25,7 @@ require_once 'PEAR/PackageFile/v2.php';
  * object, for converting package.xml 1.0 into package.xml 2.0 with no sweat.
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

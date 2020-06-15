@@ -18,7 +18,7 @@ use Monolog\Formatter\LineFormatter;
 /**
  * Base Handler class providing the Handler structure
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 abstract class AbstractHandler implements HandlerInterface
 {

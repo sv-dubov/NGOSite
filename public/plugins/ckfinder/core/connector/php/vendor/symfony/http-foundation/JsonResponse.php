@@ -20,7 +20,7 @@ namespace Symfony\Component\HttpFoundation;
  *
  * @see https://www.owasp.org/index.php/OWASP_AJAX_Security_Guidelines#Always_return_JSON_with_an_Object_on_the_outside
  *
- * @publisher Igor Wiedler <igor@wiedler.ch>
+ * @author Igor Wiedler <igor@wiedler.ch>
  */
 class JsonResponse extends Response
 {

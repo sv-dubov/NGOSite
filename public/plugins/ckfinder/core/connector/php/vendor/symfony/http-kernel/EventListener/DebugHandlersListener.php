@@ -25,7 +25,7 @@ use Symfony\Component\Console\Output\ConsoleOutputInterface;
 /**
  * Configures errors and exceptions handlers.
  *
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  */
 class DebugHandlersListener implements EventSubscriberInterface
 {

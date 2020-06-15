@@ -14,7 +14,7 @@ namespace Monolog\Formatter;
 /**
  * Encodes message information into JSON in a format compatible with Loggly.
  *
- * @publisher Adam Pancutt <adam@pancutt.com>
+ * @author Adam Pancutt <adam@pancutt.com>
  */
 class LogglyFormatter extends JsonFormatter
 {

@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 /**
  * Request stack that controls the lifecycle of requests.
  *
- * @publisher Benjamin Eberlei <kontakt@beberlei.de>
+ * @author Benjamin Eberlei <kontakt@beberlei.de>
  */
 class RequestStack
 {

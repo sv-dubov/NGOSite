@@ -48,7 +48,7 @@ require_once 'Structures/Graph/Node.php';
  * DAG. The graph must be directed, or else it is considered cyclic, even when
  * there are no arcs.
  *
- * @publisher		S�rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @author		S�rgio Carvalho <sergio.carvalho@portugalmail.com>
  * @copyright	(c) 2004 by S�rgio Carvalho
  * @package Structures_Graph
  */

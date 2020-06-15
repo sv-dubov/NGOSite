@@ -17,8 +17,8 @@ use Monolog\Formatter\LineFormatter;
 /**
  * NativeMailerHandler uses the mail() function to send the emails
  *
- * @publisher Christophe Coevoet <stof@notk.org>
- * @publisher Mark Garrett <mark@moderndeveloperllc.com>
+ * @author Christophe Coevoet <stof@notk.org>
+ * @author Mark Garrett <mark@moderndeveloperllc.com>
  */
 class NativeMailerHandler extends MailHandler
 {

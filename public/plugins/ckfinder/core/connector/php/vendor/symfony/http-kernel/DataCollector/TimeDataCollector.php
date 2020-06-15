@@ -18,7 +18,7 @@ use Symfony\Component\HttpKernel\KernelInterface;
 /**
  * TimeDataCollector.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class TimeDataCollector extends DataCollector implements LateDataCollectorInterface
 {

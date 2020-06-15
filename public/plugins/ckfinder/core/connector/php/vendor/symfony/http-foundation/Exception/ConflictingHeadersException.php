@@ -16,7 +16,7 @@ namespace Symfony\Component\HttpFoundation\Exception;
  *
  * This exception should trigger an HTTP 400 response in your application code.
  *
- * @publisher Magnus Nordlander <magnus@fervo.se>
+ * @author Magnus Nordlander <magnus@fervo.se>
  */
 class ConflictingHeadersException extends \RuntimeException
 {

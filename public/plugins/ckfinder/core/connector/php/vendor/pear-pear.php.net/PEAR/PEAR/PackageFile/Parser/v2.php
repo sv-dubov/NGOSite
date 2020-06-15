@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -21,7 +21,7 @@ require_once 'PEAR/PackageFile/v2.php';
  * Parser for package.xml version 2.0
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: @PEAR-VER@

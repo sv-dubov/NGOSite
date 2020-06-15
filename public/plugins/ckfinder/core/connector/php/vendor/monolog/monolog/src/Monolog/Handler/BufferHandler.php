@@ -19,7 +19,7 @@ use Monolog\Logger;
  * This is useful for a MailHandler to send only one mail per request instead of
  * sending one per log message.
  *
- * @publisher Christophe Coevoet <stof@notk.org>
+ * @author Christophe Coevoet <stof@notk.org>
  */
 class BufferHandler extends AbstractHandler
 {

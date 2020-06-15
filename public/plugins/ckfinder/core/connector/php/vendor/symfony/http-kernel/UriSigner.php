@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel;
 /**
  * Signs URIs.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class UriSigner
 {

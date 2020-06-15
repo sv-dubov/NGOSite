@@ -16,7 +16,7 @@
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -44,7 +44,7 @@ class Entry extends AtomBase
     // @codingStandardsIgnoreStart
 
     /**
-     * The publisher of the entry.
+     * The author of the entry.
      *
      * @var Person
      */
@@ -223,7 +223,7 @@ class Entry extends AtomBase
     }
 
     /**
-     * Gets the publisher of the entry.
+     * Gets the author of the entry.
      *
      * @return Person
      */
@@ -233,9 +233,9 @@ class Entry extends AtomBase
     }
 
     /**
-     * Sets the publisher of the entry.
+     * Sets the author of the entry.
      *
-     * @param Person $author The publisher of the entry.
+     * @param Person $author The author of the entry.
      *
      * @return none
      */

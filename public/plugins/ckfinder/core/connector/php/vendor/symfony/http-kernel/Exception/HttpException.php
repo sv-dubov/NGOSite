@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * HttpException.
  *
- * @publisher Kris Wallsmith <kris@symfony.com>
+ * @author Kris Wallsmith <kris@symfony.com>
  */
 class HttpException extends \RuntimeException implements HttpExceptionInterface
 {

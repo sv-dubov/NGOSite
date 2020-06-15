@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * GoneHttpException.
  *
- * @publisher Ben Ramsey <ben@benramsey.com>
+ * @author Ben Ramsey <ben@benramsey.com>
  */
 class GoneHttpException extends HttpException
 {

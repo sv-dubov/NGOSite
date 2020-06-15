@@ -17,7 +17,7 @@ use Monolog\Logger;
 /**
  * Stores to PHP error_log() handler.
  *
- * @publisher Elan Ruusamäe <glen@delfi.ee>
+ * @author Elan Ruusamäe <glen@delfi.ee>
  */
 class ErrorLogHandler extends AbstractProcessingHandler
 {

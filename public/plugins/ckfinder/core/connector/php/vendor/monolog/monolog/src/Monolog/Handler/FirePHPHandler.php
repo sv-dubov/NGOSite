@@ -16,7 +16,7 @@ use Monolog\Formatter\WildfireFormatter;
 /**
  * Simple FirePHP Handler (http://www.firephp.org/), which uses the Wildfire protocol.
  *
- * @publisher Eric Clemmons (@ericclemmons) <eric@uxdriven.com>
+ * @author Eric Clemmons (@ericclemmons) <eric@uxdriven.com>
  */
 class FirePHPHandler extends AbstractProcessingHandler
 {

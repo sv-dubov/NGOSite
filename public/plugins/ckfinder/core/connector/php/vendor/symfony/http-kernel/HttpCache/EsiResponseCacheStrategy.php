@@ -24,7 +24,7 @@ namespace Symfony\Component\HttpKernel\HttpCache;
  * This implementation changes the master response TTL to the smallest TTL received
  * or force validation if one of the ESI has validation cache strategy.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  *
  * @deprecated since version 2.6, to be removed in 3.0. Use ResponseCacheStrategy instead
  */

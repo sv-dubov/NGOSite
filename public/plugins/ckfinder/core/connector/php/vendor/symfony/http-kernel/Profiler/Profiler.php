@@ -21,7 +21,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Profiler.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class Profiler
 {

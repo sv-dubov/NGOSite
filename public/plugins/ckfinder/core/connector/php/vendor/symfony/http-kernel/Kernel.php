@@ -39,7 +39,7 @@ use Symfony\Component\ClassLoader\ClassCollectionLoader;
  *
  * It manages an environment made of bundles.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 abstract class Kernel implements KernelInterface, TerminableInterface
 {

@@ -24,8 +24,8 @@ use Symfony\Component\Debug\Exception\OutOfMemoryException;
  * As this class is mainly used during Kernel boot, where nothing is yet
  * available, the Response content is always HTML.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  */
 class ExceptionHandler
 {

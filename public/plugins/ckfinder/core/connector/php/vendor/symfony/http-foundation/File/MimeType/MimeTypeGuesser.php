@@ -35,7 +35,7 @@ use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
  *     $guesser = MimeTypeGuesser::getInstance();
  *     $guesser->register(new FileinfoMimeTypeGuesser('/path/to/magic/file'));
  *
- * @publisher Bernhard Schussek <bschussek@gmail.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class MimeTypeGuesser implements MimeTypeGuesserInterface
 {

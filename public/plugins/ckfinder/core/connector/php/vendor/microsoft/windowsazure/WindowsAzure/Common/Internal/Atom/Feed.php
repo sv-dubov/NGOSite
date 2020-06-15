@@ -16,7 +16,7 @@
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
@@ -31,7 +31,7 @@ use WindowsAzure\Common\Internal\Resources;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -50,7 +50,7 @@ class Feed extends AtomBase
     protected $entry;
 
     /**
-     * the publisher of the feed.
+     * the author of the feed.
      *
      * @var array
      */
@@ -164,7 +164,7 @@ class Feed extends AtomBase
             $this->attributes = (array)$attributes;
         }
 
-        if (array_key_exists('publisher', $feedArray)) {
+        if (array_key_exists('author', $feedArray)) {
             $this->author = $this->processAuthorNode($feedArray);
         }
 
@@ -265,7 +265,7 @@ class Feed extends AtomBase
     }
 
     /**
-     * Gets the publisher of the feed.
+     * Gets the author of the feed.
      *
      * @return Person
      */
@@ -275,18 +275,18 @@ class Feed extends AtomBase
     }
 
     /**
-     * Sets the publisher of the feed.
+     * Sets the author of the feed.
      *
-     * @param Person $author The publisher of the feed.
+     * @param Person $author The author of the feed.
      *
      * @return none
      */
     public function setAuthor($author)
     {
-        Validate::isArray($author, 'publisher');
+        Validate::isArray($author, 'author');
         $person = new Person();
         foreach ($author as $authorInstance) {
-            Validate::isInstanceOf($authorInstance, $person, 'publisher');
+            Validate::isInstanceOf($authorInstance, $person, 'author');
         }
         $this->author = $author;
     }

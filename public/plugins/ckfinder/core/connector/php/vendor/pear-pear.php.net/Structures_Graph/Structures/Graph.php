@@ -45,7 +45,7 @@ define('STRUCTURES_GRAPH_ERROR_GENERIC', 100);
  * directional, and can be traveled only one way. In an undirected graph, arcs
  * are bidirectional, and can be traveled both ways.
  *
- * @publisher    S�rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @author    S�rgio Carvalho <sergio.carvalho@portugalmail.com>
  * @copyright (c) 2004 by S�rgio Carvalho
  * @package   Structures_Graph
  */

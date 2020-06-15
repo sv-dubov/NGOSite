@@ -21,7 +21,7 @@ use Symfony\Component\HttpFoundation\Request;
  * the controller to execute and uses the request attributes to determine
  * the controller method arguments.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class ControllerResolver implements ControllerResolverInterface
 {

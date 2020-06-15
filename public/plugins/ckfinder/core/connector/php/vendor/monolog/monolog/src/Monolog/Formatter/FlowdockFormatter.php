@@ -14,7 +14,7 @@ namespace Monolog\Formatter;
 /**
  * formats the record to be used in the FlowdockHandler
  *
- * @publisher Dominik Liebler <liebler.dominik@gmail.com>
+ * @author Dominik Liebler <liebler.dominik@gmail.com>
  */
 class FlowdockFormatter implements FormatterInterface
 {

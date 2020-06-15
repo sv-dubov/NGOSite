@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * BadRequestHttpException.
  *
- * @publisher Ben Ramsey <ben@benramsey.com>
+ * @author Ben Ramsey <ben@benramsey.com>
  */
 class BadRequestHttpException extends HttpException
 {

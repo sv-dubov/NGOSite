@@ -21,18 +21,18 @@ use Monolog\Formatter\GelfMessageFormatter;
 /**
  * Handler to send messages to a Graylog2 (http://www.graylog2.org) server
  *
- * @publisher Matt Lehner <mlehner@gmail.com>
- * @publisher Benjamin Zikarsky <benjamin@zikarsky.de>
+ * @author Matt Lehner <mlehner@gmail.com>
+ * @author Benjamin Zikarsky <benjamin@zikarsky.de>
  */
 class GelfHandler extends AbstractProcessingHandler
 {
     /**
-     * @var Publisher the publisher object that sends the message to the server
+     * @var Publisher the author object that sends the message to the server
      */
     protected $publisher;
 
     /**
-     * @param PublisherInterface|IMessagePublisher|Publisher $publisher a publisher object
+     * @param PublisherInterface|IMessagePublisher|Publisher $publisher a author object
      * @param int                                            $level     The minimum logging level at which this handler will be triggered
      * @param bool                                           $bubble    Whether the messages that are handled can bubble up the stack or not
      */
@@ -41,7 +41,7 @@ class GelfHandler extends AbstractProcessingHandler
         parent::__construct($level, $bubble);
 
         if (!$publisher instanceof Publisher && !$publisher instanceof IMessagePublisher && !$publisher instanceof PublisherInterface) {
-            throw new InvalidArgumentException('Invalid publisher, expected a Gelf\Publisher, Gelf\IMessagePublisher or Gelf\PublisherInterface instance');
+            throw new InvalidArgumentException('Invalid author, expected a Gelf\Publisher, Gelf\IMessagePublisher or Gelf\PublisherInterface instance');
         }
 
         $this->publisher = $publisher;

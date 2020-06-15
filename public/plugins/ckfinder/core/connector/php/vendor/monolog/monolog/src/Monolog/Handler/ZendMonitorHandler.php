@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * Handler sending logs to Zend Monitor
  *
- * @publisher  Christian Bergau <cbergau86@gmail.com>
+ * @author  Christian Bergau <cbergau86@gmail.com>
  */
 class ZendMonitorHandler extends AbstractProcessingHandler
 {

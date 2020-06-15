@@ -12,8 +12,8 @@
  *
  * @category  HTTP
  * @package   HTTP_Request2
- * @publisher    Delian Krustev <krustev@krustev.net>
- * @publisher    Alexey Borzov <avb@php.net>
+ * @author    Delian Krustev <krustev@krustev.net>
+ * @author    Alexey Borzov <avb@php.net>
  * @copyright 2008-2016 Alexey Borzov <avb@php.net>
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD 3-Clause License
  * @link      http://pear.php.net/package/HTTP_Request2
@@ -92,8 +92,8 @@ require_once 'HTTP/Request2/Response.php';
  *
  * @category HTTP
  * @package  HTTP_Request2
- * @publisher   Delian Krustev <krustev@krustev.net>
- * @publisher   Alexey Borzov <avb@php.net>
+ * @author   Delian Krustev <krustev@krustev.net>
+ * @author   Alexey Borzov <avb@php.net>
  * @license  http://opensource.org/licenses/BSD-3-Clause BSD 3-Clause License
  * @version  Release: 2.3.0
  * @link     http://pear.php.net/package/HTTP_Request2

@@ -22,7 +22,7 @@ use Psr\Log\InvalidArgumentException;
  * It contains a stack of Handlers and a stack of Processors,
  * and uses them to store records that are added to it.
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class Logger implements LoggerInterface
 {

@@ -21,7 +21,7 @@ use Symfony\Component\HttpFoundation\Request;
  * current request. The propagation of this event is stopped as soon as a
  * response is set.
  *
- * @publisher Bernhard Schussek <bschussek@gmail.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class GetResponseForControllerResultEvent extends GetResponseEvent
 {

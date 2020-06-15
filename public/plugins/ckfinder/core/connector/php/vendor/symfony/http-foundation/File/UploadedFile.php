@@ -18,9 +18,9 @@ use Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser;
 /**
  * A file uploaded through a form.
  *
- * @publisher Bernhard Schussek <bschussek@gmail.com>
- * @publisher Florian Eckerstorfer <florian@eckerstorfer.org>
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
+ * @author Florian Eckerstorfer <florian@eckerstorfer.org>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class UploadedFile extends File
 {

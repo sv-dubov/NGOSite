@@ -42,7 +42,7 @@ require_once 'Structures/Graph/Manipulator/AcyclicTest.php';
  * A graph may only be sorted topologically iff it's a DAG. You can test it
  * with the Structures_Graph_Manipulator_AcyclicTest.
  *
- * @publisher    S�rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @author    S�rgio Carvalho <sergio.carvalho@portugalmail.com>
  * @copyright (c) 2004 by S�rgio Carvalho
  * @see       Structures_Graph_Manipulator_AcyclicTest
  * @package   Structures_Graph

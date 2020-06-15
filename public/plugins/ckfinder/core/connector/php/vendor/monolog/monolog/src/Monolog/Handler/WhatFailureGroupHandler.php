@@ -15,7 +15,7 @@ namespace Monolog\Handler;
  * Forwards records to multiple handlers suppressing failures of each handler
  * and continuing through to give every handler a chance to succeed.
  *
- * @publisher Craig D'Amelio <craig@damelio.ca>
+ * @author Craig D'Amelio <craig@damelio.ca>
  */
 class WhatFailureGroupHandler extends GroupHandler
 {

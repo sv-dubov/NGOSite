@@ -19,7 +19,7 @@ use Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcherInterface;
 /**
  * EventDataCollector.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class EventDataCollector extends DataCollector implements LateDataCollectorInterface
 {

@@ -18,8 +18,8 @@ use Monolog\Logger;
  *
  * It can be configured with an exact list of levels to allow, or a min/max level.
  *
- * @publisher Hennadiy Verkh
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Hennadiy Verkh
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class FilterHandler extends AbstractHandler
 {

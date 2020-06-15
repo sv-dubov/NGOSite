@@ -6,10 +6,10 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Stig Bakken <ssb@php.net>
- * @publisher     Tomas V.V. Cox <cox@idecnet.com>
- * @publisher     Martin Jansen <mj@php.net>
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Stig Bakken <ssb@php.net>
+ * @author     Tomas V.V. Cox <cox@idecnet.com>
+ * @author     Martin Jansen <mj@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -29,10 +29,10 @@ define('PEAR_INSTALLER_NOBINARY', -240);
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Stig Bakken <ssb@php.net>
- * @publisher     Tomas V.V. Cox <cox@idecnet.com>
- * @publisher     Martin Jansen <mj@php.net>
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Stig Bakken <ssb@php.net>
+ * @author     Tomas V.V. Cox <cox@idecnet.com>
+ * @author     Martin Jansen <mj@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

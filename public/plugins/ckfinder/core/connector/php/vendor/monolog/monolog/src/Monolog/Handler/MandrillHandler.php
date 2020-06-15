@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * MandrillHandler uses cURL to send the emails to the Mandrill API
  *
- * @publisher Adam Nicholson <adamnicholson10@gmail.com>
+ * @author Adam Nicholson <adamnicholson10@gmail.com>
  */
 class MandrillHandler extends MailHandler
 {

@@ -6,8 +6,8 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Stig Bakken <ssb@php.net>
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Stig Bakken <ssb@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -89,8 +89,8 @@ $GLOBALS['_PEAR_Command_objects'] = array();
  *   $this->raiseError().
  * @category   pear
  * @package    PEAR
- * @publisher     Stig Bakken <ssb@php.net>
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Stig Bakken <ssb@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

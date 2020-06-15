@@ -16,8 +16,8 @@ namespace Monolog\Handler;
  *
  * Classes extending it should (in most cases) only implement write($record)
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
- * @publisher Christophe Coevoet <stof@notk.org>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @author Christophe Coevoet <stof@notk.org>
  */
 abstract class AbstractProcessingHandler extends AbstractHandler
 {

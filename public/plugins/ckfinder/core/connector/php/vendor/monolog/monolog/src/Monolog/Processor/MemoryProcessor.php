@@ -14,7 +14,7 @@ namespace Monolog\Processor;
 /**
  * Some methods that are common for all memory processors
  *
- * @publisher Rob Jensen
+ * @author Rob Jensen
  */
 abstract class MemoryProcessor
 {

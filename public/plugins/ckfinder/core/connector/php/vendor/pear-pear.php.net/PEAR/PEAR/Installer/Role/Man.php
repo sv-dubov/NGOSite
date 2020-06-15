@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Hannes Magnusson <bjori@php.net>
+ * @author     Hannes Magnusson <bjori@php.net>
  * @copyright  2011 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    SVN: $Id: $
@@ -17,7 +17,7 @@
 /**
  * @category   pear
  * @package    PEAR
- * @publisher     Hannes Magnusson <bjori@php.net>
+ * @author     Hannes Magnusson <bjori@php.net>
  * @copyright  2011 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

@@ -27,7 +27,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  * If throws an AccessDeniedHttpException exception if the request
  * is not signed or if it is not an internal sub-request.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class FragmentListener implements EventSubscriberInterface
 {

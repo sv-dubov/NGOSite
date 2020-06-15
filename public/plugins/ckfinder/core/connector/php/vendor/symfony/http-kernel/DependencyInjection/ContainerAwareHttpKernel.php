@@ -23,8 +23,8 @@ use Symfony\Component\DependencyInjection\Scope;
 /**
  * Adds a managed request scope.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Johannes M. Schmitt <schmittjoh@gmail.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  *
  * @deprecated since version 2.7, to be removed in 3.0.
  */

@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 /**
  * RequestMatcherInterface is an interface for strategies to match a Request.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 interface RequestMatcherInterface
 {

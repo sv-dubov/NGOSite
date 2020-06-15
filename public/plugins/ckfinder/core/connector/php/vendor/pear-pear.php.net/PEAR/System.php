@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    System
- * @publisher     Tomas V.V.Cox <cox@idecnet.com>
+ * @author     Tomas V.V.Cox <cox@idecnet.com>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -47,7 +47,7 @@ $GLOBALS['_System_temp_files'] = array();
 *
 * @category   pear
 * @package    System
-* @publisher     Tomas V.V. Cox <cox@idecnet.com>
+* @author     Tomas V.V. Cox <cox@idecnet.com>
 * @copyright  1997-2006 The PHP Group
 * @license    http://opensource.org/licenses/bsd-license.php New BSD License
 * @version    Release: 1.10.1
@@ -490,7 +490,7 @@ class System
      * @param mixed  $fallback Value to return if $program is not found
      *
      * @return mixed A string with the full path or false if not found
-     * @publisher Stig Bakken <ssb@php.net>
+     * @author Stig Bakken <ssb@php.net>
      */
     public static function which($program, $fallback = false)
     {

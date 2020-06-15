@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Log;
 /**
  * DebugLoggerInterface.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 interface DebugLoggerInterface
 {

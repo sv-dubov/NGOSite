@@ -16,8 +16,8 @@ namespace Monolog\Formatter;
  *
  * This is especially useful for logging to files
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
- * @publisher Christophe Coevoet <stof@notk.org>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @author Christophe Coevoet <stof@notk.org>
  */
 class LineFormatter extends NormalizerFormatter
 {

@@ -15,7 +15,7 @@ namespace Monolog\Processor;
  * Injects memory_get_usage in all records
  *
  * @see Monolog\Processor\MemoryProcessor::__construct() for options
- * @publisher Rob Jensen
+ * @author Rob Jensen
  */
 class MemoryUsageProcessor extends MemoryProcessor
 {

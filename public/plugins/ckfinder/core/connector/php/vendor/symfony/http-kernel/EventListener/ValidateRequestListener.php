@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
  * Validates that the headers and other information indicating the
  * client IP address of a request are consistent.
  *
- * @publisher Magnus Nordlander <magnus@fervo.se>
+ * @author Magnus Nordlander <magnus@fervo.se>
  */
 class ValidateRequestListener implements EventSubscriberInterface
 {

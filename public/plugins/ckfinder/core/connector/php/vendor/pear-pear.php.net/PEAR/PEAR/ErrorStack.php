@@ -20,7 +20,7 @@
  * still be done quite handily in an error callback or by manipulating the returned array
  * @category   Debugging
  * @package    PEAR_ErrorStack
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @copyright  2004-2008 Greg Beaver
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR_ErrorStack
@@ -130,7 +130,7 @@ define('PEAR_ERRORSTACK_ERR_OBJTOSTRING', 2);
  * // local error stack
  * $local_stack = new PEAR_ErrorStack('MyPackage');
  * </code>
- * @publisher     Greg Beaver <cellog@php.net>
+ * @author     Greg Beaver <cellog@php.net>
  * @version    1.10.1
  * @package    PEAR_ErrorStack
  * @category   Debugging

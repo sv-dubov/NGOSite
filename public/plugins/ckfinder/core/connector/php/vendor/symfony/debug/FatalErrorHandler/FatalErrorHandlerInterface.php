@@ -16,7 +16,7 @@ use Symfony\Component\Debug\Exception\FatalErrorException;
 /**
  * Attempts to convert fatal errors to exceptions.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 interface FatalErrorHandlerInterface
 {

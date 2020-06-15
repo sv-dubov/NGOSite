@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 /**
  * RouterDataCollector.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class RouterDataCollector extends DataCollector
 {

@@ -14,7 +14,7 @@ namespace Monolog\Processor;
 /**
  * Adds a tags array into record
  *
- * @publisher Martijn Riemers
+ * @author Martijn Riemers
  */
 class TagProcessor
 {

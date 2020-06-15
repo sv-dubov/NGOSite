@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser;
 /**
  * A file in the file system.
  *
- * @publisher Bernhard Schussek <bschussek@gmail.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class File extends \SplFileInfo
 {

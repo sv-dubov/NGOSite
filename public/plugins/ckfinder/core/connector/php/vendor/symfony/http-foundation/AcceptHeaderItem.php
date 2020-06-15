@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 /**
  * Represents an Accept-* header item.
  *
- * @publisher Jean-François Simon <contact@jfsimon.fr>
+ * @author Jean-François Simon <contact@jfsimon.fr>
  */
 class AcceptHeaderItem
 {

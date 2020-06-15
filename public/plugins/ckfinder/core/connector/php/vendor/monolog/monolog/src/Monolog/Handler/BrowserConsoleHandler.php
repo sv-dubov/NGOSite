@@ -16,7 +16,7 @@ use Monolog\Formatter\LineFormatter;
 /**
  * Handler sending logs to browser's javascript console with no browser extension required
  *
- * @publisher Olivier Poitrey <rs@dailymotion.com>
+ * @author Olivier Poitrey <rs@dailymotion.com>
  */
 class BrowserConsoleHandler extends AbstractProcessingHandler
 {

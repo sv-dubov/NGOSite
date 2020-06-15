@@ -32,7 +32,7 @@
  *
  * @category  File_Formats
  * @package   Archive_Tar
- * @publisher    Vincent Blavet <vincent@phpconcept.net>
+ * @author    Vincent Blavet <vincent@phpconcept.net>
  * @copyright 1997-2010 The Authors
  * @license   http://www.opensource.org/licenses/bsd-license.php New BSD License
  * @version   CVS: $Id$
@@ -73,7 +73,7 @@ if (!function_exists('gzseek') && function_exists('gzseek64')) {
  * Creates a (compressed) Tar archive
  *
  * @package Archive_Tar
- * @publisher  Vincent Blavet <vincent@phpconcept.net>
+ * @author  Vincent Blavet <vincent@phpconcept.net>
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  * @version $Revision$
  */

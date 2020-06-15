@@ -17,7 +17,7 @@ use Monolog\Logger;
  *
  * This is especially useful for html email logging
  *
- * @publisher Tiago Brito <tlfbrito@gmail.com>
+ * @author Tiago Brito <tlfbrito@gmail.com>
  */
 class HtmlFormatter extends NormalizerFormatter
 {

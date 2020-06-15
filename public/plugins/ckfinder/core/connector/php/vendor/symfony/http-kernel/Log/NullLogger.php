@@ -18,7 +18,7 @@ use Psr\Log\NullLogger as PsrNullLogger;
 /**
  * NullLogger.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class NullLogger extends PsrNullLogger implements LoggerInterface
 {

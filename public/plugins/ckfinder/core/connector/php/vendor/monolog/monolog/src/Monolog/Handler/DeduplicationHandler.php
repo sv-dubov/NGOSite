@@ -31,7 +31,7 @@ use Monolog\Logger;
  * a major component failure like a database server being down which makes all requests fail in the
  * same way.
  *
- * @publisher Jordi Boggiano <j.boggiano@seld.be>
+ * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class DeduplicationHandler extends BufferHandler
 {

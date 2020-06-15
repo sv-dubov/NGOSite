@@ -16,7 +16,7 @@ namespace Symfony\Component\EventDispatcher;
  *
  * Encapsulates events thus decoupling the observer from the subject they encapsulate.
  *
- * @publisher Drak <drak@zikula.org>
+ * @author Drak <drak@zikula.org>
  */
 class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
 {

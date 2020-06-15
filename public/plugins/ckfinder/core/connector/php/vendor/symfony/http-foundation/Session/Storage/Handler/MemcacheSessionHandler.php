@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
 /**
  * MemcacheSessionHandler.
  *
- * @publisher Drak <drak@zikula.org>
+ * @author Drak <drak@zikula.org>
  */
 class MemcacheSessionHandler implements \SessionHandlerInterface
 {

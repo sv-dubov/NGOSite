@@ -22,7 +22,7 @@ use Psr\Log\LoggerInterface;
  *
  * This event dispatcher delegates the dispatching to another one.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class TraceableEventDispatcher implements TraceableEventDispatcherInterface
 {

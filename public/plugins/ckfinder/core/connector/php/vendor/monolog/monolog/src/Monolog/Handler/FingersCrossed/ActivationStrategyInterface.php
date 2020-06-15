@@ -14,7 +14,7 @@ namespace Monolog\Handler\FingersCrossed;
 /**
  * Interface for activation strategies for the FingersCrossedHandler.
  *
- * @publisher Johannes M. Schmitt <schmittjoh@gmail.com>
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  */
 interface ActivationStrategyInterface
 {

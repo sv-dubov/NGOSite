@@ -16,7 +16,7 @@ use Elastica\Document;
 /**
  * Format a log message into an Elastica Document
  *
- * @publisher Jelle Vink <jelle.vink@gmail.com>
+ * @author Jelle Vink <jelle.vink@gmail.com>
  */
 class ElasticaFormatter extends NormalizerFormatter
 {

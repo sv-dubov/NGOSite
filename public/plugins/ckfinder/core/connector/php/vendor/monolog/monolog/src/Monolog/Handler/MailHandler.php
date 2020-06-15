@@ -14,7 +14,7 @@ namespace Monolog\Handler;
 /**
  * Base class for all mail handlers
  *
- * @publisher Gyula Sallai
+ * @author Gyula Sallai
  */
 abstract class MailHandler extends AbstractProcessingHandler
 {

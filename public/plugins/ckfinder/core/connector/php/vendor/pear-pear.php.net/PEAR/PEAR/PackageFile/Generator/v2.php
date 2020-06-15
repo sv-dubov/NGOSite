@@ -6,8 +6,8 @@
  *
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
- * @publisher     Stephan Schmidt (original XML_Serializer code)
+ * @author     Greg Beaver <cellog@php.net>
+ * @author     Stephan Schmidt (original XML_Serializer code)
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -26,8 +26,8 @@ require_once 'XML/Util.php';
  * XML_Serializer, slightly customized)
  * @category   pear
  * @package    PEAR
- * @publisher     Greg Beaver <cellog@php.net>
- * @publisher     Stephan Schmidt (original XML_Serializer code)
+ * @author     Greg Beaver <cellog@php.net>
+ * @author     Stephan Schmidt (original XML_Serializer code)
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

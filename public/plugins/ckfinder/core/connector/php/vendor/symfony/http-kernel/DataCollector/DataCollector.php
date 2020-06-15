@@ -18,8 +18,8 @@ use Symfony\Component\HttpKernel\DataCollector\Util\ValueExporter;
  *
  * Children of this class must store the collected data in the data property.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
- * @publisher Bernhard Schussek <bschussek@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
+ * @author Bernhard Schussek <bschussek@symfony.com>
  */
 abstract class DataCollector implements DataCollectorInterface, \Serializable
 {

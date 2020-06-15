@@ -17,9 +17,9 @@ use Monolog\Formatter\LogglyFormatter;
 /**
  * Sends errors to Loggly.
  *
- * @publisher Przemek Sobstel <przemek@sobstel.org>
- * @publisher Adam Pancutt <adam@pancutt.com>
- * @publisher Gregory Barchard <gregory@barchard.net>
+ * @author Przemek Sobstel <przemek@sobstel.org>
+ * @author Adam Pancutt <adam@pancutt.com>
+ * @author Gregory Barchard <gregory@barchard.net>
  */
 class LogglyHandler extends AbstractProcessingHandler
 {

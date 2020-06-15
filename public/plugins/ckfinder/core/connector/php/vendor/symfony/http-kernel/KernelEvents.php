@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel;
 /**
  * Contains all events thrown in the HttpKernel component.
  *
- * @publisher Bernhard Schussek <bschussek@gmail.com>
+ * @author Bernhard Schussek <bschussek@gmail.com>
  */
 final class KernelEvents
 {

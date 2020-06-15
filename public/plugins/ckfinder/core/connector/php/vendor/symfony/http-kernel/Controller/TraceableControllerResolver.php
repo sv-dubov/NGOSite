@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * TraceableControllerResolver.
  *
- * @publisher Fabien Potencier <fabien@symfony.com>
+ * @author Fabien Potencier <fabien@symfony.com>
  */
 class TraceableControllerResolver implements ControllerResolverInterface
 {

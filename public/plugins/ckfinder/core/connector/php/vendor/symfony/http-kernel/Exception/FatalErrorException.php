@@ -16,7 +16,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /*
  * Fatal Error Exception.
  *
- * @publisher Konstanton Myakshin <koc-dp@yandex.ru>
+ * @author Konstanton Myakshin <koc-dp@yandex.ru>
  *
  * @deprecated since version 2.3, to be removed in 3.0. Use the same class from the Debug component instead.
  */

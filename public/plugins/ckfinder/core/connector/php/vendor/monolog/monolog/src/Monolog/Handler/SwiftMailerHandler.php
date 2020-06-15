@@ -17,7 +17,7 @@ use Monolog\Formatter\LineFormatter;
 /**
  * SwiftMailerHandler uses Swift_Mailer to send the emails
  *
- * @publisher Gyula Sallai
+ * @author Gyula Sallai
  */
 class SwiftMailerHandler extends MailHandler
 {

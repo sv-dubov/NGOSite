@@ -59,7 +59,7 @@ namespace Symfony\Polyfill\Mbstring;
  * - mb_strcut               - Get part of string
  * - mb_strimwidth           - Get truncated string with specified width
  *
- * @publisher Nicolas Grekas <p@tchwork.com>
+ * @author Nicolas Grekas <p@tchwork.com>
  *
  * @internal
  */

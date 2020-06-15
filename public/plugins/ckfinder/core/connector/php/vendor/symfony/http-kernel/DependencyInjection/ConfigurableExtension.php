@@ -23,7 +23,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  *    b) your configuration class is named "Configuration", and
  *    c) the configuration class resides in the DependencyInjection sub-folder.
  *
- * @publisher Johannes M. Schmitt <schmittjoh@gmail.com>
+ * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  */
 abstract class ConfigurableExtension extends Extension
 {

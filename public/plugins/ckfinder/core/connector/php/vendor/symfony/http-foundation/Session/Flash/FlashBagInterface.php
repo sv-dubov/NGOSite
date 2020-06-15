@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Session\SessionBagInterface;
 /**
  * FlashBagInterface.
  *
- * @publisher Drak <drak@zikula.org>
+ * @author Drak <drak@zikula.org>
  */
 interface FlashBagInterface extends SessionBagInterface
 {
