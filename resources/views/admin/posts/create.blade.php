@@ -51,8 +51,8 @@
                     <div class="form-group">
                         <label>Category</label>
                         {{Form::select('category_id',
-              	$categories, 
-              	null, 
+              	$categories,
+              	null,
               	['class' => 'form-control select2'])
               }}
                     </div>
@@ -62,8 +62,8 @@
                     <div class="form-group">
                         <label>Tags</label>
                         {{Form::select('tags[]',
-              	$tags, 
-              	null, 
+              	$tags,
+              	null,
               	['class' => 'form-control select2', 'multiple'=>'multiple','data-placeholder'=>'Choose tags'])
               }}
                     </div>
@@ -77,6 +77,10 @@
                             <input type="text" class="form-control pull-right" id="datepicker" name="date" value="{{old('date')}}">
                         </div>
                         <!-- /.input group -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Author</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="author" value="{{old('author')}}">
                     </div>
                     <!-- checkbox -->
                     <div class="form-group">

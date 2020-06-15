@@ -13,7 +13,7 @@ class Post extends Model
 {
     use Sluggable;
 
-    protected $fillable = ['title', 'content', 'date', 'description'];
+    protected $fillable = ['title', 'content', 'date', 'description', 'author'];
     const IS_DRAFT = 0;
     const IS_PUBLIC = 1;
 
@@ -22,7 +22,7 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function author()
+    public function publisher()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
@@ -175,13 +175,6 @@ class Post extends Model
                 :   'No category';
     }
 
-    public function getAuthorName()
-    {
-        return ($this->author != null)
-            ?   $this->author->name
-            :   'No Author';
-    }
-
     public function getTagsTitles()
     {
         return (!$this->tags->isEmpty())
@@ -236,9 +229,9 @@ class Post extends Model
         return $this->category != null ? true : false;
     }
 
-    public function hasAuthor()
+    public function hasPublisher()
     {
-        return $this->author != null ? true : false;
+        return $this->publisher != null ? true : false;
     }
 
     public static function getPopularPosts()
