@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * UnprocessableEntityHttpException.
  *
- * @author Steve Hutchins <hutchinsteve@gmail.com>
+ * @publisher Steve Hutchins <hutchinsteve@gmail.com>
  */
 class UnprocessableEntityHttpException extends HttpException
 {

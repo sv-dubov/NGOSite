@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * LengthRequiredHttpException.
  *
- * @author Ben Ramsey <ben@benramsey.com>
+ * @publisher Ben Ramsey <ben@benramsey.com>
  */
 class LengthRequiredHttpException extends HttpException
 {

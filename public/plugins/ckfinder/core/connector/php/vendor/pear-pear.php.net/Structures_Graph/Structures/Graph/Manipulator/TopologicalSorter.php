@@ -1,7 +1,7 @@
 <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 foldmethod=marker: */
 // +-----------------------------------------------------------------------------+
-// | Copyright (c) 2003 Sérgio Gonçalves Carvalho                                |
+// | Copyright (c) 2003 Sï¿½rgio Gonï¿½alves Carvalho                                |
 // +-----------------------------------------------------------------------------+
 // | This file is part of Structures_Graph.                                      |
 // |                                                                             |
@@ -20,12 +20,12 @@
 // | Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA                    |
 // | 02111-1307 USA                                                              |
 // +-----------------------------------------------------------------------------+
-// | Author: Sérgio Carvalho <sergio.carvalho@portugalmail.com>                  |
+// | Author: Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com>                  |
 // +-----------------------------------------------------------------------------+
 //
 /**
  * This file contains the definition of the Structures_Graph_Manipulator_TopologicalSorter class.
- * 
+ *
  * @package Structures_Graph
  */
 
@@ -35,22 +35,22 @@ require_once 'Structures/Graph/Node.php';
 require_once 'Structures/Graph/Manipulator/AcyclicTest.php';
 
 /**
- * The Structures_Graph_Manipulator_TopologicalSorter is a manipulator 
- * which is able to return the set of nodes in a graph, sorted by topological 
+ * The Structures_Graph_Manipulator_TopologicalSorter is a manipulator
+ * which is able to return the set of nodes in a graph, sorted by topological
  * order.
  *
  * A graph may only be sorted topologically iff it's a DAG. You can test it
  * with the Structures_Graph_Manipulator_AcyclicTest.
- * 
- * @author    Sérgio Carvalho <sergio.carvalho@portugalmail.com> 
- * @copyright (c) 2004 by Sérgio Carvalho
+ *
+ * @publisher    Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @copyright (c) 2004 by Sï¿½rgio Carvalho
  * @see       Structures_Graph_Manipulator_AcyclicTest
  * @package   Structures_Graph
  */
 class Structures_Graph_Manipulator_TopologicalSorter
 {
     /**
-     * This is a variant of Structures_Graph::inDegree which does 
+     * This is a variant of Structures_Graph::inDegree which does
      * not count nodes marked as visited.
      *
      * @param object $node Node to check
@@ -69,7 +69,7 @@ class Structures_Graph_Manipulator_TopologicalSorter
             }
         }
         return $result;
-        
+
     }
 
     /**
@@ -126,8 +126,8 @@ class Structures_Graph_Manipulator_TopologicalSorter
     }
 
     /**
-     * Sort returns the graph's nodes, sorted by topological order. 
-     * 
+     * Sort returns the graph's nodes, sorted by topological order.
+     *
      * The result is an array with as many entries as topological levels.
      * Each entry in this array is an array of nodes within
      * the given topological level.

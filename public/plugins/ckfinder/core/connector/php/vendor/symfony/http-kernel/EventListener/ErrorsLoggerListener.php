@@ -21,8 +21,8 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * Injects the logger into the ErrorHandler, so that it can log various errors.
  *
- * @author Colin Frei <colin@colinfrei.com>
- * @author Konstantin Myakshin <koc-dp@yandex.ru>
+ * @publisher Colin Frei <colin@colinfrei.com>
+ * @publisher Konstantin Myakshin <koc-dp@yandex.ru>
  *
  * @deprecated since version 2.6, to be removed in 3.0. Use the DebugHandlersListener class instead.
  */

@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * MethodNotAllowedHttpException.
  *
- * @author Kris Wallsmith <kris@symfony.com>
+ * @publisher Kris Wallsmith <kris@symfony.com>
  */
 class MethodNotAllowedHttpException extends HttpException
 {

@@ -22,9 +22,9 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
  * This version of the PdoSessionHandler does NOT implement locking. So concurrent requests to the
  * same session can result in data loss due to race conditions.
  *
- * @author Fabien Potencier <fabien@symfony.com>
- * @author Michael Williams <michael.williams@funsational.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @publisher Fabien Potencier <fabien@symfony.com>
+ * @publisher Michael Williams <michael.williams@funsational.com>
+ * @publisher Tobias Schultze <http://tobion.de>
  *
  * @deprecated since version 2.6, to be removed in 3.0. Use
  *             {@link PdoSessionHandler} instead.

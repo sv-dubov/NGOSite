@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Blob\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,12 +41,12 @@ class Blob
      * @var string
      */
     private $_name;
-    
+
     /**
      * @var string
      */
     private $_url;
-    
+
     /**
      * @var string
      */
@@ -56,7 +56,7 @@ class Blob
      * @var array
      */
     private $_metadata;
-    
+
     /**
      * @var BlobProperties
      */
@@ -76,14 +76,14 @@ class Blob
      * Sets blob name.
      *
      * @param string $name value.
-     * 
+     *
      * @return none.
      */
     public function setName($name)
     {
         $this->_name = $name;
     }
-    
+
     /**
      * Gets blob snapshot.
      *
@@ -98,7 +98,7 @@ class Blob
      * Sets blob snapshot.
      *
      * @param string $snapshot value.
-     * 
+     *
      * @return none.
      */
     public function setSnapshot($snapshot)
@@ -120,7 +120,7 @@ class Blob
      * Sets blob url.
      *
      * @param string $url value.
-     * 
+     *
      * @return none.
      */
     public function setUrl($url)
@@ -142,14 +142,14 @@ class Blob
      * Sets blob metadata.
      *
      * @param string $metadata value.
-     * 
+     *
      * @return none.
      */
     public function setMetadata($metadata)
     {
         $this->_metadata = $metadata;
     }
-    
+
     /**
      * Gets blob properties.
      *
@@ -164,7 +164,7 @@ class Blob
      * Sets blob properties.
      *
      * @param BlobProperties $properties value.
-     * 
+     *
      * @return none.
      */
     public function setProperties($properties)

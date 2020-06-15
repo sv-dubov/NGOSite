@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * ConfigDataCollector.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class ConfigDataCollector extends DataCollector
 {

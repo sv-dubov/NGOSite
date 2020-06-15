@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
@@ -27,11 +27,11 @@ use WindowsAzure\Common\Internal\Utilities;
 use WindowsAzure\Common\Internal\Resources;
 
 /**
- * The generator class of ATOM library. 
+ * The generator class of ATOM library.
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Atom
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,32 +41,32 @@ use WindowsAzure\Common\Internal\Resources;
 class Generator extends AtomBase
 {
     /**
-     * The of the generator. 
+     * The of the generator.
      *
-     * @var string  
+     * @var string
      */
     protected $text;
 
     /**
-     * The Uri of the generator. 
+     * The Uri of the generator.
      *
-     * @var string  
+     * @var string
      */
     protected $uri;
 
     /**
      * The version of the generator.
      *
-     * @var string 
+     * @var string
      */
     protected $version;
 
-    /** 
-     * Creates a generator instance with specified XML string. 
-     * 
-     * @param string $xmlString A string representing a generator 
+    /**
+     * Creates a generator instance with specified XML string.
+     *
+     * @param string $xmlString A string representing a generator
      * instance.
-     * 
+     *
      * @return none
      */
     public static function parseXml($xmlString)
@@ -74,7 +74,7 @@ class Generator extends AtomBase
         $generatorXml   = new \SimpleXMLElement($xmlString);
         $generatorArray = (array)$generatorXml;
         $attributes     = $generatorXml->attributes();
-        if (!empty($attributes['uri'])) { 
+        if (!empty($attributes['uri'])) {
             $this->uri = (string)$attributes['uri'];
         }
 
@@ -82,14 +82,14 @@ class Generator extends AtomBase
             $this->version = (string)$attributes['version'];
         }
 
-        $this->text = (string)$generatorXml;  
+        $this->text = (string)$generatorXml;
     }
-     
-    /** 
+
+    /**
      * Creates an ATOM generator instance with specified name.
      *
      * @param string $text The text content of the generator.
-     * 
+     *
      * @return none
      */
     public function __construct($text = null)
@@ -99,31 +99,31 @@ class Generator extends AtomBase
         }
     }
 
-    /** 
-     * Gets the text of the generator. 
+    /**
+     * Gets the text of the generator.
      *
      * @return string
      */
     public function getText()
-    {   
+    {
         return $this->text;
-    } 
+    }
 
     /**
      * Sets the text of the generator.
-     * 
+     *
      * @param string $text The text of the generator.
-     * 
+     *
      * @return none
      */
     public function setText($text)
     {
-        $this->text = $text; 
+        $this->text = $text;
     }
 
     /**
-     * Gets the URI of the generator. 
-     * 
+     * Gets the URI of the generator.
+     *
      * @return string
      */
     public function getUri()
@@ -132,10 +132,10 @@ class Generator extends AtomBase
     }
 
     /**
-     * Sets the URI of the generator. 
-     * 
+     * Sets the URI of the generator.
+     *
      * @param string $uri The URI of the generator.
-     * 
+     *
      * @return none
      */
     public function setUri($uri)
@@ -143,10 +143,10 @@ class Generator extends AtomBase
         $this->uri = $uri;
     }
 
-    
+
     /**
-     * Gets the version of the generator. 
-     * 
+     * Gets the version of the generator.
+     *
      * @return string
      */
     public function getVersion()
@@ -155,10 +155,10 @@ class Generator extends AtomBase
     }
 
     /**
-     * Sets the version of the generator. 
-     * 
+     * Sets the version of the generator.
+     *
      * @param string $version The version of the generator.
-     * 
+     *
      * @return none
      */
     public function setVersion($version)
@@ -166,11 +166,11 @@ class Generator extends AtomBase
         $this->version = $version;
     }
 
-    /** 
-     * Writes an XML representing the generator. 
-     * 
+    /**
+     * Writes an XML representing the generator.
+     *
      * @param \XMLWriter $xmlWriter The XML writer.
-     * 
+     *
      * @return none
      */
     public function writeXml($xmlWriter)
@@ -183,13 +183,13 @@ class Generator extends AtomBase
 
         $this->writeOptionalAttribute(
             $xmlWriter,
-            'uri', 
+            'uri',
             $this->uri
         );
 
         $this->writeOptionalAttribute(
             $xmlWriter,
-            'version', 
+            'version',
             $this->version
         );
 

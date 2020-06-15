@@ -9,6 +9,37 @@
     <title>NGO Site</title>
     <!-- common css -->
     <link rel="stylesheet" href="/css/front.css">
+    <!-- css for dropdown navbar -->
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
     <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -34,17 +65,25 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Homepage</a></li>
-                        <li><a href="about-me.html">ABOUT ME </a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT US </a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         @if(Auth::check())
-                        <li><a href="/profile">My profile</a></li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/profile">MY PROFILE</a></li>
+                        <li><a href="/logout">LOGOUT</a></li>
                         @else
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">REGISTER</a></li>
+                        <li><a href="/login">LOGIN</a></li>
                         @endif
                     </ul>
                 </div>

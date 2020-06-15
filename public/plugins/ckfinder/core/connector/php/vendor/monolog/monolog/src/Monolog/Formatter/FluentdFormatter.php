@@ -30,7 +30,7 @@ namespace Monolog\Formatter;
  * $fluentHandler->setFormatter(new Monolog\Formatter\FluentdFormatter());
  * $logger->pushHandler($fluentHandler);
  *
- * @author Andrius Putna <fordnox@gmail.com>
+ * @publisher Andrius Putna <fordnox@gmail.com>
  */
 class FluentdFormatter implements FormatterInterface
 {

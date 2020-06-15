@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
 /**
  * Guesses the mime type of a file.
  *
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 interface MimeTypeGuesserInterface
 {

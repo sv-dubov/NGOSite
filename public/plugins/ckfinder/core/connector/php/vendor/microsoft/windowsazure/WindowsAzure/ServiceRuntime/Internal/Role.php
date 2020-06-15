@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -42,46 +42,46 @@ class Role
      * @var string
      */
     private $_name;
-    
+
     /**
      * @var array
      */
     private $_instances;
-   
+
     /**
      * Constructor
-     * 
+     *
      * @param string $name      The role name.
      * @param array  $instances The role instances.
      */
     public function __construct($name, $instances)
     {
         Validate::isArray($instances, 'instances');
-        
+
         $this->_name      = $name;
         $this->_instances = $instances;
     }
-    
+
     /**
      * Returns the collection of instances for the role.
-     * 
+     *
      * The number of instances of a role to be deployed to Windows Azure is
      * specified in the service's configuration file.
-     * 
-     * A role must define at least one internal endpoint in order for its set 
+     *
+     * A role must define at least one internal endpoint in order for its set
      * of instances to be known at runtime.
-     * 
+     *
      * @return array
      */
     public function getInstances()
     {
         return $this->_instances;
     }
-    
+
     /**
      * Returns the name of the role as it is declared in the service definition
      * file.
-     * 
+     *
      * @return string
      */
     public function getName()

@@ -31,7 +31,7 @@ use Elastica\Exception\ExceptionInterface;
  *    $log = new Logger('application');
  *    $log->pushHandler($handler);
  *
- * @author Jelle Vink <jelle.vink@gmail.com>
+ * @publisher Jelle Vink <jelle.vink@gmail.com>
  */
 class ElasticSearchHandler extends AbstractProcessingHandler
 {

@@ -19,7 +19,7 @@ use Monolog\Logger;
  *
  * This also works out of the box with Firefox 43+
  *
- * @author Christophe Coevoet <stof@notk.org>
+ * @publisher Christophe Coevoet <stof@notk.org>
  */
 class ChromePHPHandler extends AbstractProcessingHandler
 {
@@ -32,7 +32,7 @@ class ChromePHPHandler extends AbstractProcessingHandler
      * Header name
      */
     const HEADER_NAME = 'X-ChromeLogger-Data';
-    
+
     /**
      * Regular expression to detect supported browsers (matches any Chrome, or Firefox 43+)
      */

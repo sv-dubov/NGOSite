@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceManagement\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceManagement\Models;
 use WindowsAzure\Common\Internal\Validate;
 
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceManagement\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -42,7 +42,7 @@ class GetHostedServicePropertiesOptions
      * @var boolean
      */
     private $_embedDetail;
-    
+
     /**
      * Constructs new GetHostedServicePropertiesOptions instance.
      */
@@ -50,25 +50,25 @@ class GetHostedServicePropertiesOptions
     {
         $this->_embedDetail = false;
     }
-    
+
     /**
      * Sets the embed detail flag.
-     * 
+     *
      * @param boolean $embedDetail The embed detail flag.
-     * 
+     *
      * @return none
      */
     public function setEmbedDetail($embedDetail)
     {
         Validate::isBoolean($embedDetail);
-        
+
         $this->_embedDetail = $embedDetail;
     }
-    
+
     /**
      * Gets the embed detail flag.
-     * 
-     * @return boolean 
+     *
+     * @return boolean
      */
     public function getEmbedDetail()
     {

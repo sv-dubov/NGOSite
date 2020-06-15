@@ -14,7 +14,7 @@ namespace Monolog\Formatter;
 /**
  * Interface for formatters
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 interface FormatterInterface
 {

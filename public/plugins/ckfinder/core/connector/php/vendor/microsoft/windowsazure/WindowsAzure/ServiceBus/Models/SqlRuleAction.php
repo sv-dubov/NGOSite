@@ -10,17 +10,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceBus\Models;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\Utilities;
@@ -32,7 +32,7 @@ use WindowsAzure\ServiceBus\Internal\Action;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -43,31 +43,31 @@ class SqlRuleAction extends Action
 {
     /**
      * The SQL expression.
-     * 
+     *
      * @var string
      */
     private $_sqlExpression;
 
     /**
      * The compatibility level.
-     * 
+     *
      * @var string
      */
     private $_compatibilityLevel;
 
-    /** 
-     * Creates a SQL Rule Action instance with default parameters. 
+    /**
+     * Creates a SQL Rule Action instance with default parameters.
      */
     public function __construct()
-    {   
+    {
         parent::__construct();
         $this->attributes['xsi:type'] = 'SqlRuleAction';
     }
 
     /**
      * Gets the SQL expression.
-     * 
-     * @return string 
+     *
+     * @return string
      */
     public function getSqlExpression()
     {
@@ -75,10 +75,10 @@ class SqlRuleAction extends Action
     }
 
     /**
-     * Sets the SQL expression. 
-     * 
-     * @param string $sqlExpression Sets the SQL expression. 
-     * 
+     * Sets the SQL expression.
+     *
+     * @param string $sqlExpression Sets the SQL expression.
+     *
      * @return none
      */
     public function setSqlExpression($sqlExpression)
@@ -87,9 +87,9 @@ class SqlRuleAction extends Action
     }
 
     /**
-     * Gets the compatibility level. 
-     * 
-     * @return string 
+     * Gets the compatibility level.
+     *
+     * @return string
      */
     public function getCompatibilityLevel()
     {
@@ -98,7 +98,7 @@ class SqlRuleAction extends Action
 
     /**
      * Sets the compatibility level.
-     * 
+     *
      * @param string $compatibilityLevel The level of compatibility.
      *
      * @return none

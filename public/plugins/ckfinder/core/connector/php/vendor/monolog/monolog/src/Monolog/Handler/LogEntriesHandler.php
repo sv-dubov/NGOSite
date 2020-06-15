@@ -14,7 +14,7 @@ namespace Monolog\Handler;
 use Monolog\Logger;
 
 /**
- * @author Robert Kaufmann III <rok3@rok3.me>
+ * @publisher Robert Kaufmann III <rok3@rok3.me>
  */
 class LogEntriesHandler extends SocketHandler
 {

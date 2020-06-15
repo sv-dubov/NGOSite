@@ -20,7 +20,7 @@ use Symfony\Component\Config\Loader\LoaderInterface;
  *
  * It manages an environment made of bundles.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 interface KernelInterface extends HttpKernelInterface, \Serializable
 {

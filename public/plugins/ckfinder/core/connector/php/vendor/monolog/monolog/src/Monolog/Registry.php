@@ -33,7 +33,7 @@ use InvalidArgumentException;
  * }
  * </code>
  *
- * @author Tomas Tatarko <tomas@tatarko.sk>
+ * @publisher Tomas Tatarko <tomas@tatarko.sk>
  */
 class Registry
 {

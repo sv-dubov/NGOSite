@@ -16,9 +16,9 @@ use Monolog\Logger;
 /**
  * Serializes a log message according to Wildfire's header requirements
  *
- * @author Eric Clemmons (@ericclemmons) <eric@uxdriven.com>
- * @author Christophe Coevoet <stof@notk.org>
- * @author Kirill chEbba Chebunin <iam@chebba.org>
+ * @publisher Eric Clemmons (@ericclemmons) <eric@uxdriven.com>
+ * @publisher Christophe Coevoet <stof@notk.org>
+ * @publisher Kirill chEbba Chebunin <iam@chebba.org>
  */
 class WildfireFormatter extends NormalizerFormatter
 {

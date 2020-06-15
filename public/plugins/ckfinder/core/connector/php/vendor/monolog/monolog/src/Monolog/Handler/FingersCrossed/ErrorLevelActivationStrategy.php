@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * Error level based activation strategy.
  *
- * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ * @publisher Johannes M. Schmitt <schmittjoh@gmail.com>
  */
 class ErrorLevelActivationStrategy implements ActivationStrategyInterface
 {

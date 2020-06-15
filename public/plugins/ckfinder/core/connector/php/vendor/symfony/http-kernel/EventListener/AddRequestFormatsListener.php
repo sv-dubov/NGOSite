@@ -18,7 +18,7 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 /**
  * Adds configured formats to each request.
  *
- * @author Gildas Quemener <gildas.quemener@gmail.com>
+ * @publisher Gildas Quemener <gildas.quemener@gmail.com>
  */
 class AddRequestFormatsListener implements EventSubscriberInterface
 {

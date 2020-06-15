@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceManagement\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceManagement\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\ServiceManagement\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceManagement\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -39,12 +39,12 @@ class Mode
 {
     const AUTO   = 'auto';
     const MANUAL = 'manual';
-    
+
     /**
      * Validates the provided mode.
-     * 
+     *
      * @param string $mode The deployment change mode.
-     * 
+     *
      * @return boolean
      */
     public static function isValid($mode)
@@ -53,7 +53,7 @@ class Mode
         case self::AUTO:
         case self::MANUAL:
         return true;
-        
+
         default:
         return false;
         }

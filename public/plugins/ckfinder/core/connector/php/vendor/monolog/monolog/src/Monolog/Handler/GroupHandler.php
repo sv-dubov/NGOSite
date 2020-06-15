@@ -16,7 +16,7 @@ use Monolog\Formatter\FormatterInterface;
 /**
  * Forwards records to multiple handlers
  *
- * @author Lenar Lõhmus <lenar@city.ee>
+ * @publisher Lenar Lõhmus <lenar@city.ee>
  */
 class GroupHandler extends AbstractHandler
 {

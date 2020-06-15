@@ -19,7 +19,7 @@ namespace Symfony\Component\HttpKernel\HttpCache;
  * ResponseCacheStrategyInterface implementations know how to compute the
  * Response cache HTTP header based on the different response cache headers.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  *
  * @deprecated since version 2.6, to be removed in 3.0. Use ResponseCacheStrategyInterface instead.
  */

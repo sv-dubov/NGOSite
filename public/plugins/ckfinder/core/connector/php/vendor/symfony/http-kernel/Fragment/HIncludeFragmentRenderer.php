@@ -20,7 +20,7 @@ use Symfony\Component\HttpKernel\UriSigner;
 /**
  * Implements the Hinclude rendering strategy.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class HIncludeFragmentRenderer extends RoutableFragmentRenderer
 {

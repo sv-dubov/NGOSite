@@ -18,7 +18,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * Sets the session in the request.
  *
- * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ * @publisher Johannes M. Schmitt <schmittjoh@gmail.com>
  */
 abstract class SessionListener implements EventSubscriberInterface
 {

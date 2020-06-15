@@ -15,7 +15,7 @@ namespace Monolog\Formatter;
  * Formats data into an associative array of scalar values.
  * Objects and arrays will be JSON encoded.
  *
- * @author Andrew Lawson <adlawson@gmail.com>
+ * @publisher Andrew Lawson <adlawson@gmail.com>
  */
 class ScalarFormatter extends NormalizerFormatter
 {

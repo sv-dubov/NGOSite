@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Common\Internal\Filters;
 use WindowsAzure\Common\Internal\IServiceFilter;
 
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Internal\IServiceFilter;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -45,7 +45,7 @@ class RetryPolicyFilter implements IServiceFilter
 
     /**
      * Initializes new object from RetryPolicyFilter.
-     * 
+     *
      * @param RetryPolicy $retryPolicy The retry policy object.
      */
     public function __construct($retryPolicy)
@@ -55,9 +55,9 @@ class RetryPolicyFilter implements IServiceFilter
 
     /**
      * Handles the request before sending.
-     * 
+     *
      * @param \HTTP_Request2 $request The HTTP request.
-     * 
+     *
      * @return \HTTP_Request2
      */
     public function handleRequest($request)
@@ -67,10 +67,10 @@ class RetryPolicyFilter implements IServiceFilter
 
     /**
      * Handles the response after sending.
-     * 
+     *
      * @param \HTTP_Request2          $request  The HTTP request.
      * @param \HTTP_Request2_Response $response The HTTP response.
-     * 
+     *
      * @return \HTTP_Request2_Response
      */
     public function handleResponse($request, $response)
@@ -80,11 +80,11 @@ class RetryPolicyFilter implements IServiceFilter
                 $retryCount,
                 $response
             );
-            
+
             if (!$shouldRetry) {
                 return $response;
             }
-            
+
             // Backoff for some time according to retry policy
             $backoffTime = $this->_retryPolicy->calculateBackoff(
                 $retryCount,

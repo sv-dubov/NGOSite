@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -271,7 +271,7 @@ define('PEAR_PACKAGEFILE_ERROR_INVALID_FILENAME', 52);
  * package.xml encapsulator
  * @category   pear
  * @package    PEAR
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1
@@ -335,7 +335,7 @@ class PEAR_PackageFile_v1
      *
      * - package name
      * - channel name
-     * - dependencies 
+     * - dependencies
      * @var boolean
      * @access private
      */
@@ -1199,14 +1199,14 @@ class PEAR_PackageFile_v1
                         array('file' => $file));
                 }
                 if (isset($fa['install-as']) &&
-                      preg_match('~/\.\.?(/|\\z)|^\.\.?/~', 
+                      preg_match('~/\.\.?(/|\\z)|^\.\.?/~',
                                  str_replace('\\', '/', $fa['install-as']))) {
                     // install-as contains .. parent directory or . cur directory references
                     $this->_validateError(PEAR_PACKAGEFILE_ERROR_INVALID_FILENAME,
                         array('file' => $file . ' [installed as ' . $fa['install-as'] . ']'));
                 }
                 if (isset($fa['baseinstalldir']) &&
-                      preg_match('~/\.\.?(/|\\z)|^\.\.?/~', 
+                      preg_match('~/\.\.?(/|\\z)|^\.\.?/~',
                                  str_replace('\\', '/', $fa['baseinstalldir']))) {
                     // install-as contains .. parent directory or . cur directory references
                     $this->_validateError(PEAR_PACKAGEFILE_ERROR_INVALID_FILENAME,

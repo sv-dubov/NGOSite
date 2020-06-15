@@ -16,7 +16,7 @@ namespace Monolog\Handler;
  *
  * It records all records and gives you access to them for verification.
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  *
  * @method bool hasEmergency($record)
  * @method bool hasAlert($record)

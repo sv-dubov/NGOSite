@@ -386,7 +386,7 @@
 
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-                                Expose author name in posts
+                                Expose publisher name in posts
                                 <input type="checkbox" class="pull-right" checked>
                             </label>
 

@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * UnsupportedMediaTypeHttpException.
  *
- * @author Ben Ramsey <ben@benramsey.com>
+ * @publisher Ben Ramsey <ben@benramsey.com>
  */
 class UnsupportedMediaTypeHttpException extends HttpException
 {

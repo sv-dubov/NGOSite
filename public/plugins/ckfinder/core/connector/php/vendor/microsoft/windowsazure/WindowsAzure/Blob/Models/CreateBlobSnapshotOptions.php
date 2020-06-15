@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Blob\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,17 +41,17 @@ class CreateBlobSnapshotOptions extends BlobServiceOptions
      * @var array
      */
     private $_metadata;
-    
+
     /**
      * @var AccessCondition
      */
     private $_accessCondition;
-    
+
     /**
      * @var string
      */
     private $_leaseId;
-    
+
     /**
      * Gets metadata.
      *
@@ -73,29 +73,29 @@ class CreateBlobSnapshotOptions extends BlobServiceOptions
     {
         $this->_metadata = $metadata;
     }
-    
+
     /**
      * Gets access condition.
-     * 
+     *
      * @return AccessCondition
      */
     public function getAccessCondition()
     {
         return $this->_accessCondition;
     }
-    
+
     /**
      * Sets access condition.
-     * 
+     *
      * @param AccessCondition $accessCondition The access condition object.
-     * 
+     *
      * @return none
      */
     public function setAccessCondition($accessCondition)
     {
         $this->_accessCondition = $accessCondition;
     }
-    
+
     /**
      * Gets lease Id.
      *
@@ -110,7 +110,7 @@ class CreateBlobSnapshotOptions extends BlobServiceOptions
      * Sets lease Id.
      *
      * @param string $leaseId The lease Id.
-     * 
+     *
      * @return none
      */
     public function setLeaseId($leaseId)

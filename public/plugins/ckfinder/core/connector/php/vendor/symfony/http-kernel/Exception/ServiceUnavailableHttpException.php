@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * ServiceUnavailableHttpException.
  *
- * @author Ben Ramsey <ben@benramsey.com>
+ * @publisher Ben Ramsey <ben@benramsey.com>
  */
 class ServiceUnavailableHttpException extends HttpException
 {

@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Request;
  *
  * Controllers should be callables.
  *
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 class FilterControllerEvent extends KernelEvent
 {

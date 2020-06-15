@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Common\Internal;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Common\Internal;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -47,9 +47,9 @@ class Logger
      *
      * @param mix    $var The data to log.
      * @param string $tip The help message.
-     * 
+     *
      * @static
-     * 
+     *
      * @return none
      */
     public static function log($var, $tip = Resources::EMPTY_STRING)
@@ -57,21 +57,21 @@ class Logger
         if (!empty($tip)) {
             error_log($tip . "\n", 3, self::$_filePath);
         }
-        
+
         if (is_array($var) || is_object($var)) {
             error_log(print_r($var, true), 3, self::$_filePath);
         } else {
             error_log($var . "\n", 3, self::$_filePath);
         }
     }
-    
+
     /**
      * Sets file path to use.
      *
      * @param string $filePath The log file path.
-     * 
+     *
      * @static
-     * 
+     *
      * @return none
      */
     public static function setLogFile($filePath)

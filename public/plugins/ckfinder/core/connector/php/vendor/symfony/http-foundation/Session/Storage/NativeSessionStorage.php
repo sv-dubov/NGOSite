@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Session\Storage\Proxy\SessionHandlerProxy;
 /**
  * This provides a base class for session attribute storage.
  *
- * @author Drak <drak@zikula.org>
+ * @publisher Drak <drak@zikula.org>
  */
 class NativeSessionStorage implements SessionStorageInterface
 {

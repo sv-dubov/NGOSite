@@ -16,7 +16,7 @@ namespace Symfony\Component\HttpFoundation\Session\Flash;
  *
  * \IteratorAggregate implementation is deprecated and will be removed in 3.0.
  *
- * @author Drak <drak@zikula.org>
+ * @publisher Drak <drak@zikula.org>
  */
 class FlashBag implements FlashBagInterface, \IteratorAggregate
 {

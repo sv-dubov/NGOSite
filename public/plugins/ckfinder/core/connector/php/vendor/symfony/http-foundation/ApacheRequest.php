@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 /**
  * Request represents an HTTP request from an Apache server.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class ApacheRequest extends Request
 {

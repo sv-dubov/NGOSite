@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -29,7 +29,7 @@ namespace WindowsAzure\ServiceRuntime\Internal;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -38,17 +38,17 @@ namespace WindowsAzure\ServiceRuntime\Internal;
 class FileInputChannel implements IInputChannel
 {
     // @codingStandardsIgnoreStart
-    
+
     /**
      * @var Resource
      */
     private $_inputStream;
-    
+
     /**
      * Gets the input stream.
-     * 
+     *
      * @param string $name The input stream path.
-     * 
+     *
      * @return none
      */
     public function getInputStream($name)
@@ -60,20 +60,20 @@ class FileInputChannel implements IInputChannel
             throw new ChannelNotAvailableException();
         }
     }
-    
+
     /**
      * Closes the input stream.
-     * 
+     *
      * @return none
      */
-    public function closeInputStream() 
+    public function closeInputStream()
     {
         if (!is_null($this->_inputStream)) {
             fclose($this->_inputStream);
             $this->_inputStream = null;
         }
     }
-    
+
     // @codingStandardsIgnoreEnd
 }
 

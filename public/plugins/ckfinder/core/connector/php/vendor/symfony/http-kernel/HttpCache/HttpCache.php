@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Cache provides HTTP caching.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class HttpCache implements HttpKernelInterface, TerminableInterface
 {

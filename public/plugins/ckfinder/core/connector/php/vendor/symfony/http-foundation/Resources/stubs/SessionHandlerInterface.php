@@ -26,8 +26,8 @@
  * @see http://php.net/session.customhandler
  * @see http://php.net/session-set-save-handler
  *
- * @author Drak <drak@zikula.org>
- * @author Tobias Schultze <http://tobion.de>
+ * @publisher Drak <drak@zikula.org>
+ * @publisher Tobias Schultze <http://tobion.de>
  */
 interface SessionHandlerInterface
 {

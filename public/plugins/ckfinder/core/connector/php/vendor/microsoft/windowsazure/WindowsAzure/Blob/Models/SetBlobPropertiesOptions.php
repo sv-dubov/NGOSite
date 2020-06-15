@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 use WindowsAzure\Common\Internal\Validate;
 
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -42,56 +42,56 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
      * @var BlobProperties
      */
     private $_blobProperties;
-    
+
     /**
      * @var string
      */
     private $_leaseId;
-    
+
     /**
      * @var string
      */
     private $_sequenceNumberAction;
-    
+
     /**
      * @var AccessCondition
      */
     private $_accessCondition;
-    
+
     /**
-     * Creates a new SetBlobPropertiesOptions with a specified BlobProperties 
+     * Creates a new SetBlobPropertiesOptions with a specified BlobProperties
      * instance.
-     * 
+     *
      * @param BlobProperties $blobProperties The blob properties instance.
      */
     public function __construct($blobProperties = null)
     {
-        $this->_blobProperties = is_null($blobProperties) 
+        $this->_blobProperties = is_null($blobProperties)
                                  ? new BlobProperties() : clone $blobProperties;
     }
-    
+
     /**
      * Gets access condition
-     * 
+     *
      * @return AccessCondition
      */
     public function getAccessCondition()
     {
         return $this->_accessCondition;
     }
-    
+
     /**
      * Sets access condition
-     * 
+     *
      * @param AccessCondition $accessCondition value to use.
-     * 
+     *
      * @return none.
      */
     public function setAccessCondition($accessCondition)
     {
         $this->_accessCondition = $accessCondition;
     }
-    
+
     /**
      * Gets blob sequenceNumber.
      *
@@ -113,51 +113,51 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setSequenceNumber($sequenceNumber);
     }
-    
+
     /**
      * Gets lease Id for the blob
-     * 
+     *
      * @return string
      */
     public function getSequenceNumberAction()
     {
         return $this->_sequenceNumberAction;
     }
-    
+
     /**
      * Sets lease Id for the blob
-     * 
+     *
      * @param string $sequenceNumberAction action.
-     * 
+     *
      * @return none
      */
     public function setSequenceNumberAction($sequenceNumberAction)
     {
         $this->_sequenceNumberAction = $sequenceNumberAction;
     }
-    
+
     /**
      * Gets lease Id for the blob
-     * 
+     *
      * @return string
      */
     public function getLeaseId()
     {
         return $this->_leaseId;
     }
-    
+
     /**
      * Sets lease Id for the blob
-     * 
+     *
      * @param string $leaseId the blob lease id.
-     * 
+     *
      * @return none
      */
     public function setLeaseId($leaseId)
     {
         $this->_leaseId = $leaseId;
     }
-    
+
     /**
      * Gets blob blobContentLength.
      *
@@ -179,7 +179,7 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setContentLength($blobContentLength);
     }
-    
+
     /**
      * Gets blob ContentType.
      *
@@ -201,7 +201,7 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setContentType($blobContentType);
     }
-    
+
     /**
      * Gets blob ContentEncoding.
      *
@@ -223,7 +223,7 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setContentEncoding($blobContentEncoding);
     }
-    
+
     /**
      * Gets blob ContentLanguage.
      *
@@ -245,7 +245,7 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setContentLanguage($blobContentLanguage);
     }
-    
+
     /**
      * Gets blob ContentMD5.
      *
@@ -267,7 +267,7 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         $this->_blobProperties->setContentMD5($blobContentMD5);
     }
-    
+
     /**
      * Gets blob cache control.
      *
@@ -277,12 +277,12 @@ class SetBlobPropertiesOptions extends BlobServiceOptions
     {
         return $this->_blobProperties->getCacheControl();
     }
-    
+
     /**
      * Sets blob cacheControl.
      *
      * @param string $blobCacheControl value to use.
-     * 
+     *
      * @return none.
      */
     public function setBlobCacheControl($blobCacheControl)

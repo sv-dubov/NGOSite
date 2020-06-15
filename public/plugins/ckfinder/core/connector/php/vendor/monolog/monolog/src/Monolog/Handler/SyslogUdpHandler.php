@@ -17,7 +17,7 @@ use Monolog\Handler\SyslogUdp\UdpSocket;
 /**
  * A Handler for logging to a remote syslogd server.
  *
- * @author Jesper Skovgaard Nielsen <nulpunkt@gmail.com>
+ * @publisher Jesper Skovgaard Nielsen <nulpunkt@gmail.com>
  */
 class SyslogUdpHandler extends AbstractSyslogHandler
 {

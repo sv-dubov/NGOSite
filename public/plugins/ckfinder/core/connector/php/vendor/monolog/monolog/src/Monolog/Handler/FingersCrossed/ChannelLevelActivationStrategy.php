@@ -31,7 +31,7 @@ use Monolog\Logger;
  *   $handler = new FingersCrossedHandler(new StreamHandler('php://stderr'), $activationStrategy);
  * </code>
  *
- * @author Mike Meessen <netmikey@gmail.com>
+ * @publisher Mike Meessen <netmikey@gmail.com>
  */
 class ChannelLevelActivationStrategy implements ActivationStrategyInterface
 {

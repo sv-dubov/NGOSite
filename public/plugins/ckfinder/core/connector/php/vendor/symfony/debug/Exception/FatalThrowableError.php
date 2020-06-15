@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Fatal Throwable Error.
  *
- * @author Nicolas Grekas <p@tchwork.com>
+ * @publisher Nicolas Grekas <p@tchwork.com>
  */
 class FatalThrowableError extends FatalErrorException
 {

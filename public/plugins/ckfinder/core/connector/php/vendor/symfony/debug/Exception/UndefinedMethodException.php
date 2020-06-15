@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Undefined Method Exception.
  *
- * @author Grégoire Pineau <lyrixx@lyrixx.info>
+ * @publisher Grégoire Pineau <lyrixx@lyrixx.info>
  */
 class UndefinedMethodException extends FatalErrorException
 {

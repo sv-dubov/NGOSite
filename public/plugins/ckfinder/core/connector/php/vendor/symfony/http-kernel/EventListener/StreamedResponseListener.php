@@ -20,7 +20,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  * StreamedResponseListener is responsible for sending the Response
  * to the client.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class StreamedResponseListener implements EventSubscriberInterface
 {

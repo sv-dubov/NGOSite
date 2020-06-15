@@ -6,9 +6,9 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Stig Bakken <ssb@php.net>
- * @author     Tomas V. V. Cox <cox@idecnet.com>
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Stig Bakken <ssb@php.net>
+ * @publisher     Tomas V. V. Cox <cox@idecnet.com>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -31,9 +31,9 @@ define('PEAR_REGISTRY_ERROR_CHANNEL_FILE', -6);
  * Administration class used to maintain the installed package database.
  * @category   pear
  * @package    PEAR
- * @author     Stig Bakken <ssb@php.net>
- * @author     Tomas V. V. Cox <cox@idecnet.com>
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Stig Bakken <ssb@php.net>
+ * @publisher     Tomas V. V. Cox <cox@idecnet.com>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

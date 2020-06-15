@@ -24,7 +24,7 @@ use Symfony\Component\HttpFoundation\Response;
  * This implementation changes the master response TTL to the smallest TTL received
  * or force validation if one of the surrogates has validation cache strategy.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class ResponseCacheStrategy implements ResponseCacheStrategyInterface
 {

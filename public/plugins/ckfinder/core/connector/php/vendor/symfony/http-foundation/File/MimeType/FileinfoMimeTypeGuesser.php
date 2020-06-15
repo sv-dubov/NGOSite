@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
 /**
  * Guesses the mime type using the PECL extension FileInfo.
  *
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 class FileinfoMimeTypeGuesser implements MimeTypeGuesserInterface
 {

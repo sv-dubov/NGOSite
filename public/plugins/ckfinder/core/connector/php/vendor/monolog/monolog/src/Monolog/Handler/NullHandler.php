@@ -19,7 +19,7 @@ use Monolog\Logger;
  * Any record it can handle will be thrown away. This can be used
  * to put on top of an existing stack to override it temporarily.
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class NullHandler extends AbstractHandler
 {

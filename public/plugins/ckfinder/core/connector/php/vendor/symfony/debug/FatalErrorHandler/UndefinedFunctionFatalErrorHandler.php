@@ -17,7 +17,7 @@ use Symfony\Component\Debug\Exception\FatalErrorException;
 /**
  * ErrorHandler for undefined functions.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class UndefinedFunctionFatalErrorHandler implements FatalErrorHandlerInterface
 {

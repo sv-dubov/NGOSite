@@ -22,7 +22,7 @@ use Symfony\Component\Translation\TranslatorInterface;
 /**
  * Synchronizes the locale between the request and the translator.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class TranslatorListener implements EventSubscriberInterface
 {

@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Undefined Function Exception.
  *
- * @author Konstanton Myakshin <koc-dp@yandex.ru>
+ * @publisher Konstanton Myakshin <koc-dp@yandex.ru>
  */
 class UndefinedFunctionException extends FatalErrorException
 {

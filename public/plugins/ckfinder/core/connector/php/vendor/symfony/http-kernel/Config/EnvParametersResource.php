@@ -16,7 +16,7 @@ use Symfony\Component\Config\Resource\ResourceInterface;
 /**
  * EnvParametersResource represents resources stored in prefixed environment variables.
  *
- * @author Chris Wilkinson <chriswilkinson84@gmail.com>
+ * @publisher Chris Wilkinson <chriswilkinson84@gmail.com>
  */
 class EnvParametersResource implements ResourceInterface, \Serializable
 {

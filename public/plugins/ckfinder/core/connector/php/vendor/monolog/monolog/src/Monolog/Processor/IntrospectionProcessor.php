@@ -22,7 +22,7 @@ use Monolog\Logger;
  * and all the log records will have the same file/line/.. data from the call that
  * triggered the FingersCrossedHandler.
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class IntrospectionProcessor
 {

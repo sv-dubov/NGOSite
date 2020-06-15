@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceBus\Internal;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\ServiceBus\Models;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -40,12 +40,12 @@ use WindowsAzure\Common\Internal\Utilities;
  */
 class WrapAccessTokenResult
 {
-    /** 
+    /**
      * @var string
      */
     private $_accessToken;
 
-    /** 
+    /**
      * @var integer
      */
     private $_expiresIn;
@@ -54,7 +54,7 @@ class WrapAccessTokenResult
      * Creates WrapAccesTokenResult object from parsed XML response.
      *
      * @param array $response The get WRAP access token response.
-     * 
+     *
      * @return WindowsAzure\ServiceBus\Internal\WrapAccessTokenResult.
      */
     public static function create($response)
@@ -73,7 +73,7 @@ class WrapAccessTokenResult
                 $parsedResponse, Resources::WRAP_ACCESS_TOKEN_EXPIRES_IN
             )
         );
-        
+
         return $wrapAccessTokenResult;
     }
 
@@ -86,12 +86,12 @@ class WrapAccessTokenResult
     {
         return $this->_accessToken;
     }
-    
+
     /**
      * Sets access token.
      *
      * @param string $accessToken The access token.
-     * 
+     *
      * @return none.
      */
     public function setAccessToken($accessToken)
@@ -113,7 +113,7 @@ class WrapAccessTokenResult
      * Sets expires in.
      *
      * @param integer $expiresIn value.
-     * 
+     *
      * @return none.
      */
     public function setExpiresIn($expiresIn)

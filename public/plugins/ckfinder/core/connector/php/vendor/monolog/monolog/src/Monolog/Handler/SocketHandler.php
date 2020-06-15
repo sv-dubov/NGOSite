@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * Stores to any socket - uses fsockopen() or pfsockopen().
  *
- * @author Pablo de Leon Belloc <pablolb@gmail.com>
+ * @publisher Pablo de Leon Belloc <pablolb@gmail.com>
  * @see    http://php.net/manual/en/function.fsockopen.php
  */
 class SocketHandler extends AbstractProcessingHandler

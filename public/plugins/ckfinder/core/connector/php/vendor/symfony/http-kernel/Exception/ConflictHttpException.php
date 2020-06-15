@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * ConflictHttpException.
  *
- * @author Ben Ramsey <ben@benramsey.com>
+ * @publisher Ben Ramsey <ben@benramsey.com>
  */
 class ConflictHttpException extends HttpException
 {

@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceBus\Internal;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\ServiceBus\Internal\WrapAccessTokenResult;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -40,22 +40,22 @@ use WindowsAzure\Common\Internal\Utilities;
  */
 class ActiveToken
 {
-    /** 
-     * The WRAP access token result. 
-     * 
+    /**
+     * The WRAP access token result.
+     *
      * @var WrapAccessTokenResult
      */
     private $_wrapAccessTokenResult;
 
-    /** 
-     * When the WRAP access token expires. 
-     * 
+    /**
+     * When the WRAP access token expires.
+     *
      * @var \DateTime
      */
     private $_expirationDateTime;
 
     /**
-     * Creates an ActiveToken with specified WRAP 
+     * Creates an ActiveToken with specified WRAP
      * access token result.
      *
      * @param array $wrapAccessTokenResult A WRAP access token result.
@@ -74,12 +74,12 @@ class ActiveToken
     {
         return $this->_wrapAccessTokenResult;
     }
-    
+
     /**
      * Sets WRAP access token.
      *
      * @param string $wrapAccessTokenResult The WRAP access token result.
-     * 
+     *
      * @return none
      */
     public function setWrapAccessTokenResult($wrapAccessTokenResult)
@@ -88,7 +88,7 @@ class ActiveToken
     }
 
     /**
-     * Gets expiration time.  
+     * Gets expiration time.
      *
      * @return \DateTime
      */
@@ -101,7 +101,7 @@ class ActiveToken
      * Sets expiration time.
      *
      * @param \DateTime $expirationDateTime value.
-     * 
+     *
      * @return none
      */
     public function setExpirationDateTime($expirationDateTime)

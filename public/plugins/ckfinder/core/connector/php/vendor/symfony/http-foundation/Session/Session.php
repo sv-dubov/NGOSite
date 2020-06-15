@@ -21,8 +21,8 @@ use Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage;
 /**
  * Session.
  *
- * @author Fabien Potencier <fabien@symfony.com>
- * @author Drak <drak@zikula.org>
+ * @publisher Fabien Potencier <fabien@symfony.com>
+ * @publisher Drak <drak@zikula.org>
  */
 class Session implements SessionInterface, \IteratorAggregate, \Countable
 {

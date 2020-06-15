@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 use WindowsAzure\Common\Internal\Validate;
 use WindowsAzure\Common\Internal\Resources;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -44,75 +44,75 @@ class ListBlobBlocksResult
      * @var \DateTime
      */
     private $_lastModified;
-    
+
     /**
      * @var string
      */
     private $_etag;
-    
+
     /**
      * @var string
      */
     private $_contentType;
-    
+
     /**
      * @var integer
      */
     private $_contentLength;
-    
+
     /**
      * @var array
      */
     private $_committedBlocks;
-    
+
     /**
      * @var array
      */
     private $_uncommittedBlocks;
-    
+
     /**
      * Gets block entries from parsed response
-     * 
+     *
      * @param array  $parsed HTTP response
      * @param string $type   Block type
-     * 
+     *
      * @return array
      */
     private static function _getEntries($parsed, $type)
     {
         $entries = array();
-        
+
         if (is_array($parsed)) {
             $rawEntries = array();
-         
+
             if (   array_key_exists($type, $parsed)
                 &&     is_array($parsed[$type])
                 &&     !empty($parsed[$type])
             ) {
                 $rawEntries = Utilities::getArray($parsed[$type]['Block']);
             }
-            
+
             foreach ($rawEntries as $value) {
                 $entries[base64_decode($value['Name'])] = $value['Size'];
             }
         }
-        
+
         return $entries;
     }
-    
+
     /**
      * Creates ListBlobBlocksResult from given response headers and parsed body
-     * 
+     *
      * @param array $headers HTTP response headers
      * @param array $parsed  HTTP response body in array representation
-     * 
+     *
      * @return ListBlobBlocksResult
      */
     public static function create($headers, $parsed)
     {
         $result = new ListBlobBlocksResult();
         $clean  = array_change_key_case($headers);
-        
+
         $result->setETag(Utilities::tryGetValue($clean, Resources::ETAG));
         $date = Utilities::tryGetValue($clean, Resources::LAST_MODIFIED);
         if (!is_null($date)) {
@@ -127,15 +127,15 @@ class ListBlobBlocksResult
         $result->setContentType(
             Utilities::tryGetValue($clean, Resources::CONTENT_TYPE)
         );
-        
+
         $result->_uncommittedBlocks = self::_getEntries(
             $parsed, 'UncommittedBlocks'
         );
         $result->_committedBlocks   = self::_getEntries($parsed, 'CommittedBlocks');
-        
+
         return $result;
     }
-    
+
     /**
      * Gets blob lastModified.
      *
@@ -180,7 +180,7 @@ class ListBlobBlocksResult
     {
         $this->_etag = $etag;
     }
-    
+
     /**
      * Gets blob contentType.
      *
@@ -202,7 +202,7 @@ class ListBlobBlocksResult
     {
         $this->_contentType = $contentType;
     }
-    
+
     /**
      * Gets blob contentLength.
      *
@@ -225,44 +225,44 @@ class ListBlobBlocksResult
         Validate::isInteger($contentLength, 'contentLength');
         $this->_contentLength = $contentLength;
     }
-    
+
     /**
      * Gets uncommitted blocks
-     * 
+     *
      * @return array
      */
     public function getUncommittedBlocks()
     {
         return $this->_uncommittedBlocks;
     }
-    
+
     /**
      * Sets uncommitted blocks
-     * 
+     *
      * @param array $uncommittedBlocks The uncommitted blocks entries
-     * 
+     *
      * @return none.
      */
     public function setUncommittedBlocks($uncommittedBlocks)
     {
         $this->_uncommittedBlocks = $uncommittedBlocks;
     }
-    
+
     /**
      * Gets committed blocks
-     * 
+     *
      * @return array
      */
     public function getCommittedBlocks()
     {
         return $this->_committedBlocks;
     }
-    
+
     /**
      * Sets committed blocks
-     * 
+     *
      * @param array $committedBlocks The committed blocks entries
-     * 
+     *
      * @return none.
      */
     public function setCommittedBlocks($committedBlocks)

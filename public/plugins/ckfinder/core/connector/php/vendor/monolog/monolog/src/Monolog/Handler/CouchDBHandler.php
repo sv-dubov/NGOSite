@@ -17,7 +17,7 @@ use Monolog\Logger;
 /**
  * CouchDB handler
  *
- * @author Markus Bachmann <markus.bachmann@bachi.biz>
+ * @publisher Markus Bachmann <markus.bachmann@bachi.biz>
  */
 class CouchDBHandler extends AbstractProcessingHandler
 {

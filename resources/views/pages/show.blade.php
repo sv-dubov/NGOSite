@@ -34,6 +34,8 @@
                             <div class="social-share">
                                 @if($post->hasAuthor())
                                     <span class="social-share-title pull-left text-capitalize">By {{$post->getAuthorName()}} {{$post->getDate()}}</span>
+                                    @else
+                                    <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                                 @endif
                                 <ul class="text-center pull-right">
                                     <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -48,7 +50,7 @@
                     <div class="top-comment">
                         <!--top comment-->
                         @if($post->hasAuthor())
-                            <img src="{{$post->author->getImage()}}" class="pull-left img-circle" alt="" width="75" height="75">
+                            <img src="{{$post->publisher->getImage()}}" class="pull-left img-circle" alt="" width="75" height="75">
                         @endif
                         @if($post->hasAuthor())
                             <h4>{{$post->getAuthorName()}}</h4>
@@ -106,15 +108,15 @@
                         </div>
                     </div>
                     <!--related post carousel-->
-                    @if(!$post->comments->isEmpty())
+                    @if(!$post->comments->isEmpty() && $post->hasCommentAuthor())
                         @foreach($post->getComments() as $comment)
                             <div class="bottom-comment">
                                 <!--bottom comment-->
                                 <div class="comment-img">
-                                    <img class="img-circle" src="{{$comment->author->getImage()}}" alt="" width="75" height="75">
+                                    <img class="img-circle" src="{{$comment->publisher->getImage()}}" alt="" width="75" height="75">
                                 </div>
                                 <div class="comment-text">
-                                    <h5>{{$comment->author->name}}</h5>
+                                    <h5>{{$comment->publisher->name}}</h5>
                                     <p class="comment-date">
                                         {{$comment->created_at->diffForHumans()}}
                                     </p>

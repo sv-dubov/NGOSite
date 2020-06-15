@@ -21,7 +21,7 @@ use Symfony\Component\EventDispatcher\Event;
  *
  * This event dispatcher delegates the dispatching to another one.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class TraceableEventDispatcher extends BaseTraceableEventDispatcher
 {

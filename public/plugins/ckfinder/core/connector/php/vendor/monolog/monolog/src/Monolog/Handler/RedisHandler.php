@@ -23,7 +23,7 @@ use Monolog\Logger;
  *   $redis = new RedisHandler(new Predis\Client("tcp://localhost:6379"), "logs", "prod");
  *   $log->pushHandler($redis);
  *
- * @author Thomas Tourlourat <thomas@tourlourat.com>
+ * @publisher Thomas Tourlourat <thomas@tourlourat.com>
  */
 class RedisHandler extends AbstractProcessingHandler
 {

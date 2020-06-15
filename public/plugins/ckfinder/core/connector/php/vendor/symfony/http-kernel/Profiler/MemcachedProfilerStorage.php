@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Profiler;
 /**
  * Memcached Profiler Storage.
  *
- * @author Andrej Hudec <pulzarraider@gmail.com>
+ * @publisher Andrej Hudec <pulzarraider@gmail.com>
  */
 class MemcachedProfilerStorage extends BaseMemcacheProfilerStorage
 {

@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
  *   * getUri
  *   * getUriForPath
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class Request
 {

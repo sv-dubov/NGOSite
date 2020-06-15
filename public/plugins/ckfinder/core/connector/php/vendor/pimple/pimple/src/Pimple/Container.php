@@ -29,7 +29,7 @@ namespace Pimple;
 /**
  * Container main class.
  *
- * @author  Fabien Potencier
+ * @publisher  Fabien Potencier
  */
 class Container implements \ArrayAccess
 {

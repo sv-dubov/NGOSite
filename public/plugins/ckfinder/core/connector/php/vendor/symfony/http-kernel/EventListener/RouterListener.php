@@ -35,7 +35,7 @@ use Symfony\Component\HttpFoundation\Request;
  *  * 2.3 compatibility mode where you must call setRequest whenever the Request changes.
  *  * 2.4+ mode where you must pass a RequestStack instance in the constructor.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class RouterListener implements EventSubscriberInterface
 {

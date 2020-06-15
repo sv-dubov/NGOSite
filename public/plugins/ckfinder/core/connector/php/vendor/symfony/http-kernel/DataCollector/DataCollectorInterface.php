@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * DataCollectorInterface.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 interface DataCollectorInterface
 {

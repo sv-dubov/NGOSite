@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 
 use WindowsAzure\Common\Internal\Utilities;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -44,17 +44,17 @@ class AccessPolicy
      * @var string
      */
     private $_start;
-    
+
     /**
      * @var \DateTime
      */
     private $_expiry;
-    
+
     /**
      * @var \DateTime
      */
     private $_permission;
-    
+
     /**
      * Gets start.
      *
@@ -69,7 +69,7 @@ class AccessPolicy
      * Sets start.
      *
      * @param \DateTime $start value.
-     * 
+     *
      * @return none.
      */
     public function setStart($start)
@@ -77,7 +77,7 @@ class AccessPolicy
         Validate::isDate($start);
         $this->_start = $start;
     }
-    
+
     /**
      * Gets expiry.
      *
@@ -92,7 +92,7 @@ class AccessPolicy
      * Sets expiry.
      *
      * @param \DateTime $expiry value.
-     * 
+     *
      * @return none.
      */
     public function setExpiry($expiry)
@@ -100,7 +100,7 @@ class AccessPolicy
         Validate::isDate($expiry);
         $this->_expiry = $expiry;
     }
-    
+
     /**
      * Gets permission.
      *
@@ -115,27 +115,27 @@ class AccessPolicy
      * Sets permission.
      *
      * @param string $permission value.
-     * 
+     *
      * @return none.
      */
     public function setPermission($permission)
     {
         $this->_permission = $permission;
     }
-    
+
     /**
      * Converts this current object to XML representation.
-     * 
+     *
      * @return array.
      */
     public function toArray()
     {
         $array = array();
-        
+
         $array['Start']      = Utilities::convertToEdmDateTime($this->_start);
         $array['Expiry']     = Utilities::convertToEdmDateTime($this->_expiry);
         $array['Permission'] = $this->_permission;
-        
+
         return $array;
     }
 }

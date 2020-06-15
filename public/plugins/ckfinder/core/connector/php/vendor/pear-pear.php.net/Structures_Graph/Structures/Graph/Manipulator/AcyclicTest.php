@@ -1,7 +1,7 @@
 <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 foldmethod=marker: */
 // +-----------------------------------------------------------------------------+
-// | Copyright (c) 2003 Sérgio Gonçalves Carvalho                                |
+// | Copyright (c) 2003 Sï¿½rgio Gonï¿½alves Carvalho                                |
 // +-----------------------------------------------------------------------------+
 // | This file is part of Structures_Graph.                                      |
 // |                                                                             |
@@ -20,12 +20,12 @@
 // | Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA                    |
 // | 02111-1307 USA                                                              |
 // +-----------------------------------------------------------------------------+
-// | Author: Sérgio Carvalho <sergio.carvalho@portugalmail.com>                  |
+// | Author: Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com>                  |
 // +-----------------------------------------------------------------------------+
 //
 /**
  * This file contains the definition of the Structures_Graph_Manipulator_AcyclicTest graph manipulator.
- * 
+ *
  * @see Structures_Graph_Manipulator_AcyclicTest
  * @package Structures_Graph
  */
@@ -42,21 +42,21 @@ require_once 'Structures/Graph/Node.php';
 /* class Structures_Graph_Manipulator_AcyclicTest {{{ */
 /**
  * The Structures_Graph_Manipulator_AcyclicTest is a graph manipulator
- * which tests whether a graph contains a cycle. 
- * 
- * The definition of an acyclic graph used in this manipulator is that of a 
- * DAG. The graph must be directed, or else it is considered cyclic, even when 
+ * which tests whether a graph contains a cycle.
+ *
+ * The definition of an acyclic graph used in this manipulator is that of a
+ * DAG. The graph must be directed, or else it is considered cyclic, even when
  * there are no arcs.
  *
- * @author		Sérgio Carvalho <sergio.carvalho@portugalmail.com> 
- * @copyright	(c) 2004 by Sérgio Carvalho
+ * @publisher		Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com>
+ * @copyright	(c) 2004 by Sï¿½rgio Carvalho
  * @package Structures_Graph
  */
 class Structures_Graph_Manipulator_AcyclicTest {
     /* _nonVisitedInDegree {{{ */
     /**
     *
-    * This is a variant of Structures_Graph::inDegree which does 
+    * This is a variant of Structures_Graph::inDegree which does
     * not count nodes marked as visited.
     *
     * @return	integer	 Number of non-visited nodes that link to this one
@@ -68,7 +68,7 @@ class Structures_Graph_Manipulator_AcyclicTest {
             if ((!$graphNodes[$key]->getMetadata('acyclic-test-visited')) && $graphNodes[$key]->connectsTo($node)) $result++;
         }
         return $result;
-        
+
     }
     /* }}} */
 
@@ -106,7 +106,7 @@ class Structures_Graph_Manipulator_AcyclicTest {
         // If graph is a DAG, there should be no non-visited nodes. Let's try to prove otherwise
         $result = true;
         foreach($nodeKeys as $key) if (!$nodes[$key]->getMetadata('acyclic-test-visited')) $result = false;
-        
+
         // Cleanup visited marks
         foreach($nodeKeys as $key) $nodes[$key]->unsetMetadata('acyclic-test-visited');
 

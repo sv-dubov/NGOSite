@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Error Exception with Variable Context.
  *
- * @author Christian Sciberras <uuf6429@gmail.com>
+ * @publisher Christian Sciberras <uuf6429@gmail.com>
  */
 class ContextErrorException extends \ErrorException
 {

@@ -7,10 +7,10 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Tomas V. V. Cox <cox@idecnet.com>
- * @author     Hans Lellelid <hans@velum.net>
- * @author     Bertrand Mansion <bmansion@mamasam.com>
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Tomas V. V. Cox <cox@idecnet.com>
+ * @publisher     Hans Lellelid <hans@velum.net>
+ * @publisher     Bertrand Mansion <bmansion@mamasam.com>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -82,10 +82,10 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Tomas V.V.Cox <cox@idecnet.com>
- * @author     Hans Lellelid <hans@velum.net>
- * @author     Bertrand Mansion <bmansion@mamasam.com>
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Tomas V.V.Cox <cox@idecnet.com>
+ * @publisher     Hans Lellelid <hans@velum.net>
+ * @publisher     Bertrand Mansion <bmansion@mamasam.com>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

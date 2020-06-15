@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Queue\Models;
 use WindowsAzure\Queue\Models\QueueServiceOptions;
 use \WindowsAzure\Common\Internal\Validate;
@@ -31,7 +31,7 @@ use \WindowsAzure\Common\Internal\Validate;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -58,7 +58,7 @@ class ListQueuesOptions extends QueueServiceOptions
      * Sets prefix.
      *
      * @param string $prefix value.
-     * 
+     *
      * @return none.
      */
     public function setPrefix($prefix)
@@ -69,7 +69,7 @@ class ListQueuesOptions extends QueueServiceOptions
 
     /**
      * Gets marker.
-     * 
+     *
      * @return string.
      */
     public function getMarker()
@@ -81,7 +81,7 @@ class ListQueuesOptions extends QueueServiceOptions
      * Sets marker.
      *
      * @param string $marker value.
-     * 
+     *
      * @return none.
      */
     public function setMarker($marker)
@@ -92,7 +92,7 @@ class ListQueuesOptions extends QueueServiceOptions
 
     /**
      * Gets max results.
-     * 
+     *
      * @return string.
      */
     public function getMaxResults()
@@ -104,7 +104,7 @@ class ListQueuesOptions extends QueueServiceOptions
      * Sets max results.
      *
      * @param string $maxResults value.
-     * 
+     *
      * @return none.
      */
     public function setMaxResults($maxResults)
@@ -115,7 +115,7 @@ class ListQueuesOptions extends QueueServiceOptions
 
     /**
      * Indicates if metadata is included or not.
-     * 
+     *
      * @return boolean.
      */
     public function getIncludeMetadata()
@@ -127,7 +127,7 @@ class ListQueuesOptions extends QueueServiceOptions
      * Sets the include metadata flag.
      *
      * @param bool $includeMetadata value.
-     * 
+     *
      * @return none.
      */
     public function setIncludeMetadata($includeMetadata)

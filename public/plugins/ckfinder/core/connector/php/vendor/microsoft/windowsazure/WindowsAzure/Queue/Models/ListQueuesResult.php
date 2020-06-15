@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Queue\Models;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Queue\Models\Queue;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -51,7 +51,7 @@ class ListQueuesResult
      * Creates ListQueuesResult object from parsed XML response.
      *
      * @param array $parsedResponse XML response parsed into array.
-     * 
+     *
      * @return WindowsAzure\Queue\Models\ListQueuesResult.
      */
     public static function create($parsedResponse)
@@ -76,18 +76,18 @@ class ListQueuesResult
         );
         $result->_queues      = array();
         $rawQueues            = array();
-        
+
         if ( !empty($parsedResponse['Queues']) ) {
             $rawQueues = Utilities::getArray($parsedResponse['Queues']['Queue']);
         }
-        
+
         foreach ($rawQueues as $value) {
             $queue    = new Queue($value['Name'], $value['Url']);
             $metadata = Utilities::tryGetValue($value, Resources::QP_METADATA);
             $queue->setMetadata(is_null($metadata) ? array() : $metadata);
             $result->_queues[] = $queue;
         }
-        
+
         return $result;
     }
 
@@ -100,12 +100,12 @@ class ListQueuesResult
     {
         return $this->_queues;
     }
-    
+
     /**
      * Sets queues.
      *
      * @param array $queues list of queues
-     * 
+     *
      * @return none.
      */
     public function setQueues($queues)
@@ -130,7 +130,7 @@ class ListQueuesResult
      * Sets prefix.
      *
      * @param string $prefix value.
-     * 
+     *
      * @return none.
      */
     public function setPrefix($prefix)
@@ -140,7 +140,7 @@ class ListQueuesResult
 
     /**
      * Gets marker.
-     * 
+     *
      * @return string.
      */
     public function getMarker()
@@ -152,7 +152,7 @@ class ListQueuesResult
      * Sets marker.
      *
      * @param string $marker value.
-     * 
+     *
      * @return none.
      */
     public function setMarker($marker)
@@ -162,7 +162,7 @@ class ListQueuesResult
 
     /**
      * Gets max results.
-     * 
+     *
      * @return string.
      */
     public function getMaxResults()
@@ -174,7 +174,7 @@ class ListQueuesResult
      * Sets max results.
      *
      * @param string $maxResults value.
-     * 
+     *
      * @return none.
      */
     public function setMaxResults($maxResults)
@@ -184,7 +184,7 @@ class ListQueuesResult
 
     /**
      * Gets next marker.
-     * 
+     *
      * @return string.
      */
     public function getNextMarker()
@@ -196,17 +196,17 @@ class ListQueuesResult
      * Sets next marker.
      *
      * @param string $nextMarker value.
-     * 
+     *
      * @return none.
      */
     public function setNextMarker($nextMarker)
     {
         $this->_nextMarker = $nextMarker;
     }
-    
+
     /**
      * Gets account name.
-     * 
+     *
      * @return string
      */
     public function getAccountName()
@@ -218,7 +218,7 @@ class ListQueuesResult
      * Sets account name.
      *
      * @param string $accountName value.
-     * 
+     *
      * @return none
      */
     public function setAccountName($accountName)

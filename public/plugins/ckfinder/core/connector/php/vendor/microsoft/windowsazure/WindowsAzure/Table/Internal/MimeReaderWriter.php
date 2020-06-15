@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Table\Internal;
 require_once 'PEAR.php';
 require_once 'Mail/mimePart.php';
@@ -34,7 +34,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -44,10 +44,10 @@ class MimeReaderWriter implements IMimeReaderWriter
 {
     /**
      * Given array of MIME parts in raw string, this function converts them into MIME
-     * representation. 
-     * 
+     * representation.
+     *
      * @param array $bodyPartContents The MIME body parts.
-     * 
+     *
      * @return array Returns array with two elements 'headers' and 'body' which
      * represents the MIME message.
      */
@@ -68,32 +68,32 @@ class MimeReaderWriter implements IMimeReaderWriter
 
         // Create changeset MIME part
         $changeSet = new \Mail_mimePart();
-        
+
         for ($i = 0; $i < $count; $i++) {
             $changeSet->addSubpart($bodyPartContents[$i], $options);
         }
-        
+
         // Encode the changeset MIME part
         $changeSetEncoded = $changeSet->encode($changeSetId);
-        
+
         // Create the batch MIME part
         $batch = new \Mail_mimePart(Resources::EMPTY_STRING, $contentType1);
-        
+
         // Add changeset encoded to batch MIME part
         $batch->addSubpart($changeSetEncoded['body'], $contentType2);
-        
+
         // Encode batch MIME part
         $batchEncoded = $batch->encode($batchId);
-        
+
         return $batchEncoded;
     }
-    
+
     /**
-     * Parses given mime HTTP response body into array. Each array element 
+     * Parses given mime HTTP response body into array. Each array element
      * represents a change set result.
-     * 
+     *
      * @param string $mimeBody The raw MIME body result.
-     * 
+     *
      * @return array
      */
     public function decodeMimeMultipart($mimeBody)
@@ -104,11 +104,11 @@ class MimeReaderWriter implements IMimeReaderWriter
         $structure                = $mimeDecoder->decode($params);
         $parts                    = $structure->parts;
         $bodies                   = array();
-        
+
         foreach ($parts as $part) {
             $bodies[] = $part->body;
         }
-        
+
         return $bodies;
     }
 }

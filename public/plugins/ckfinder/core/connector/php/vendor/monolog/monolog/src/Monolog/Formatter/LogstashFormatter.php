@@ -17,7 +17,7 @@ namespace Monolog\Formatter;
  * @see http://logstash.net/
  * @see https://github.com/logstash/logstash/blob/master/lib/logstash/event.rb
  *
- * @author Tim Mower <timothy.mower@gmail.com>
+ * @publisher Tim Mower <timothy.mower@gmail.com>
  */
 class LogstashFormatter extends NormalizerFormatter
 {

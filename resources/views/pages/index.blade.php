@@ -31,6 +31,8 @@
                         <div class="social-share">
                             @if($post->hasAuthor())
                             <span class="social-share-title pull-left text-capitalize">By {{$post->getAuthorName()}} {{$post->getDate()}}</span>
+                            @else
+                                <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                             @endif
                             <ul class="text-center pull-right">
                                 <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>

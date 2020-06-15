@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -29,7 +29,7 @@ namespace WindowsAzure\ServiceRuntime\Internal;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -79,7 +79,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Constructor
-     * 
+     *
      * @param Protocol1RuntimeCurrentStateClient $currentStateClient          The
      *      current state client.
      * @param IGoalStateDeserializer             $goalStateDeserializer       The
@@ -106,7 +106,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Gets the current goal state.
-     * 
+     *
      * @return GoalState
      */
     public function getCurrentGoalState()
@@ -118,7 +118,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Gets the role environment data.
-     * 
+     *
      * @return RoleEnvironmentData
      */
     public function getRoleEnvironmentData()
@@ -149,7 +149,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
      * Sets the endpoint.
      *
      * @param string $endpoint Sets the endpoint.
-     * 
+     *
      * @return none
      */
     public function setEndpoint($endpoint)
@@ -159,7 +159,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Gets the endpoint.
-     * 
+     *
      * @return string
      */
     public function getEndpoint()
@@ -171,7 +171,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
      * Sets the keep open state.
      *
      * @param string $keepOpen Sets the keep open state.
-     * 
+     *
      * @return none
      */
     public function setKeepOpen($keepOpen)
@@ -181,7 +181,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Gets the keep open state.
-     * 
+     *
      * @return bool
      */
     public function getKeepOpen()
@@ -191,7 +191,7 @@ class Protocol1RuntimeGoalStateClient implements IRuntimeGoalStateClient
 
     /**
      * Ensures that the goal state is retrieved.
-     * 
+     *
      * @return none
      */
     private function _ensureGoalStateRetrieved()

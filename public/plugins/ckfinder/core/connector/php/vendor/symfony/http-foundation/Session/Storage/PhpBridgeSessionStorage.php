@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeSessionHandle
 /**
  * Allows session to be started by PHP and managed by Symfony.
  *
- * @author Drak <drak@zikula.org>
+ * @publisher Drak <drak@zikula.org>
  */
 class PhpBridgeSessionStorage extends NativeSessionStorage
 {

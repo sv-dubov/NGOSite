@@ -6,7 +6,7 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -17,7 +17,7 @@
  * sole purpose is to split up the PEAR/PackageFile/v2.php file to make it smaller
  * @category   pear
  * @package    PEAR
- * @author     Greg Beaver <cellog@php.net>
+ * @publisher     Greg Beaver <cellog@php.net>
  * @copyright  1997-2009 The Authors
  * @license    http://opensource.org/licenses/bsd-license.php New BSD License
  * @version    Release: 1.10.1

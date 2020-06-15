@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\ServiceBus\Models;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\Utilities;
@@ -33,7 +33,7 @@ use WindowsAzure\ServiceBus\Internal\Filter;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceBus\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -42,17 +42,17 @@ use WindowsAzure\ServiceBus\Internal\Filter;
 
 class SqlFilter extends Filter
 {
-    /** 
-     * The SQL expression of the filter. 
+    /**
+     * The SQL expression of the filter.
      *
-     * @var string 
+     * @var string
      */
     private $_sqlExpression;
 
     /**
-     * The compatibility level of the filter. 
-     * 
-     * @var string 
+     * The compatibility level of the filter.
+     *
+     * @var string
      */
     private $_compatibilityLevel;
 
@@ -61,15 +61,15 @@ class SqlFilter extends Filter
      * Creates a SQL filter with default parameters.
      */
     public function __construct()
-    {   
+    {
         parent::__construct();
         $this->attributes['xsi:type'] = 'SqlFilter';
     }
     /**
-     * Gets the SQL expression. 
-     * 
-     * @var string 
-     * 
+     * Gets the SQL expression.
+     *
+     * @var string
+     *
      * @return none
      */
     public function getSqlExpression()
@@ -78,10 +78,10 @@ class SqlFilter extends Filter
     }
 
     /**
-     * Sets the SQL expression. 
-     * 
-     * @param string $sqlExpression The SQL expression of the filter. 
-     * 
+     * Sets the SQL expression.
+     *
+     * @param string $sqlExpression The SQL expression of the filter.
+     *
      * @return none
      */
     public function setSqlExpression($sqlExpression)
@@ -90,9 +90,9 @@ class SqlFilter extends Filter
     }
 
     /**
-     * Gets the compatibility level. 
-     * 
-     * @return string 
+     * Gets the compatibility level.
+     *
+     * @return string
      */
     public function getCompatibilityLevel()
     {
@@ -100,10 +100,10 @@ class SqlFilter extends Filter
     }
 
     /**
-     * Sets the compatibility level. 
-     * 
-     * @param string $compatibilityLevel The compatibility level. 
-     * 
+     * Sets the compatibility level.
+     *
+     * @param string $compatibilityLevel The compatibility level.
+     *
      * @return none
      */
     public function setCompatibilityLevel($compatibilityLevel)

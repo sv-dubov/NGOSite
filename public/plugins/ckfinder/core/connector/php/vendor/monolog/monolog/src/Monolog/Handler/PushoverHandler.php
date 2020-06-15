@@ -16,7 +16,7 @@ use Monolog\Logger;
 /**
  * Sends notifications through the pushover api to mobile phones
  *
- * @author Sebastian Göttschkes <sebastian.goettschkes@googlemail.com>
+ * @publisher Sebastian Göttschkes <sebastian.goettschkes@googlemail.com>
  * @see    https://www.pushover.net/api
  */
 class PushoverHandler extends SocketHandler

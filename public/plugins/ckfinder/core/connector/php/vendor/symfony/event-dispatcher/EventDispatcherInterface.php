@@ -16,7 +16,7 @@ namespace Symfony\Component\EventDispatcher;
  * Listeners are registered on the manager and events are dispatched through the
  * manager.
  *
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 interface EventDispatcherInterface
 {

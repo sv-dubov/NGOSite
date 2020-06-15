@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Table\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Table\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,17 +41,17 @@ class QueryEntitiesOptions extends TableServiceOptions
      * @var Query
      */
     private $_query;
-    
+
     /**
      * @var string
      */
     private $_nextPartitionKey;
-    
+
     /**
      * @var string
      */
     private $_nextRowKey;
-    
+
     /**
      * Constructs new QueryEntitiesOptions object.
      */
@@ -59,32 +59,32 @@ class QueryEntitiesOptions extends TableServiceOptions
     {
         $this->_query = new Query();
     }
-    
+
     /**
      * Gets query.
-     * 
+     *
      * @return Query
      */
     public function getQuery()
     {
         return $this->_query;
     }
-    
+
     /**
      * Sets query.
-     * 
+     *
      * You can either sets the whole query *or* use the individual query functions
      * like (setTop).
-     * 
+     *
      * @param string $query The query instance.
-     * 
+     *
      * @return none
      */
     public function setQuery($query)
     {
         $this->_query = $query;
     }
-    
+
     /**
      * Gets entity next partition key.
      *
@@ -106,7 +106,7 @@ class QueryEntitiesOptions extends TableServiceOptions
     {
         $this->_nextPartitionKey = $nextPartitionKey;
     }
-    
+
     /**
      * Gets entity next row key.
      *
@@ -128,7 +128,7 @@ class QueryEntitiesOptions extends TableServiceOptions
     {
         $this->_nextRowKey = $nextRowKey;
     }
-    
+
     /**
      * Gets filter.
      *
@@ -144,16 +144,16 @@ class QueryEntitiesOptions extends TableServiceOptions
      *
      * You can either use this individual function or use setQuery to set the whole
      * query object.
-     * 
+     *
      * @param Filters\Filter $filter value.
-     * 
+     *
      * @return none.
      */
     public function setFilter($filter)
     {
         $this->_query->setFilter($filter);
     }
-    
+
     /**
      * Gets top.
      *
@@ -169,31 +169,31 @@ class QueryEntitiesOptions extends TableServiceOptions
      *
      * You can either use this individual function or use setQuery to set the whole
      * query object.
-     * 
+     *
      * @param integer $top value.
-     * 
+     *
      * @return none.
      */
     public function setTop($top)
     {
         $this->_query->setTop($top);
     }
-    
+
     /**
      * Adds a field to select fields.
-     * 
+     *
      * You can either use this individual function or use setQuery to set the whole
      * query object.
-     * 
+     *
      * @param string $field The value of the field.
-     * 
+     *
      * @return none.
      */
     public function addSelectField($field)
     {
         $this->_query->addSelectField($field);
     }
-    
+
     /**
      * Gets selectFields.
      *
@@ -209,9 +209,9 @@ class QueryEntitiesOptions extends TableServiceOptions
      *
      * You can either use this individual function or use setQuery to set the whole
      * query object.
-     * 
+     *
      * @param array $selectFields value.
-     * 
+     *
      * @return none.
      */
     public function setSelectFields($selectFields)

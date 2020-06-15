@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Class (or Trait or Interface) Not Found Exception.
  *
- * @author Konstanton Myakshin <koc-dp@yandex.ru>
+ * @publisher Konstanton Myakshin <koc-dp@yandex.ru>
  */
 class ClassNotFoundException extends FatalErrorException
 {

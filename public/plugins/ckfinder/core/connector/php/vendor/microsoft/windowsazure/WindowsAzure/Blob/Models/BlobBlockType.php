@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Blob\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -40,12 +40,12 @@ class BlobBlockType
     const COMMITTED_TYPE   = 'Committed';
     const UNCOMMITTED_TYPE = 'Uncommitted';
     const LATEST_TYPE      = 'Latest';
-    
+
     /**
      * Validates the provided type.
-     * 
+     *
      * @param string $type The entry type.
-     * 
+     *
      * @return boolean
      */
     public static function isValid($type)
@@ -55,7 +55,7 @@ class BlobBlockType
         case self::LATEST_TYPE:
         case self::UNCOMMITTED_TYPE:
         return true;
-        
+
         default:
         return false;
         }

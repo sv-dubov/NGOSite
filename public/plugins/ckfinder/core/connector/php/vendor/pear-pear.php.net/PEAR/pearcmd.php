@@ -8,8 +8,8 @@
  *
  * @category  pear
  * @package   PEAR
- * @author    Stig Bakken <ssb@php.net>
- * @author    Tomas V.V.Cox <cox@idecnet.com>
+ * @publisher    Stig Bakken <ssb@php.net>
+ * @publisher    Tomas V.V.Cox <cox@idecnet.com>
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license.php New BSD License
  * @link      http://pear.php.net/package/PEAR

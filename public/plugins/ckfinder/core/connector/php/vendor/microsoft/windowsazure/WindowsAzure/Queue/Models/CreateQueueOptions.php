@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Queue\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Queue\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -38,37 +38,37 @@ namespace WindowsAzure\Queue\Models;
 class CreateQueueOptions extends QueueServiceOptions
 {
     private $_metadata;
-    
+
     /**
      * Gets user defined metadata.
-     * 
+     *
      * @return array.
      */
     public function getMetadata()
     {
         return $this->_metadata;
     }
-    
+
     /**
      * Sets user defined metadata. This metadata should be added without the header
      * prefix (x-ms-meta-*).
-     * 
+     *
      * @param array $metadata user defined metadata object in array form.
-     * 
+     *
      * @return none.
      */
     public function setMetadata($metadata)
     {
         $this->_metadata = $metadata;
     }
-    
+
     /**
      * Adds new metadata element. This element should be added without the header
      * prefix (x-ms-meta-*).
-     * 
+     *
      * @param string $key   metadata key element.
      * @param string $value metadata value element.
-     * 
+     *
      * @return none.
      */
     public function addMetadata($key, $value)

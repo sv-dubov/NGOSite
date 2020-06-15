@@ -23,7 +23,7 @@ use Monolog\Formatter\FormatterInterface;
  * Notes:
  * API token - Flowdock API token
  *
- * @author Dominik Liebler <liebler.dominik@gmail.com>
+ * @publisher Dominik Liebler <liebler.dominik@gmail.com>
  * @see https://www.flowdock.com/api/push
  */
 class FlowdockHandler extends SocketHandler

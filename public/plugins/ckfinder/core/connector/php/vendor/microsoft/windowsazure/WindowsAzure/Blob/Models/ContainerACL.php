@@ -16,7 +16,7 @@
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -33,10 +33,10 @@ use WindowsAzure\Common\Internal\Serialization\XmlSerializer;
 
 /**
  * Holds conatiner ACL members.
- * 
+ *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -55,10 +55,10 @@ class ContainerAcl
      * @var array
      */
     private $_signedIdentifiers = array();
-    
+
     /*
      * The root name of XML elemenet representation.
-     * 
+     *
      * @var string
      */
     public static $xmlRootName = 'SignedIdentifiers';
@@ -66,10 +66,10 @@ class ContainerAcl
 
     /**
      * Parses the given array into signed identifiers.
-     * 
+     *
      * @param string $publicAccess The container public access.
      * @param array  $parsed       The parsed response into array representation.
-     * 
+     *
      * @return none
      */
     public static function create($publicAccess, $parsed)
@@ -77,7 +77,7 @@ class ContainerAcl
         $result                     = new ContainerAcl();
         $result->_publicAccess      = $publicAccess;
         $result->_signedIdentifiers = array();
-        
+
         if (!empty($parsed) && is_array($parsed['SignedIdentifier'])) {
             $entries = $parsed['SignedIdentifier'];
             $temp    = Utilities::getArray($entries);
@@ -92,7 +92,7 @@ class ContainerAcl
                 $result->addSignedIdentifier($id, $start, $expiry, $permission);
             }
         }
-        
+
         return $result;
     }
 
@@ -146,7 +146,7 @@ class ContainerAcl
 
     /**
      * Adds new signed modifier
-     * 
+     *
      * @param string    $id         a unique id for this modifier
      * @param \DateTime $start      The time at which the Shared Access Signature
      * becomes valid. If omitted, start time for this call is assumed to be
@@ -158,9 +158,9 @@ class ContainerAcl
      * Access Signature. The user is restricted to operations allowed by the
      * permissions. Valid permissions values are read (r), write (w), delete (d) and
      * list (l).
-     * 
+     *
      * @return none.
-     * 
+     *
      * @see http://msdn.microsoft.com/en-us/library/windowsazure/hh508996.aspx
      */
     public function addSignedIdentifier($id, $start, $expiry, $permission)
@@ -169,40 +169,40 @@ class ContainerAcl
         Validate::isDate($start);
         Validate::isDate($expiry);
         Validate::isString($permission, 'permission');
-        
+
         $accessPolicy = new AccessPolicy();
         $accessPolicy->setStart($start);
         $accessPolicy->setExpiry($expiry);
         $accessPolicy->setPermission($permission);
-        
+
         $signedIdentifier = new SignedIdentifier();
         $signedIdentifier->setId($id);
         $signedIdentifier->setAccessPolicy($accessPolicy);
-        
+
         $this->_signedIdentifiers[] = $signedIdentifier;
     }
-    
+
     /**
-     * Converts this object to array representation for XML serialization 
-     * 
+     * Converts this object to array representation for XML serialization
+     *
      * @return array.
      */
     public function toArray()
     {
         $array = array();
-        
+
         foreach ($this->_signedIdentifiers as $value) {
             $array[] = $value->toArray();
         }
-        
+
         return $array;
     }
-    
+
     /**
      * Converts this current object to XML representation.
-     * 
+     *
      * @param XmlSerializer $xmlSerializer The XML serializer.
-     * 
+     *
      * @return string.
      */
     public function toXml($xmlSerializer)
@@ -211,7 +211,7 @@ class ContainerAcl
             XmlSerializer::DEFAULT_TAG => 'SignedIdentifier',
             XmlSerializer::ROOT_NAME   => self::$xmlRootName
         );
-        
+
         return $xmlSerializer->serialize($this->toArray(), $properties);
     }
 }

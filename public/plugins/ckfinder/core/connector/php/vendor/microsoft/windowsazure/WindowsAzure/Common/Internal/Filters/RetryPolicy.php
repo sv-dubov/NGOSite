@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Common\Internal\Filters;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Common\Internal\Filters;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,23 +41,23 @@ abstract class RetryPolicy
     const DEFAULT_CLIENT_RETRY_COUNT = 3;
     const DEFAULT_MAX_BACKOFF        = 90000;
     const DEFAULT_MIN_BACKOFF        = 300;
-    
+
     /**
      * Indicates if there should be a retry or not.
-     * 
+     *
      * @param integer                 $retryCount The retry count.
      * @param \HTTP_Request2_Response $response   The HTTP response object.
-     * 
+     *
      * @return boolean
      */
     public abstract function shouldRetry($retryCount, $response);
-    
+
     /**
      * Calculates the backoff for the retry policy.
-     * 
+     *
      * @param integer                 $retryCount The retry count.
      * @param \HTTP_Request2_Response $response   The HTTP response object.
-     * 
+     *
      * @return integer
      */
     public abstract function calculateBackoff($retryCount, $response);

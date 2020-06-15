@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Profiler;
 /**
  * A ProfilerStorage for Mysql.
  *
- * @author Jan Schumann <js@schumann-it.com>
+ * @publisher Jan Schumann <js@schumann-it.com>
  */
 class MysqlProfilerStorage extends PdoProfilerStorage
 {

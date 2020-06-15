@@ -36,7 +36,7 @@
  *
  * @category  Networking
  * @package   Net_URL2
- * @author    Christian Schmidt <schmidt@php.net>
+ * @publisher    Christian Schmidt <schmidt@php.net>
  * @copyright 2007-2009 Peytz & Co. A/S
  * @license   https://spdx.org/licenses/BSD-3-Clause BSD-3-Clause
  * @version   CVS: $Id$
@@ -48,7 +48,7 @@
  *
  * @category  Networking
  * @package   Net_URL2
- * @author    Christian Schmidt <schmidt@php.net>
+ * @publisher    Christian Schmidt <schmidt@php.net>
  * @copyright 2007-2009 Peytz & Co. A/S
  * @license   https://spdx.org/licenses/BSD-3-Clause BSD-3-Clause
  * @version   Release: 2.2.1

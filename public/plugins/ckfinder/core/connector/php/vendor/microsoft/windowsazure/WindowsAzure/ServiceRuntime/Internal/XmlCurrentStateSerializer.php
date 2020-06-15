@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -40,10 +40,10 @@ class XmlCurrentStateSerializer
 {
     /**
      * Serializes the current state.
-     * 
+     *
      * @param CurrentState  $state        The current state.
      * @param IOutputStream $outputStream The output stream.
-     * 
+     *
      * @return none
      */
     public function serialize($state, $outputStream)
@@ -55,7 +55,7 @@ class XmlCurrentStateSerializer
                 )
             )
         );
-        
+
         if ($state instanceof AcquireCurrentState) {
             $statusLeaseInfo['StatusLease']['Acquire'] = array(
                 'Incarnation' => $state->getIncarnation(),
@@ -67,7 +67,7 @@ class XmlCurrentStateSerializer
         } else if ($state instanceof ReleaseCurrentState) {
             $statusLeaseInfo['StatusLease']['Release'] = array();
         }
-        
+
         $currentState = Utilities::serialize($statusLeaseInfo, 'CurrentState');
         fwrite($outputStream, $currentState);
     }

@@ -18,7 +18,7 @@ use Doctrine\CouchDB\CouchDBClient;
 /**
  * CouchDB handler for Doctrine CouchDB ODM
  *
- * @author Markus Bachmann <markus.bachmann@bachi.biz>
+ * @publisher Markus Bachmann <markus.bachmann@bachi.biz>
  */
 class DoctrineCouchDBHandler extends AbstractProcessingHandler
 {

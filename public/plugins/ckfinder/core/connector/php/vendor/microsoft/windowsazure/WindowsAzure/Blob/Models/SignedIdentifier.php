@@ -11,26 +11,26 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 use WindowsAzure\Blob\Models\AccessPolicy;
 
 /**
  * Holds container signed identifiers.
- * 
+ *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -40,7 +40,7 @@ class SignedIdentifier
 {
     private $_id;
     private $_accessPolicy;
-    
+
     /**
      * Gets id.
      *
@@ -55,14 +55,14 @@ class SignedIdentifier
      * Sets id.
      *
      * @param string $id value.
-     * 
+     *
      * @return none.
      */
     public function setId($id)
     {
         $this->_id = $id;
     }
-    
+
     /**
      * Gets accessPolicy.
      *
@@ -77,26 +77,26 @@ class SignedIdentifier
      * Sets accessPolicy.
      *
      * @param string $accessPolicy value.
-     * 
+     *
      * @return none.
      */
     public function setAccessPolicy($accessPolicy)
     {
         $this->_accessPolicy = $accessPolicy;
     }
-    
+
     /**
      * Converts this current object to XML representation.
-     * 
+     *
      * @return array.
      */
     public function toArray()
     {
         $array = array();
-        
+
         $array['SignedIdentifier']['Id']           = $this->_id;
         $array['SignedIdentifier']['AccessPolicy'] = $this->_accessPolicy->toArray();
-        
+
         return $array;
     }
 }

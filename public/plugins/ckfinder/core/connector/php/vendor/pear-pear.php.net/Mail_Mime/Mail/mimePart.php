@@ -42,10 +42,10 @@
  *
  * @category  Mail
  * @package   Mail_Mime
- * @author    Richard Heyes  <richard@phpguru.org>
- * @author    Cipriano Groenendal <cipri@php.net>
- * @author    Sean Coates <sean@php.net>
- * @author    Aleksander Machniak <alec@php.net>
+ * @publisher    Richard Heyes  <richard@phpguru.org>
+ * @publisher    Cipriano Groenendal <cipri@php.net>
+ * @publisher    Sean Coates <sean@php.net>
+ * @publisher    Aleksander Machniak <alec@php.net>
  * @copyright 2003-2006 PEAR <pear-group@php.net>
  * @license   http://www.opensource.org/licenses/bsd-license.php BSD License
  * @version   Release: @package_version@
@@ -70,10 +70,10 @@ require_once 'PEAR.php';
  *
  * @category  Mail
  * @package   Mail_Mime
- * @author    Richard Heyes  <richard@phpguru.org>
- * @author    Cipriano Groenendal <cipri@php.net>
- * @author    Sean Coates <sean@php.net>
- * @author    Aleksander Machniak <alec@php.net>
+ * @publisher    Richard Heyes  <richard@phpguru.org>
+ * @publisher    Cipriano Groenendal <cipri@php.net>
+ * @publisher    Sean Coates <sean@php.net>
+ * @publisher    Aleksander Machniak <alec@php.net>
  * @copyright 2003-2006 PEAR <pear-group@php.net>
  * @license   http://www.opensource.org/licenses/bsd-license.php BSD License
  * @version   Release: @package_version@
@@ -769,7 +769,7 @@ class Mail_mimePart
             $add_len = strlen($prefix . $suffix) + strlen($name) + 6;
             $len = $add_len + strlen($value);
 
-            while ($len > $maxLength) { 
+            while ($len > $maxLength) {
                 // We can cut base64-encoded string every 4 characters
                 $real_len = floor(($maxLength - $add_len) / 4) * 4;
                 $_quote = substr($value, 0, $real_len);

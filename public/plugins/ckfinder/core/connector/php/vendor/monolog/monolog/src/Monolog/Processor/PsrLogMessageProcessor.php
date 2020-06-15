@@ -16,7 +16,7 @@ namespace Monolog\Processor;
  *
  * It replaces {foo} with the value from $context['foo']
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class PsrLogMessageProcessor
 {

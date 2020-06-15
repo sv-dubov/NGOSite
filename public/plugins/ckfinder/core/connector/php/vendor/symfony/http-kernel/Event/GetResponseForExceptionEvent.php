@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\Request;
  * exception will be thrown if no response is set during processing of this
  * event.
  *
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 class GetResponseForExceptionEvent extends GetResponseEvent
 {

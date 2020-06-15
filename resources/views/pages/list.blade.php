@@ -30,6 +30,8 @@
                                     <div class="social-share">
                                         <span class="social-share-title pull-left text-capitalize">By {{$post->getAuthorName()}} {{$post->getDate()}}</span>
                                     </div>
+                                    @else
+                                        <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                                     @endif
                                 </div>
                             </div>

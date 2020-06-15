@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * Interface for HTTP error exceptions.
  *
- * @author Kris Wallsmith <kris@symfony.com>
+ * @publisher Kris Wallsmith <kris@symfony.com>
  */
 interface HttpExceptionInterface
 {

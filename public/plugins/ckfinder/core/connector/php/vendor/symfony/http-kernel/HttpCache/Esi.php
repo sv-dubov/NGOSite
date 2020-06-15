@@ -24,7 +24,7 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
  *
  *  * Edge Architecture Specification (http://www.w3.org/TR/edge-arch)
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class Esi implements SurrogateInterface
 {

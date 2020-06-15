@@ -22,7 +22,7 @@ use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
  * An implementation of BundleInterface that adds a few conventions
  * for DependencyInjection extensions and Console commands.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 abstract class Bundle extends ContainerAware implements BundleInterface
 {

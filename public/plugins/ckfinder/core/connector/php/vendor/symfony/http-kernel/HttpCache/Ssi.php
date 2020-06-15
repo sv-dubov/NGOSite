@@ -18,7 +18,7 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
 /**
  * Ssi implements the SSI capabilities to Request and Response instances.
  *
- * @author Sebastian Krebs <krebs.seb@gmail.com>
+ * @publisher Sebastian Krebs <krebs.seb@gmail.com>
  */
 class Ssi implements SurrogateInterface
 {

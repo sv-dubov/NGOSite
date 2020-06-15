@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Common\Internal\Filters;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\IServiceFilter;
@@ -31,7 +31,7 @@ use WindowsAzure\Common\Internal\IServiceFilter;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Internal\Filters
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -43,10 +43,10 @@ class DateFilter implements IServiceFilter
      * Adds date (in GMT format) header to the request headers.
      *
      * @param HttpClient $request HTTP channel object.
-     * 
+     *
      * @return \HTTP_Request2
      */
-    public function handleRequest($request) 
+    public function handleRequest($request)
     {
         $date = gmdate(Resources::AZURE_DATE_FORMAT, time());
         $request->setHeader(Resources::DATE, $date);
@@ -59,10 +59,10 @@ class DateFilter implements IServiceFilter
      *
      * @param HttpClient              $request  HTTP channel object.
      * @param \HTTP_Request2_Response $response HTTP response object.
-     * 
+     *
      * @return \HTTP_Request2_Response
      */
-    public function handleResponse($request, $response) 
+    public function handleResponse($request, $response)
     {
         // Do nothing with the response.
         return $response;

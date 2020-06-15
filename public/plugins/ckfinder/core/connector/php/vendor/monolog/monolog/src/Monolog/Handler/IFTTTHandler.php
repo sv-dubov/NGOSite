@@ -22,7 +22,7 @@ use Monolog\Logger;
  * value2 will be the level name (ERROR, WARNING, ..)
  * value3 will be the log record's message
  *
- * @author Nehal Patel <nehal@nehalpatel.me>
+ * @publisher Nehal Patel <nehal@nehalpatel.me>
  */
 class IFTTTHandler extends AbstractProcessingHandler
 {

@@ -15,7 +15,7 @@ namespace Symfony\Component\HttpFoundation\Session\Attribute;
  * This class provides structured storage of session attributes using
  * a name spacing character in the key.
  *
- * @author Drak <drak@zikula.org>
+ * @publisher Drak <drak@zikula.org>
  */
 class NamespacedAttributeBag extends AttributeBag
 {

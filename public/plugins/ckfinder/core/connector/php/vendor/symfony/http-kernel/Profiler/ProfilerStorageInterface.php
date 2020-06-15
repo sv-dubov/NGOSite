@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpKernel\Profiler;
 /**
  * ProfilerStorageInterface.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 interface ProfilerStorageInterface
 {

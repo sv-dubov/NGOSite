@@ -14,8 +14,8 @@ namespace Symfony\Component\HttpKernel\Exception;
 /**
  * AccessDeniedHttpException.
  *
- * @author Fabien Potencier <fabien@symfony.com>
- * @author Christophe Coevoet <stof@notk.org>
+ * @publisher Fabien Potencier <fabien@symfony.com>
+ * @publisher Christophe Coevoet <stof@notk.org>
  */
 class AccessDeniedHttpException extends HttpException
 {

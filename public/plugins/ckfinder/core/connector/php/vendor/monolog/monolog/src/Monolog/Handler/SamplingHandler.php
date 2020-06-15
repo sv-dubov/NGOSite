@@ -22,8 +22,8 @@ namespace Monolog\Handler;
  * occurred in the application, but based on the Law of large numbers, it will
  * tend to be close to this ratio with a large number of attempts.
  *
- * @author Bryan Davis <bd808@wikimedia.org>
- * @author Kunal Mehta <legoktm@gmail.com>
+ * @publisher Bryan Davis <bd808@wikimedia.org>
+ * @publisher Kunal Mehta <legoktm@gmail.com>
  */
 class SamplingHandler extends AbstractHandler
 {

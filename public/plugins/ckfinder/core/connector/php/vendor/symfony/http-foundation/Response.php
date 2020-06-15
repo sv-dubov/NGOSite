@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 /**
  * Response represents an HTTP response.
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @publisher Fabien Potencier <fabien@symfony.com>
  */
 class Response
 {

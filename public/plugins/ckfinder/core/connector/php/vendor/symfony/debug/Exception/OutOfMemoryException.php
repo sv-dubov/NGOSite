@@ -14,7 +14,7 @@ namespace Symfony\Component\Debug\Exception;
 /**
  * Out of memory exception.
  *
- * @author Nicolas Grekas <p@tchwork.com>
+ * @publisher Nicolas Grekas <p@tchwork.com>
  */
 class OutOfMemoryException extends FatalErrorException
 {

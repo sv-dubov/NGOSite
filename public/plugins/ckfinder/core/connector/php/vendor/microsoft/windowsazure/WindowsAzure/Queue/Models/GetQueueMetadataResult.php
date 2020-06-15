@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Queue\Models;
 
 /**
@@ -29,7 +29,7 @@ namespace WindowsAzure\Queue\Models;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -39,21 +39,21 @@ class GetQueueMetadataResult
 {
     /**
      * Indicates the approximate number of messages in the queue
-     * 
-     * @var integer 
+     *
+     * @var integer
      */
     private $_approximateMessageCount;
-    
+
     /**
      * A user-defined name/value pair
-     * 
-     * @var array 
+     *
+     * @var array
      */
     private $_metadata;
-    
+
     /**
      * Constructor
-     * 
+     *
      * @param integer $approximateMessageCount Approximate number of queue messages.
      * @param array   $metadata                user defined metadata.
      */
@@ -62,44 +62,44 @@ class GetQueueMetadataResult
         $this->_approximateMessageCount = $approximateMessageCount;
         $this->_metadata                = is_null($metadata) ? array() : $metadata;
     }
-    
+
     /**
      * Gets approximate message count.
-     * 
+     *
      * @return integer
      */
     public function getApproximateMessageCount()
     {
         return $this->_approximateMessageCount;
     }
-    
+
     /**
      * Sets approximate message count.
-     * 
+     *
      * @param integer $approximateMessageCount value to use.
-     * 
+     *
      * @return none
      */
     public function setApproximateMessageCount($approximateMessageCount)
     {
         $this->_approximateMessageCount = $approximateMessageCount;
     }
-    
+
     /**
      * Sets metadata.
-     * 
+     *
      * @return array
      */
     public function getMetadata()
     {
         return $this->_metadata;
     }
-    
+
     /**
      * Sets metadata.
-     * 
+     *
      * @param array $metadata value to use.
-     * 
+     *
      * @return none
      */
     public function setMetadata($metadata)

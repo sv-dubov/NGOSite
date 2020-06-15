@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -29,7 +29,7 @@ namespace WindowsAzure\ServiceRuntime\Internal;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -46,15 +46,15 @@ class LocalResource
      * @var string
      */
     private $_name;
-    
+
     /**
      * @var string
      */
     private $_rootPath;
-   
+
     /**
      * Package accessible constructor.
-     * 
+     *
      * @param string $maximumSizeInMegabytes Maximum size in megabytes.
      * @param string $name                   The name.
      * @param string $rootPath               The root path.
@@ -65,11 +65,11 @@ class LocalResource
         $this->_name                   = $name;
         $this->_rootPath               = $rootPath;
     }
-    
+
     /**
      * Returns the maximum size, in megabytes, allocated for the local storage
      * resource, as defined in the service.
-     * 
+     *
      * @return int
      */
     public function getMaximumSizeInMegabytes()
@@ -80,7 +80,7 @@ class LocalResource
     /**
      * Returns the name of the local store as declared in the service definition
      * file.
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -90,7 +90,7 @@ class LocalResource
 
     /**
      * Returns the full directory path to the local storage resource.
-     * 
+     *
      * @return string
      */
     public function getRootPath()

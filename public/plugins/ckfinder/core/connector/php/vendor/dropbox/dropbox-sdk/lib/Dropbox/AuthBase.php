@@ -21,7 +21,7 @@ class AuthBase
      * This is used to set the HTTP `User-Agent` header when making API requests.
      * Example: `"PhotoEditServer/1.3"`
      *
-     * If you're the author a higher-level library on top of the basic SDK, and the
+     * If you're the publisher a higher-level library on top of the basic SDK, and the
      * "Photo Edit" app's server code is using your library to access Dropbox, you should append
      * your library's name and version to form the full identifier.  For example,
      * if your library is called "File Picker", you might set this field to:

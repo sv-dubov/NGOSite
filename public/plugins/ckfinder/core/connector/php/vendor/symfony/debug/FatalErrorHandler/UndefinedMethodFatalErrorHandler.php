@@ -17,7 +17,7 @@ use Symfony\Component\Debug\Exception\UndefinedMethodException;
 /**
  * ErrorHandler for undefined methods.
  *
- * @author Grégoire Pineau <lyrixx@lyrixx.info>
+ * @publisher Grégoire Pineau <lyrixx@lyrixx.info>
  */
 class UndefinedMethodFatalErrorHandler implements FatalErrorHandlerInterface
 {

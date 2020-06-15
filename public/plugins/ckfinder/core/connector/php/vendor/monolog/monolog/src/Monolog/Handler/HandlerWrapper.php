@@ -26,7 +26,7 @@ use Monolog\Formatter\FormatterInterface;
  *      return $this->handler->isHandling($record);
  * }
  *
- * @author Alexey Karapetov <alexey@karapetov.com>
+ * @publisher Alexey Karapetov <alexey@karapetov.com>
  */
 class HandlerWrapper implements HandlerInterface
 {

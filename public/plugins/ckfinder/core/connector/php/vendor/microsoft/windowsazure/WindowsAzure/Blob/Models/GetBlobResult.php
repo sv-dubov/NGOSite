@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 use WindowsAzure\Blob\Models\BlobProperties;
 use WindowsAzure\Common\Internal\Utilities;
@@ -31,7 +31,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -43,24 +43,24 @@ class GetBlobResult
      * @var BlobProperties
      */
     private $_properties;
-    
+
     /**
      * @var array
      */
     private $_metadata;
-    
+
     /**
      * @var resource
      */
     private $_contentStream;
-    
+
     /**
      * Creates GetBlobResult from getBlob call.
-     * 
+     *
      * @param array  $headers  The HTTP response headers.
      * @param string $body     The response body.
      * @param array  $metadata The blob metadata.
-     * 
+     *
      * @return GetBlobResult
      */
     public static function create($headers, $body, $metadata)
@@ -69,10 +69,10 @@ class GetBlobResult
         $result->setContentStream(Utilities::stringToStream($body));
         $result->setProperties(BlobProperties::create($headers));
         $result->setMetadata(is_null($metadata) ? array() : $metadata);
-        
+
         return $result;
     }
-    
+
     /**
      * Gets blob metadata.
      *
@@ -87,14 +87,14 @@ class GetBlobResult
      * Sets blob metadata.
      *
      * @param string $metadata value.
-     * 
+     *
      * @return none
      */
     public function setMetadata($metadata)
     {
         $this->_metadata = $metadata;
     }
-    
+
     /**
      * Gets blob properties.
      *
@@ -109,14 +109,14 @@ class GetBlobResult
      * Sets blob properties.
      *
      * @param BlobProperties $properties value.
-     * 
+     *
      * @return none
      */
     public function setProperties($properties)
     {
         $this->_properties = $properties;
     }
-    
+
     /**
      * Gets blob contentStream.
      *
@@ -131,7 +131,7 @@ class GetBlobResult
      * Sets blob contentStream.
      *
      * @param resource $contentStream The stream handle.
-     * 
+     *
      * @return none
      */
     public function setContentStream($contentStream)

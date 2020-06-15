@@ -11,17 +11,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
- 
+
 namespace WindowsAzure\Blob\Models;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\Validate;
@@ -32,7 +32,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Blob\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -44,35 +44,35 @@ class CreateBlobPagesResult
      * @var \DateTime
      */
     private $_lastModified;
-    
+
     /**
      * @var string
      */
     private $_etag;
-    
+
     /**
      * @var integer
      */
     private $_sequenceNumber;
-    
+
     /**
      * @var string
      */
     private $_contentMD5;
-    
+
     /**
-     * Creates CreateBlobPagesResult object from $parsed response in array 
+     * Creates CreateBlobPagesResult object from $parsed response in array
      * representation
-     * 
+     *
      * @param array $headers HTTP response headers
-     * 
+     *
      * @return CreateBlobPagesResult
      */
     public static function create($headers)
     {
         $result = new CreateBlobPagesResult();
         $clean  = array_change_key_case($headers);
-        
+
         $date = $clean[Resources::LAST_MODIFIED];
         $date = Utilities::rfc1123ToDateTime($date);
         $result->setETag($clean[Resources::ETAG]);
@@ -85,10 +85,10 @@ class CreateBlobPagesResult
                 Utilities::tryGetValue($clean, Resources::X_MS_BLOB_SEQUENCE_NUMBER)
             )
         );
-        
+
         return $result;
     }
-    
+
     /**
      * Gets blob lastModified.
      *
@@ -134,7 +134,7 @@ class CreateBlobPagesResult
         Validate::isString($etag, 'etag');
         $this->_etag = $etag;
     }
-    
+
     /**
      * Gets blob contentMD5.
      *
@@ -156,7 +156,7 @@ class CreateBlobPagesResult
     {
         $this->_contentMD5 = $contentMD5;
     }
-    
+
     /**
      * Gets blob sequenceNumber.
      *

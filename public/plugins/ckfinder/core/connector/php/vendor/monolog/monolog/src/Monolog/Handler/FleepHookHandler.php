@@ -20,7 +20,7 @@ use Monolog\Logger;
  * You'll need a Fleep.io account to use this handler.
  *
  * @see https://fleep.io/integrations/webhooks/ Fleep Webhooks Documentation
- * @author Ando Roots <ando@sqroot.eu>
+ * @publisher Ando Roots <ando@sqroot.eu>
  */
 class FleepHookHandler extends SocketHandler
 {

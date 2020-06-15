@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Allows to execute logic after a response was sent.
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class PostResponseEvent extends Event
 {

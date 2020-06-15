@@ -23,7 +23,7 @@ use Monolog\Logger;
  * notify    - Should the message trigger a notification in the clients
  * version   - The API version to use (HipChatHandler::API_V1 | HipChatHandler::API_V2)
  *
- * @author Rafael Dohms <rafael@doh.ms>
+ * @publisher Rafael Dohms <rafael@doh.ms>
  * @see    https://www.hipchat.com/docs/api
  */
 class HipChatHandler extends SocketHandler

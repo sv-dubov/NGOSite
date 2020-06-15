@@ -35,7 +35,7 @@ use PhpConsole\Helper;
  *      $logger->addDebug('SELECT * FROM users', array('db', 'time' => 0.012));
  *      PC::debug($_SERVER); // PHP Console debugger for any type of vars
  *
- * @author Sergey Barbushin https://www.linkedin.com/in/barbushin
+ * @publisher Sergey Barbushin https://www.linkedin.com/in/barbushin
  */
 class PHPConsoleHandler extends AbstractProcessingHandler
 {

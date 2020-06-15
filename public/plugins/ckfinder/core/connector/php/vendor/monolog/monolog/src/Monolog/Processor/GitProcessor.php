@@ -16,8 +16,8 @@ use Monolog\Logger;
 /**
  * Injects Git branch and Git commit SHA in all records
  *
- * @author Nick Otter
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Nick Otter
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class GitProcessor
 {

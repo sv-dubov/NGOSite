@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -29,7 +29,7 @@ namespace WindowsAzure\ServiceRuntime\Internal;
  *
  * @category  Microsoft
  * @package   WindowsAzure\ServiceRuntime\Internal
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -38,12 +38,12 @@ namespace WindowsAzure\ServiceRuntime\Internal;
 class FileOutputChannel implements IOutputChannel
 {
     // @codingStandardsIgnoreStart
-    
+
     /**
      * Gets the output stream.
-     * 
+     *
      * @param string $name The output channel path.
-     * 
+     *
      * @return none
      */
     public function getOutputStream($name)
@@ -55,7 +55,7 @@ class FileOutputChannel implements IOutputChannel
             throw new ChannelNotAvailableException();
         }
     }
-    
+
     // @codingStandardsIgnoreEnd
 }
 

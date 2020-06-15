@@ -22,7 +22,7 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function author()
+    public function publisher()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
@@ -51,18 +51,18 @@ class Post extends Model
         ];
     }
 
-    public static function add($fileds)
+    public static function add($fields)
     {
         $post = new static;
-        $post->fill($fileds);
+        $post->fill($fields);
         $post->user_id = Auth::user()->id;
         $post->save();
         return $post;
     }
 
-    public function edit($fileds)
+    public function edit($fields)
     {
-        $this->fill($fileds);
+        $this->fill($fields);
         $this->save();
     }
 

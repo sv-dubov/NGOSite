@@ -18,7 +18,7 @@ use Monolog\Logger;
  *
  * Can be used to store into php://stderr, remote and local files, etc.
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class StreamHandler extends AbstractProcessingHandler
 {

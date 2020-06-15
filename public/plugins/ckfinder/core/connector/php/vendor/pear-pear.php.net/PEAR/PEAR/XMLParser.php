@@ -6,8 +6,8 @@
  *
  * @category   pear
  * @package    PEAR
- * @author     Greg Beaver <cellog@php.net>
- * @author     Stephan Schmidt (original XML_Unserializer code)
+ * @publisher     Greg Beaver <cellog@php.net>
+ * @publisher     Stephan Schmidt (original XML_Unserializer code)
  * @copyright  1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license New BSD License
  * @link       http://pear.php.net/package/PEAR
@@ -18,8 +18,8 @@
  * Parser for any xml file
  * @category  pear
  * @package   PEAR
- * @author    Greg Beaver <cellog@php.net>
- * @author    Stephan Schmidt (original XML_Unserializer code)
+ * @publisher    Greg Beaver <cellog@php.net>
+ * @publisher    Stephan Schmidt (original XML_Unserializer code)
  * @copyright 1997-2009 The Authors
  * @license   http://opensource.org/licenses/bsd-license New BSD License
  * @version   Release: 1.10.1

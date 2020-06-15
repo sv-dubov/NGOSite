@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -30,7 +30,7 @@ use WindowsAzure\Common\Models\ServiceProperties;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Common\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -39,38 +39,38 @@ use WindowsAzure\Common\Models\ServiceProperties;
 class GetServicePropertiesResult
 {
     private $_serviceProperties;
-    
+
     /**
      * Creates object from $parsedResponse.
-     * 
+     *
      * @param array $parsedResponse XML response parsed into array.
-     * 
+     *
      * @return WindowsAzure\Common\Models\GetServicePropertiesResult
      */
     public static function create($parsedResponse)
     {
         $result                     = new GetServicePropertiesResult();
         $result->_serviceProperties = ServiceProperties::create($parsedResponse);
-        
+
         return $result;
     }
-    
+
     /**
      * Gets service properties object.
-     * 
-     * @return WindowsAzure\Common\Models\ServiceProperties 
+     *
+     * @return WindowsAzure\Common\Models\ServiceProperties
      */
     public function getValue()
     {
         return $this->_serviceProperties;
     }
-    
+
     /**
      * Sets service properties object.
-     * 
+     *
      * @param ServiceProperties $serviceProperties object to use.
-     * 
-     * @return none 
+     *
+     * @return none
      */
     public function setValue($serviceProperties)
     {

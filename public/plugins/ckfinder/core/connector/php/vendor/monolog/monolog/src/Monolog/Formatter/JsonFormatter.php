@@ -19,7 +19,7 @@ use Throwable;
  *
  * This can be useful to log to databases or remote APIs
  *
- * @author Jordi Boggiano <j.boggiano@seld.be>
+ * @publisher Jordi Boggiano <j.boggiano@seld.be>
  */
 class JsonFormatter extends NormalizerFormatter
 {

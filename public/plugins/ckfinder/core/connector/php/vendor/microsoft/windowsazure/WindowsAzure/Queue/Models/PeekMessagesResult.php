@@ -11,12 +11,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * PHP version 5
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @link      https://github.com/windowsazure/azure-sdk-for-php
@@ -31,7 +31,7 @@ use WindowsAzure\Common\Internal\Utilities;
  *
  * @category  Microsoft
  * @package   WindowsAzure\Queue\Models
- * @author    Azure PHP SDK <azurephpsdk@microsoft.com>
+ * @publisher    Azure PHP SDK <azurephpsdk@microsoft.com>
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  * @version   Release: 0.4.0_2014-01
@@ -41,57 +41,57 @@ class PeekMessagesResult
 {
     /**
      * Holds all message entries.
-     * 
+     *
      * @var array.
      */
     private $_queueMessages;
-    
+
     /**
      * Creates PeekMessagesResult object from parsed XML response.
      *
      * @param array $parsedResponse XML response parsed into array.
-     * 
+     *
      * @return WindowsAzure\Queue\Models\PeekMessagesResult.
      */
     public static function create($parsedResponse)
     {
         $result        = new PeekMessagesResult();
         $queueMessages = array();
-        
+
         if (!empty($parsedResponse)) {
             $rawMessages = Utilities::getArray($parsedResponse['QueueMessage']);
             foreach ($rawMessages as $value) {
                 $message = WindowsAzureQueueMessage::createFromPeekMessages($value);
-                
+
                 $queueMessages[] = $message;
             }
         }
         $result->setQueueMessages($queueMessages);
-        
+
         return $result;
     }
-    
+
     /**
      * Gets queueMessages field.
-     * 
+     *
      * @return integer
      */
     public function getQueueMessages()
     {
         $clonedMessages = array();
-        
+
         foreach ($this->_queueMessages as $value) {
             $clonedMessages[] = clone $value;
         }
-        
+
         return $clonedMessages;
     }
-    
+
     /**
      * Sets queueMessages field.
-     * 
+     *
      * @param integer $queueMessages value to use.
-     * 
+     *
      * @return none
      */
     public function setQueueMessages($queueMessages)

@@ -29,8 +29,8 @@ namespace Pimple;
 /**
  * Pimple service provider interface.
  *
- * @author  Fabien Potencier
- * @author  Dominik Zogg
+ * @publisher  Fabien Potencier
+ * @publisher  Dominik Zogg
  */
 interface ServiceProviderInterface
 {

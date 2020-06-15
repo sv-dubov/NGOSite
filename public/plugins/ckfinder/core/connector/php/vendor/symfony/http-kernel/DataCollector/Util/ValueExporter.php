@@ -12,7 +12,7 @@
 namespace Symfony\Component\HttpKernel\DataCollector\Util;
 
 /**
- * @author Bernhard Schussek <bschussek@gmail.com>
+ * @publisher Bernhard Schussek <bschussek@gmail.com>
  */
 class ValueExporter
 {

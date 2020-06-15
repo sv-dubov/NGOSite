@@ -17,7 +17,7 @@ use Monolog\Formatter\LineFormatter;
 /**
  * Sends notifications through Slack API
  *
- * @author Greg Kedzierski <greg@gregkedzierski.com>
+ * @publisher Greg Kedzierski <greg@gregkedzierski.com>
  * @see    https://api.slack.com/
  */
 class SlackHandler extends SocketHandler
