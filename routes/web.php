@@ -47,4 +47,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/subscribers', 'SubscribersController');
     Route::resource('/about', 'AboutController');
     Route::resource('/members', 'MembersController');
+    Route::resource('/albums', 'AlbumsController');
 });
