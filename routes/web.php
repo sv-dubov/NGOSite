@@ -48,4 +48,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/about', 'AboutController');
     Route::resource('/members', 'MembersController');
     Route::resource('/albums', 'AlbumsController');
+    Route::get('/photos/create/{id}', 'PhotosController@create')->name('photos.create');
+    Route::post('/photos/store', 'PhotosController@store')->name('photos.store');
+    Route::get('/photos/{id}', 'PhotosController@show')->name('photos.show');
+    Route::delete('/photos/{id}/destroy', 'PhotosController@destroy')->name('photos.destroy');
 });

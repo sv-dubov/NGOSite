@@ -45,7 +45,7 @@ class AlbumsController extends Controller
         $this->validate($request, [
             'name' =>'required',
             'description' => 'required',
-            'cover_image' => 'nullable|image'
+            'cover_image' => 'nullable|image|max:2048'
         ]);
 
         $album = Album::find($id);
@@ -59,5 +59,10 @@ class AlbumsController extends Controller
     {
         Album::find($id)->remove();
         return redirect()->route('albums.index');
+    }
+
+    public function show($id){
+        $album = Album::with('Photos')->find($id);
+        return view('admin.albums.show')->with('album', $album);
     }
 }

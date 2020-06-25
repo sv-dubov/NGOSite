@@ -52,7 +52,7 @@ class Album extends Model
         if($cover_image == null) { return; }
         $this->removeImage();
         $filename = Str::random(10) . '.' . $cover_image->extension();
-        $cover_image->storeAs('uploads', $filename);
+        $cover_image->storeAs('uploads/albums/covers', $filename);
         $this->cover_image = $filename;
         $this->save();
     }
@@ -61,7 +61,7 @@ class Album extends Model
     {
         if($this->cover_image != null)
         {
-            Storage::delete('uploads/' . $this->cover_image);
+            Storage::delete('uploads/albums/covers/' . $this->cover_image);
         }
     }
 
@@ -71,6 +71,6 @@ class Album extends Model
         {
             return '/img/no-image.png';
         }
-        return '/uploads/' . $this->cover_image;
+        return '/uploads/albums/covers/' . $this->cover_image;
     }
 }

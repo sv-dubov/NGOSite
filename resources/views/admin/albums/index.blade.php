@@ -32,8 +32,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Created at</th>
-                            <th>Actions</th>
+                            <th>Show/Add photos</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -41,7 +40,9 @@
                             <tr>
                                 <td>{{$album->id}}</td>
                                 <td>{{$album->name}}</td>
-                                <td>{{$album->created_at}}</td>
+                                <td>
+                                    <a class="fa fa-picture-o" href="{{route('albums.show', $album->id)}}"></a>
+                                </td>
                                 <td>
                                     <a href="{{route('albums.edit', $album->id)}}" class="fa fa-pencil"></a>
                                     {{Form::open(['route'=>['albums.destroy', $album->id], 'method'=>'delete'])}}
