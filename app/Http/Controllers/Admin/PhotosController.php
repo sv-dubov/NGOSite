@@ -55,32 +55,4 @@ class PhotosController extends Controller
             return redirect()->route('albums.index')->with('success', 'Photo Deleted');
         }
     }
-
-/*    public function create($album_id){
-        return view('admin.photos.create')->with('album_id', $album_id);
-    }
-
-    public function store(Request $request){
-        $this->validate($request, [
-            'title' => 'required',
-            'photo' => 'image|max:2048'
-        ]);
-
-        $photo = Photo::add($request->all());
-        //$photo->size = $request->file('photo')->getClientSize();
-        $photo->uploadImage($request->file('image').$request->input('album_id'));
-        //return redirect()->route('albums.index');
-        return redirect('/admin/albums/'.$request->input('album_id'))->with('success', 'Photo Uploaded');
-    }
-
-    public function show($id){
-        $photo = Photo::find($id);
-        return view('photos.show')->with('photo', $photo);
-    }
-
-    public function destroy($id)
-    {
-        Photo::find($id)->remove();
-        return redirect()->route('albums.index');
-    }*/
 }

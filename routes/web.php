@@ -20,6 +20,10 @@ Route::get('/category/{slug}', 'HomeController@category')->name('category.show')
 Route::post('/subscribe', 'SubsController@subscribe');
 Route::get('/verify/{token}', 'SubsController@verify');
 Route::get('/team', 'TeamController@index');
+Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
+//Route::get('/gallery/{id}', 'GalleryController@show')->name('gallery.show');
+Route::get('/gallery/{slug}', 'GalleryController@show')->name('gallery.show');
+Route::get('/photo/{id}', 'GalleryController@photo')->name('gallery.photo');
 
 Route::group(['middleware'	=>	'auth'], function(){
     Route::get('/profile', 'ProfileController@index');

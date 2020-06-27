@@ -66,7 +66,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/about">ABOUT US </a></li>
+                        <li><a href="/about">ABOUT US</a></li>
+                        <li><a href="/gallery">GALLERY</a></li>
                         <div class="dropdown">
                             <button class="dropbtn">Dropdown</button>
                             <div class="dropdown-content">
@@ -263,6 +264,7 @@
     </footer>
     <!-- js files -->
     <script src="/js/front.js"></script>
+    @stack('scripts')
 </body>
 
 </html>
