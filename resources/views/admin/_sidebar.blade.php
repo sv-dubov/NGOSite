@@ -11,6 +11,7 @@
     <li><a href="{{route('categories.index')}}"><i class="fa fa-list-ul"></i> <span>Categories</span></a></li>
     <li><a href="{{route('tags.index')}}"><i class="fa fa-tags"></i> <span>Tags</span></a></li>
     <li><a href="{{route('albums.index')}}"><i class="fa fa-picture-o"></i> <span>Albums</span></a></li>
+    <li><a href="{{route('projects.index')}}"><i class="fa fa-database"></i> <span>Projects</span></a></li>
     <li>
         <a href="/admin/comments">
             <i class="fa fa-commenting"></i> <span>Comments</span>
