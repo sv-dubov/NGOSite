@@ -47,6 +47,7 @@
     <![endif]-->
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/favicon.png">
+    @yield('assets')
 </head>
 
 <body>
@@ -66,14 +67,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/about">ABOUT US</a></li>
                         <li><a href="/gallery">GALLERY</a></li>
                         <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
+                            <button class="dropbtn">ABOUT US</button>
                             <div class="dropdown-content">
                                 <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a href="/projects">Projects</a>
+                                <a href="/team">Team</a>
                             </div>
                         </div>
                         <li><a href="contact.html">CONTACT</a></li>
