@@ -21,6 +21,7 @@ Route::post('/subscribe', 'SubsController@subscribe');
 Route::get('/verify/{token}', 'SubsController@verify');
 Route::get('/team', 'TeamController@index');
 Route::get('/projects', 'ProjectController@index');
+Route::get('/reports', 'ReportController@index');
 Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
 //Route::get('/gallery/{id}', 'GalleryController@show')->name('gallery.show');
 Route::get('/gallery/{slug}', 'GalleryController@show')->name('gallery.show');
