@@ -12,4 +12,10 @@ class ProjectController extends Controller
         $projects = Project::all();
         return view('pages.projects')->with('projects', $projects);
     }
+
+    public function show($year)
+    {
+        $projects = Project::where('year', $year);
+        return view('pages.projects')->with('projects', $projects);
+    }
 }

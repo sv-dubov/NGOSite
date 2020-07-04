@@ -42,11 +42,11 @@
                     <div class="accordion" id="accordion{{$project->year}}">
                         <div class="accordion-group">
                             <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$project->year}}" href="#collapseTwo">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$project->year}}" href="#collapse{{$project->id}}">
                                     {{$project->year}}
                                 </a>
                             </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
+                            <div id="collapse{{$project->id}}" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     <!-- Here we insert another nested accordion -->
                                     @foreach($projects as $project)

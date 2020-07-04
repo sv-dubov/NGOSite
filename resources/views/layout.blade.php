@@ -73,7 +73,9 @@
                             <div class="dropdown-content">
                                 <a href="#">Link 1</a>
                                 <a href="/projects">Projects</a>
+                                <a href="/reports">Reports</a>
                                 <a href="/team">Team</a>
+                                <a href="/gallery">Photo Gallery</a>
                             </div>
                         </div>
                         <li><a href="contact.html">CONTACT</a></li>
