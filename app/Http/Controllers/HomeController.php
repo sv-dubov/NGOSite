@@ -12,8 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         //$posts = Post::paginate(2);
-        $posts = Post::where('status', Post::IS_PUBLIC)
-            ->paginate(2);
+        $posts = Post::where('status', Post::IS_PUBLIC)->orderBy('date', 'desc')->paginate(2);
         return view('pages.index')->with('posts', $posts);
     }
 
