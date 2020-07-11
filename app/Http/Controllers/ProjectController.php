@@ -10,10 +10,10 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::all();
-        //$projects = DB::select('select * from projects where year = ?');
-        //return view('pages.projects', ['projects' => $projects]);
-        return view('pages.projects')->with('projects', $projects);
+        //$projects = Project::all();
+        $projects = DB::select('select distinct year, id, title, description from projects');
+        return view('pages.projects', ['projects' => $projects]);
+        //return view('pages.projects')->with('projects', $projects);
     }
 
     public function show($year)

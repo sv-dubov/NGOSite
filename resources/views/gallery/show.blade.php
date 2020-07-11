@@ -8,8 +8,8 @@
     <!-- favicon icon -->
     <title>NGO Site Gallery</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -29,10 +29,10 @@
         $i = 1;
         ?>
         <div class="row">
-            @foreach($album->photos as $photo)
-                <div class="col-lg-12">
-                    <h4 class="page-header">{{$photo->title}}</h4>
+            <div class="col-lg-12">
+                @foreach($album->photos as $photo)
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <h4 class="page-header">{{$photo->title}}</h4>
                         <a class="thumbnail" href="#" data-image-id="{{$photo->id}}" data-toggle="modal"
                            data-title="{{$photo->title}}" data-caption="{!!$photo->description!!}"
                            data-image="/uploads/albums/photos/{{$photo->album_id}}/{{$photo->photo}}"
@@ -42,8 +42,8 @@
                                  alt="{{$photo->title}}">
                         </a>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
             <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog">
@@ -97,7 +97,6 @@
          * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
          * @param setClickAttr  Sets the attribute for the click handler.
          */
-
         function loadGallery(setIDs, setClickAttr) {
             var current_image,
                 selector,
