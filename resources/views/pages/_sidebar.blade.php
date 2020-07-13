@@ -23,15 +23,15 @@
             @endforeach
         </aside>
         <aside class="widget">
-            <h3 class="widget-title text-center">Featured Posts</h3>
-            @foreach($featuredPosts as $post)
+            <h3 class="widget-title text-center">Featured Articles</h3>
+            @foreach($featuredArticles as $article)
             <div id="widget-feature" class="owl-carousel">
                 <div class="item">
                     <div class="feature-content">
-                        <img src="{{$post->getImage()}}" alt="">
+                        <img src="{{$article->getImage()}}" alt="">
                         <a href="#" class="overlay-text text-center">
-                            <h5>{{$post->title}}</h5>
-                            <p>{!!$post->description!!}</p>
+                            <h5>{{$article->title}}</h5>
+                            <p>{!!$article->description!!}</p>
                         </a>
                     </div>
                 </div>

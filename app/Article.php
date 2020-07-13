@@ -230,4 +230,9 @@ class Article extends Model
     {
         return $this->category != null ? true : false;
     }
+
+    public static function getFeaturedArticles()
+    {
+        return self::where('is_featured', 1)->take(3)->get();
+    }
 }
