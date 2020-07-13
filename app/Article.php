@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
@@ -12,7 +13,7 @@ class Article extends Model
 {
     use Sluggable;
 
-    protected $fillable = ['title', 'content', 'date', 'description'];
+    protected $fillable = ['title', 'content', 'date', 'description', 'author'];
     const IS_DRAFT = 0;
     const IS_PUBLIC = 1;
 
@@ -21,7 +22,7 @@ class Article extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function author()
+    public function publisher()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
@@ -50,20 +51,18 @@ class Article extends Model
         ];
     }
 
-    public static function add($fileds)
+    public static function add($fields)
     {
         $article = new static;
-        $article->fill($fileds);
-        $article->user_id = 1;
-        //$article->user_id = Auth::user()->id;
+        $article->fill($fields);
+        $article->user_id = Auth::user()->id;
         $article->save();
-
         return $article;
     }
 
-    public function edit($fileds)
+    public function edit($fields)
     {
-        $this->fill($fileds);
+        $this->fill($fields);
         $this->save();
     }
 
@@ -76,7 +75,6 @@ class Article extends Model
     public function uploadImage($image)
     {
         if($image == null) { return; }
-
         $this->removeImage();
         $filename = Str::random(10) . '.' . $image->extension();
         $image->storeAs('uploads', $filename);
@@ -95,7 +93,7 @@ class Article extends Model
     public function getImage()
     {
         if($this-> image == null)
-        { 
+        {
             return '/img/no-image.png';
         }
 
@@ -105,7 +103,6 @@ class Article extends Model
     public function setCategory($id)
     {
         if($id == null) { return; }
-
         $this->category_id = $id;
         $this->save();
     }
@@ -113,7 +110,6 @@ class Article extends Model
     public function setTags($ids)
     {
         if($ids == null) { return; }
-
         $this->tags()->sync($ids);
     }
 
@@ -137,7 +133,6 @@ class Article extends Model
         {
             return $this->setDraft();
         }
-
         return $this->setPublic();
     }
 
@@ -161,5 +156,78 @@ class Article extends Model
         }
 
         return $this->setFeatured();
+    }
+
+    public function setDateAttribute($value)
+    {
+        $date = Carbon::createFromFormat('d/m/y', $value)->format('Y/m/d');
+        $this->attributes['date'] = strtolower($date);
+    }
+
+    public function getDateAttribute($value)
+    {
+        $date = Carbon::createFromFormat('Y-m-d', $value)->format('d/m/y');
+        return $date;
+    }
+
+    public function getCategoryTitle()
+    {
+        return ($this->category != null)
+            ?   $this->category->title
+            :   'No category';
+    }
+
+    public function getTagsTitles()
+    {
+        return (!$this->tags->isEmpty())
+            ?   implode(', ', $this->tags->pluck('title')->all())
+            : 'No tags';
+    }
+
+    public function getCategoryID()
+    {
+        return $this->category != null ? $this->category->id : null;
+    }
+
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    public function getDate()
+    {
+        return Carbon::createFromFormat('d/m/y', $this->date)->format('F d, Y');
+    }
+
+    public function hasPrevious()
+    {
+        return self::where('id', '<', $this->id)->max('id');
+    }
+
+    public function getPrevious()
+    {
+        $articleID = $this->hasPrevious(); //ID
+        return self::find($articleID);
+    }
+
+    public function hasNext()
+    {
+        return self::where('id', '>', $this->id)->min('id');
+    }
+
+    public function getNext()
+    {
+        $articleID = $this->hasNext();
+        return self::find($articleID);
+    }
+
+    public function related()
+    {
+        return self::all()->except($this->id);
+    }
+
+    public function hasCategory()
+    {
+        return $this->category != null ? true : false;
     }
 }
