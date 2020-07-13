@@ -46,6 +46,7 @@
                             </div>
                         </div>
                     </article>
+                        <div id="disqus_thread"></div>
 {{--                    <div class="top-comment">
                         <!--top comment-->
                         @if($post->hasPublisher())
