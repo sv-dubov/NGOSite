@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
     <!--main content start-->
     <div class="main-content">
         <div class="container">
@@ -19,7 +18,9 @@
                         <div class="post-content">
                             <header class="entry-header text-center">
                                 @if($post->hasCategory())
-                                    <h6><a href="{{route('category.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a></h6>
+                                    <h6>
+                                        <a href="{{route('category.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a>
+                                    </h6>
                                 @endif
                                 <h1 class="entry-title"><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h1>
                             </header>
@@ -35,7 +36,7 @@
                                 @endforeach
                             </div>
                             <div class="social-share">
-                                    <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
+                                <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                                 <ul class="text-center pull-right">
                                     <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="s-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -46,14 +47,7 @@
                             </div>
                         </div>
                     </article>
-                        <div id="disqus_thread"></div>
-{{--                    <div class="top-comment">
-                        <!--top comment-->
-                        @if($post->hasPublisher())
-                            <img src="{{$post->publisher->getImage()}}" class="pull-left img-circle" alt="" width="75" height="75">
-                        @endif
-                    </div>--}}
-                    <!--top comment end-->
+                    <div id="disqus_thread"></div>
                     <div class="row">
                         <!--blog next previous-->
                         <div class="col-md-6">
@@ -104,42 +98,6 @@
                             @endforeach
                         </div>
                     </div>
-                    <!--related post carousel-->
-{{--                    @if(!$post->comments->isEmpty())
-                        @foreach($post->getComments() as $comment)
-                            <div class="bottom-comment">
-                                <!--bottom comment-->
-                                <div class="comment-img">
-                                    <img class="img-circle" src="{{$comment->publisher->getImage()}}" alt="" width="75" height="75">
-                                </div>
-                                <div class="comment-text">
-                                    <h5>{{$comment->publisher->name}}</h5>
-                                    <p class="comment-date">
-                                        {{$comment->created_at->diffForHumans()}}
-                                    </p>
-                                    <p class="para">{{$comment->text}}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    @endif--}}
-                <!-- end bottom comment-->
-                    {{--@if(Auth::check())
-                        <div class="leave-comment">
-                            <!--leave comment-->
-                            <h4>Leave a reply</h4>
-                            <form class="form-horizontal contact-form" role="form" method="post" action="/comment">
-                                {{csrf_field()}}
-                                <input type="hidden" name="post_id" value="{{$post->id}}">
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <textarea class="form-control" rows="6" name="message" placeholder="Write Massage"></textarea>
-                                    </div>
-                                </div>
-                                <button class="btn send-btn">Post Comment</button>
-                            </form>
-                        </div>
-                        <!--end leave comment-->
-                    @endif--}}
                 </div>
                 @include('pages._sidebar')
             </div>

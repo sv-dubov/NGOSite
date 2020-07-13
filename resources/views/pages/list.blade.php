@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
     <!--main content start-->
     <div class="main-content">
         <div class="container">
