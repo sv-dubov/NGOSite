@@ -9,6 +9,7 @@
     <li><a href="{{route('members.index')}}"><i class="fa fa-users"></i> <span>Members</span></a></li>
     <li><a href="{{route('posts.index')}}"><i class="fa fa-sticky-note-o"></i> <span>Posts</span></a></li>
     <li><a href="{{route('articles.index')}}"><i class="fa fa-sticky-note"></i> <span>Articles</span></a></li>
+    <li><a href="{{route('videoposts.index')}}"><i class="fa fa-video-camera"></i> <span>Videos</span></a></li>
     <li><a href="{{route('categories.index')}}"><i class="fa fa-list-ul"></i> <span>Categories</span></a></li>
     <li><a href="{{route('tags.index')}}"><i class="fa fa-tags"></i> <span>Tags</span></a></li>
     <li><a href="{{route('albums.index')}}"><i class="fa fa-picture-o"></i> <span>Albums</span></a></li>
