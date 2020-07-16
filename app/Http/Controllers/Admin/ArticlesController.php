@@ -68,6 +68,7 @@ class ArticlesController extends Controller
         ]);
 
         $article = Article::find($id);
+        $article->slug = null; //change slug in DB
         $article->edit($request->all());
         $article->uploadImage($request->file('image'));
         $article->setCategory($request->get('category_id'));

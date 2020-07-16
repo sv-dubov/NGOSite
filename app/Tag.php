@@ -30,6 +30,16 @@ class Tag extends Model
         );
     }
 
+    public function videoposts()
+    {
+        return $this->belongsToMany(
+            Videopost::class,
+            'videopost_tag',
+            'tag_id',
+            'videopost_id'
+        );
+    }
+
     public function sluggable()
     {
         return [

@@ -20,6 +20,11 @@ class Category extends Model
         return $this->hasMany(Article::class);
     }
 
+    public function videoposts()
+    {
+        return $this->hasMany(Videopost::class);
+    }
+
     public function sluggable()
     {
         return [

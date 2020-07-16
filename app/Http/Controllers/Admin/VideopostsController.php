@@ -66,6 +66,7 @@ class VideopostsController extends Controller
             'image' => 'nullable|image'
         ]);
         $videopost = Videopost::find($id);
+        $videopost->slug = null; //change slug in DB
         $videopost->edit($request->all());
         $videopost->uploadImage($request->file('image'));
         $videopost->setCategory($request->get('category_id'));

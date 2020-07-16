@@ -68,6 +68,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/">HOME</a></li>
                         <li><a href="/gallery">GALLERY</a></li>
+                        <li><a href="/videos">VIDEO</a></li>
+                        <li><a href="/articles">ARTICLES</a></li>
                         <div class="dropdown">
                             <button class="dropbtn">ABOUT US</button>
                             <div class="dropdown-content">

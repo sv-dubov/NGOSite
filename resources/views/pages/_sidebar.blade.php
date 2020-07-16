@@ -9,34 +9,34 @@
             </form>
         </aside>
         <aside class="widget">
-            <h3 class="widget-title text-center">Popular Posts</h3>
-            @foreach($popularPosts as $post)
-            <div class="popular-post">
-                <a href="{{route('post.show', $post->slug)}}" class="popular-img"><img src="{{$post->getImage()}}" alt="">
-                    <div class="p-overlay"></div>
-                </a>
-                <div class="p-content">
-                    <a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a>
-                    <span class="p-date">{{$post->getDate()}}</span>
+            <h3 class="widget-title text-center">Articles</h3>
+            @foreach($featuredArticles as $article)
+                <div class="popular-post">
+                    <a href="{{route('article.show', $article->slug)}}" class="popular-img"><img src="{{$article->getImage()}}" alt="">
+                        <div class="p-overlay"></div>
+                    </a>
+                    <div class="p-content">
+                        <a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a>
+                        <span class="p-date">{{$article->getDate()}}</span>
+                    </div>
                 </div>
-            </div>
             @endforeach
         </aside>
         <aside class="widget">
-            <h3 class="widget-title text-center">Featured Articles</h3>
-            @foreach($featuredArticles as $article)
+            <h3 class="widget-title text-center">Video</h3>
             <div id="widget-feature" class="owl-carousel">
+                @foreach($featuredVideo as $videopost)
                 <div class="item">
                     <div class="feature-content">
-                        <img src="{{$article->getImage()}}" alt="">
-                        <a href="#" class="overlay-text text-center">
-                            <h5>{{$article->title}}</h5>
-                            <p>{!!$article->description!!}</p>
+                        <img src="{{$videopost->getImage()}}" alt="">
+                        <a href="{{route('videos.show', $videopost->slug)}}" class="overlay-text text-center">
+                            <h5>{{$videopost->title}}</h5>
+                            <span class="p-date">{{$videopost->getDate()}}</span>
                         </a>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </aside>
         <aside class="widget pos-padding">
             <h3 class="widget-title text-center">Recent Posts</h3>

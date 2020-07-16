@@ -154,7 +154,6 @@ class Article extends Model
         {
             return $this->setStandart();
         }
-
         return $this->setFeatured();
     }
 

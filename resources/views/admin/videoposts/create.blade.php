@@ -81,7 +81,7 @@
                                 <input type="checkbox" class="minimal" name="is_featured">
                             </label>
                             <label>
-                                Add to Recommended
+                                Add to Homepage
                             </label>
                         </div>
                         <!-- checkbox -->

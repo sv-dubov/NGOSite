@@ -20,7 +20,6 @@ class PostsController extends Controller
     {
         $categories = Category::pluck('title', 'id')->all();
         $tags = Tag::pluck('title', 'id')->all();
-
         return view('admin.posts.create', compact(
             'categories',
             'tags'
@@ -42,7 +41,6 @@ class PostsController extends Controller
         $post->setTags($request->get('tags'));
         $post->toggleStatus($request->get('status'));
         $post->toggleFeatured($request->get('is_featured'));
-
         return redirect()->route('posts.index');
     }
 
@@ -52,7 +50,6 @@ class PostsController extends Controller
         $categories = Category::pluck('title', 'id')->all();
         $tags = Tag::pluck('title', 'id')->all();
         $selectedTags = $post->tags->pluck('id')->all();
-
         return view('admin.posts.edit', compact(
             'categories',
             'tags',
@@ -71,13 +68,13 @@ class PostsController extends Controller
         ]);
 
         $post = Post::find($id);
+        $post->slug = null; //change slug in DB
         $post->edit($request->all());
         $post->uploadImage($request->file('image'));
         $post->setCategory($request->get('category_id'));
         $post->setTags($request->get('tags'));
         $post->toggleStatus($request->get('status'));
         $post->toggleFeatured($request->get('is_featured'));
-
         return redirect()->route('posts.index');
     }
 

@@ -229,12 +229,7 @@ class Videopost extends Model
         return $this->category != null ? true : false;
     }
 
-    public static function getPopularPosts()
-    {
-        return self::orderBy('views','desc')->take(3)->get();
-    }
-
-    public static function getFeaturedPosts()
+    public static function getFeaturedOnHomepage()
     {
         return self::where('is_featured', 1)->take(3)->get();
     }

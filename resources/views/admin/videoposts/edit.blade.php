@@ -72,7 +72,7 @@
                                 {{Form::checkbox('is_featured', '1', $videopost->is_featured, ['class'=>'minimal'])}}
                             </label>
                             <label>
-                                Recommend
+                                Publish on Homepage
                             </label>
                         </div>
                         <!-- checkbox -->

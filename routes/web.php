@@ -26,6 +26,14 @@ Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
 //Route::get('/gallery/{id}', 'GalleryController@show')->name('gallery.show');
 Route::get('/gallery/{slug}', 'GalleryController@show')->name('gallery.show');
 Route::get('/photo/{id}', 'GalleryController@photo')->name('gallery.photo');
+Route::get('/videos', 'VideoController@index');
+Route::get('/videos/{slug}', 'VideoController@show')->name('videos.show');
+Route::get('/videos/tag/{slug}', 'VideoController@tag')->name('tag.show');
+Route::get('/videos/category/{slug}', 'VideoController@category')->name('category.show');
+Route::get('/articles', 'ArticleController@index');
+Route::get('/articles/{slug}', 'ArticleController@show')->name('article.show');
+Route::get('/articles/tag/{slug}', 'ArticleController@tag')->name('tag.show');
+Route::get('/articles/category/{slug}', 'ArticleController@category')->name('category.show');
 
 Route::group(['middleware'	=>	'auth'], function(){
     Route::get('/profile', 'ProfileController@index');
