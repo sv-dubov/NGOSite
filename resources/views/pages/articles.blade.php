@@ -9,8 +9,8 @@
                     @foreach($articles as $article)
                         <article class="post">
                             <div class="post-thumb">
-                                <a href="{{route('articles.show', $article->slug)}}"><img src="{{$article->getImage()}}" alt=""></a>
-                                <a href="{{route('articles.show', $article->slug)}}" class="post-thumb-overlay text-center">
+                                <a href="{{route('article.show', $article->slug)}}"><img src="{{$article->getImage()}}" alt=""></a>
+                                <a href="{{route('article.show', $article->slug)}}" class="post-thumb-overlay text-center">
                                     <div class="text-center">View article</div>
                                 </a>
                             </div>
@@ -21,11 +21,11 @@
                                             <a href="{{route('category.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
                                         </h6>
                                     @endif
-                                    <h1 class="entry-title"><a href="{{route('articles.show', $article->slug)}}">{{$article->title}}</a></h1>
+                                    <h1 class="entry-title"><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h1>
                                 </header>
                                 <div class="entry-content">
                                     <div class="btn-continue-reading text-center">
-                                        <a href="{{route('articles.show', $article->slug)}}" class="more-link">Continue Reading</a>
+                                        <a href="{{route('article.show', $article->slug)}}" class="more-link">Continue Reading</a>
                                     </div>
                                 </div>
                                 <div class="social-share">
