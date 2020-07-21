@@ -91,7 +91,6 @@
                 $('#show-previous-image').hide();
             }
         }
-
         /**
          *
          * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
@@ -132,7 +131,5 @@
         }
     });
 </script>
-
 </body>
-
 </html>
