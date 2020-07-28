@@ -110,27 +110,28 @@
         <div class="container">
             <div class="row">
                 <div class="bs-example">
-                    @foreach($projects as $project)
-                    <div class="accordion" id="accordion{{$project->id}}">
+{{--                    @foreach($projects as $item)
+{{logger($projects)}}
+                    <div class="accordion" id="accordion{{$item['year']}}">
                         <div class="accordion-group">
                             <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$project->year}}" href="#collapse{{$project->id}}">
-                                    {{$project->year}}
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$item['year']}}" href="#collapse{{$item['year']}}">
+                                    {{$item['year']}}
                                 </a>
                             </div>
-                            <div id="collapse{{$project->id}}" class="accordion-body collapse">
+                            <div id="collapse{{$item['year']}}" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     <!-- Here we insert another nested accordion -->
-                                    <div class="accordion" id="accordion{{$project->id}}">
+                                    <div class="accordion" id="accordion{{$item['year']}}{{$item['id']}}">
                                         <div class="accordion-group">
                                             <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$project->id}}" href="#collapseInnerOne">
-                                                    {{$project->title}}
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{$item['year']}}{{$item['id']}}" href="#collapseInnerOne">
+                                                    {{$item['title']}}
                                                 </a>
                                             </div>
                                             <div id="collapseInnerOne" class="accordion-body collapse in">
                                                 <div class="accordion-inner">
-                                                    <p>{!!$project->description!!}</p>
+                                                    <p>{!!$item['description']!!}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,10 +139,11 @@
                                     <!-- Inner accordion ends here -->
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    @endforeach
-                    {{--<div class="accordion" id="accordionExample">
+                    @endforeach--}}
+                    <div class="accordion" id="accordionExample">
                         @foreach($projects as $project)
                             <div class="card">
                                 <div class="card-header" id="heading{{$project->id}}">
@@ -179,7 +181,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div>--}}
+                    </div>
                     {{--<div class="accordion" id="accordionExample">
                         @foreach($projects as $project)
                             <div class="card">
