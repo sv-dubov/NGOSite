@@ -22,7 +22,7 @@
                                         <a href="{{route('category.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
-                                <h1 class="entry-title"><a href="{{route('articles.show', $article->slug)}}">{{$article->title}}</a></h1>
+                                <h1 class="entry-title">{{$article->title}}</h1>
                             </header>
                             <div class="entry-content">
                                 {!!$article->content!!}

@@ -22,7 +22,7 @@
                                         <a href="{{route('category.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
-                                <h1 class="entry-title"><a href="{{route('videos.show', $videopost->slug)}}">{{$videopost->title}}</a></h1>
+                                <h1 class="entry-title">{{$videopost->title}}</h1>
                             </header>
                             <div class="entry-content">
                                 {!!$videopost->content!!}
