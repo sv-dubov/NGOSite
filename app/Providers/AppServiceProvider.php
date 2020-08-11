@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Member;
 use App\Post;
 use App\Comment;
 use App\Category;
@@ -26,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
     public function boot()
     {
         view()->composer('pages._sidebar', function($view){
@@ -37,6 +39,13 @@ class AppServiceProvider extends ServiceProvider
             //$view->with('recentPosts', Post::orderBy('date', 'desc')->take(3)->get());
             $view->with('recentPosts', Post::getRecentPosts());
             $view->with('categories', Category::all());
+        });
+
+        view()->composer('pages.index', function($view){
+            $view->with('recentPosts', Post::orderBy('date', 'desc')->take(3)->get());
+            $view->with('articles', Article::orderBy('date', 'desc')->take(3)->get());
+            $view->with('videoposts', Videopost::orderBy('date', 'desc')->take(3)->get());
+            $view->with('members', Member::all());
         });
 
         view()->composer('admin._sidebar', function($view){
