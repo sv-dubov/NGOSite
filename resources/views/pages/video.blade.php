@@ -13,35 +13,35 @@
                     @endif
                     <article class="post">
                         <div class="post-thumb">
-                            <a href="{{route('videos.show', $videopost->slug)}}"><img src="{{$videopost->getImage()}}" alt=""></a>
+                            <img src="{{$videopost->getImage()}}" alt="">
                         </div>
                         <div class="post-content">
-                            <header class="entry-header text-center">
+                            <div class="entry-header text-center">
                                 @if($videopost->hasCategory())
                                     <h6>
                                         <a href="{{route('category.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
                                 <h1 class="entry-title">{{$videopost->title}}</h1>
-                            </header>
+                            </div>
                             <div class="entry-content">
                                 {!!$videopost->content!!}
                             </div>
                             <div class="entry-content">
                                 {!!$videopost->author!!}
                             </div>
-                            <div class="decoration">
+                            </br>
+                            <div class="tag">
                                 @foreach($videopost->tags as $tag)
-                                    <a href="{{route('tag.show', $tag->slug)}}" class="btn btn-default">{{$tag->title}}</a>
+                                    <a href="{{route('tag.show', $tag->slug)}}">{{$tag->title}}</a>
                                 @endforeach
                             </div>
                             <div class="social-share">
-                                <span class="social-share-title pull-left text-capitalize">{{$videopost->getDate()}}</span>
+                                <small>{{$videopost->getDate()}}</small>
                                 <ul class="text-center pull-right">
-                                    <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="s-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="s-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a class="s-instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="s-facebook" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a class="s-twitter" href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a class="s-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -81,24 +81,7 @@
                         </div>
                     </div>
                     <!--blog next previous end-->
-                    <div class="related-post-carousel">
-                        <!--related post carousel-->
-                        <div class="related-heading">
-                            <h4>You might also like</h4>
-                        </div>
-                        <div class="items">
-                            @foreach($videopost->related() as $item)
-                                <div class="single-item">
-                                    <a href="{{route('videos.show', $item->slug)}}">
-                                        <img src="{{$item->getImage()}}" alt="">
-                                        <p>{{$item->title}}</p>
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
                 </div>
-                @include('pages._sidebar')
             </div>
         </div>
     </div>
