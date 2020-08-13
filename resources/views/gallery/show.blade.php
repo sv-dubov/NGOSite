@@ -19,7 +19,7 @@
 </head>
 <body>
 <!--navbar start-->
-{{--@include('partials._navbar')--}}
+@include('partials._navbar')
 
     <!-- Page Content -->
     <div class="container page-top">
