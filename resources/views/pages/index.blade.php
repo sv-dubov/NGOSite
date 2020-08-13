@@ -271,7 +271,7 @@
             </div>
         </div>
     </section>
-    <!-- ################# Charity Number Starts Here#######################--->
+    <!-- ################# Achievements in Numbers Starts Here #######################--->
     <div class="stats-message">
         <div class="inner-lay">
             <div class="container">
@@ -281,22 +281,12 @@
                         But you can read the following facts in order to make sure of all pluses of our organisation:</p>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 numb">
-                        <h3>12+</h3>
-                        <span>YEARS OF EXPEREANCE</span>
-                    </div>
-                    <div class="col-sm-3 numb">
-                        <h3>1812+</h3>
-                        <span>HAPPY CHILDRENS</span>
-                    </div>
-                    <div class="col-sm-3 numb">
-                        <h3>52+</h3>
-                        <span>EVENTS</span>
-                    </div>
-                    <div class="col-sm-3 numb">
-                        <h3>48+</h3>
-                        <span>FUNT RAISED</span>
-                    </div>
+                    @foreach($facts as $fact)
+                        <div class="col-sm-3 numb">
+                            <h3>{{$fact->number}}</h3>
+                            <span>{{$fact->title}}</span>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ use App\Comment;
 use App\Category;
 use App\Article;
 use App\Videopost;
+use App\Facts;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -46,6 +47,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('articles', Article::orderBy('date', 'desc')->take(3)->get());
             $view->with('videoposts', Videopost::orderBy('date', 'desc')->take(3)->get());
             $view->with('members', Member::all());
+            $view->with('facts', Facts::all());
         });
 
         view()->composer('admin._sidebar', function($view){
