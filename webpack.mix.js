@@ -75,6 +75,10 @@ mix.styles([
     'resources/assets/front2/css/style.css',
 ],'public/css/front2.css');
 
+mix.styles([
+    'resources/assets/front2/css/gallery.css',
+],'public/css/gallery.css');
+
 mix.scripts([
     'resources/assets/front2/js/jquery-3.2.1.min.js',
     'resources/assets/front2/js/bootstrap.min.js',
@@ -84,6 +88,10 @@ mix.scripts([
     'resources/assets/front2/js/scripts.js',
     'resources/assets/front2/js/scroll.js'
 ], 'public/js/front2.js');
+
+mix.scripts([
+    'resources/assets/front2/js/gallery.js'
+], 'public/js/gallery.js');
 
 mix.copy('resources/assets/front2/fonts', 'public/fonts');
 mix.copy('resources/assets/front2/images', 'public/images');
