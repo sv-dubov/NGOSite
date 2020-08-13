@@ -67,6 +67,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/albums', 'AlbumsController');
     Route::resource('/projects', 'ProjectsController');
     Route::resource('/reports', 'ReportsController');
+    Route::resource('/facts', 'FactsController');
     Route::get('/photos/create/{id}', 'PhotosController@create')->name('photos.create');
     Route::post('/photos/store', 'PhotosController@store')->name('photos.store');
     Route::get('/photos/{id}', 'PhotosController@show')->name('photos.show');
