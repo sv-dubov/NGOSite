@@ -67,7 +67,7 @@
                             <div class="blog-detail">
                                 <small>{{$post->getDate()}}</small>
                                 <h4><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h4>
-                                <p> {!!$post->description!!}</p>
+                                <p>{!!$post->description!!}</p>
                                 <div class="link">
                                     <a href="{{route('post.show', $post->slug)}}">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
                                 </div>
@@ -95,7 +95,7 @@
                             <div class="blog-detail">
                                 <small>{{$article->getDate()}}</small>
                                 <h4><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h4>
-                                <p> {!!$article->description!!}</p>
+                                <p>{!!$article->description!!}</p>
                                 <div class="link">
                                     <a href="{{route('article.show', $article->slug)}}">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
                                 </div>
@@ -233,41 +233,23 @@
             </div>
         </div>
     </section>
-    <!-- ################# Events Start Here#######################--->
+    <!-- ################# Recent Projects Start Here #######################--->
     <section class="events">
         <div class="container">
             <div class="session-title row">
-                <h2>Popular Causes</h2>
-                <p>We are a non-profital & Charity raising money for child education</p>
+                <h2>Recent Projects</h2>
+                <p>The last three projects of our team</p>
             </div>
             <div class="event-ro row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="event-box">
-                        <img src="/images/events/image_08.jpg" alt="">
-                        <h4>Child Education in Africa</h4>
-                        <p class="raises"><span>Raised : $34,425</span> / $500,000 </p>
-                        <p class="desic">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        <button class="btn btn-success btn-sm">Donate Now</button>
+                @foreach($projects as $project)
+                    <div class="col-md-4 col-sm-6">
+                        <div class="event-box">
+                            <img src="{{$project->getImage()}}" width="200" height="200" alt="">
+                            <h4>{{$project->title}}</h4>
+                            <p>{!!$project->description!!}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="event-box">
-                        <img src="/images/events/image_06.jpg" alt="">
-                        <h4>Child Education in Africa</h4>
-                        <p class="raises"><span>Raised : $34,425</span> / $500,000 </p>
-                        <p class="desic">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        <button class="btn btn-success btn-sm">Donate Now</button>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="event-box">
-                        <img src="/images/events/image_04.jpg" alt="">
-                        <h4>Child Education in Africa</h4>
-                        <p class="raises"><span>Raised : $34,425</span> / $500,000 </p>
-                        <p class="desic">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        <button class="btn btn-success btn-sm">Donate Now</button>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

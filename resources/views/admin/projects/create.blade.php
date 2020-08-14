@@ -34,6 +34,11 @@
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="title"
                                    value="{{old('title')}}">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Cover image</label>
+                            <input type="file" id="exampleInputFile" name="cover_image">
+                            <p class="help-block">Some message about image formats...</p>
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">

@@ -23,10 +23,11 @@ class ProjectsController extends Controller
     {
         $this->validate($request, [
             'year' =>'required',
-            'title' => 'required'
+            'title' => 'required',
+            'cover_image' => 'nullable|image|max:2048'
         ]);
-
         $project = Project::add($request->all());
+        $project->uploadImage($request->file('cover_image'));
         return redirect()->route('projects.index');
     }
 
@@ -40,11 +41,13 @@ class ProjectsController extends Controller
     {
         $this->validate($request, [
             'year' =>'required',
-            'title' => 'required'
+            'title' => 'required',
+            'cover_image' => 'nullable|image|max:2048'
         ]);
 
         $project = Project::find($id);
         $project->edit($request->all());
+        $project->uploadImage($request->file('cover_image'));
         return redirect()->route('projects.index');
     }
 

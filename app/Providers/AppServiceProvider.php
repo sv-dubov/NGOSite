@@ -9,6 +9,7 @@ use App\Category;
 use App\Article;
 use App\Videopost;
 use App\Facts;
+use App\Project;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -47,6 +48,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('articles', Article::orderBy('date', 'desc')->take(3)->get());
             $view->with('videoposts', Videopost::orderBy('date', 'desc')->take(3)->get());
             $view->with('members', Member::all());
+            $view->with('projects', Project::orderBy('created_at', 'desc')->take(3)->get());
             $view->with('facts', Facts::all());
         });
 
