@@ -31,11 +31,11 @@
                                 {!!$post->author!!}
                             </div>
                             </br>
-                            <div class="tag">
-                                @foreach($post->tags as $tag)
+                            @foreach($post->tags as $tag)
+                                <div class="tag">
                                     <a href="{{route('tag.show', $tag->slug)}}">{{$tag->title}}</a>
-                                @endforeach
-                            </div>
+                                </div>
+                            @endforeach
                             <div class="social-share">
                                 <small>{{$post->getDate()}}</small>
                                 <ul class="text-center pull-right">
