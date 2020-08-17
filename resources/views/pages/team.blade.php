@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team page</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" type="text/css" href="/css/team.css" />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NGO Website</title>
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/fav.jpg">
+    <link rel="stylesheet" href="/css/team.css">
 </head>
 
 <body>
+<!--navbar start-->
+@include('partials._navbar')
 <!-- Team -->
 <section id="team" class="pb-5">
     <div class="container">
@@ -72,4 +73,7 @@
     </div>
 </section>
 <!-- Team -->
+<!--footer start-->
+@include('partials._footer')
 </body>
+</html>
