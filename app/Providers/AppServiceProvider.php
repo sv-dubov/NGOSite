@@ -4,12 +4,12 @@ namespace App\Providers;
 
 use App\Member;
 use App\Post;
-use App\Comment;
 use App\Category;
 use App\Article;
 use App\Videopost;
 use App\Facts;
 use App\Project;
+use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -50,6 +50,10 @@ class AppServiceProvider extends ServiceProvider
             $view->with('members', Member::all());
             $view->with('projects', Project::orderBy('created_at', 'desc')->take(3)->get());
             $view->with('facts', Facts::all());
+        });
+
+        view()->composer('admin.layout', function($view){
+            $view->with('users', User::all());
         });
     }
 }
