@@ -21,8 +21,6 @@ Route::get('/posts', 'PostController@index');
 Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
 Route::get('/posts/tag/{slug}', 'PostController@tag')->name('tag.show');
 Route::get('/posts/category/{slug}', 'PostController@category')->name('category.show');
-Route::post('/subscribe', 'SubsController@subscribe');
-Route::get('/verify/{token}', 'SubsController@verify');
 Route::get('/team', 'TeamController@index');
 Route::get('/projects', 'ProjectController@index');
 Route::get('/reports', 'ReportController@index');
@@ -43,7 +41,6 @@ Route::group(['middleware'	=>	'auth'], function(){
     Route::get('/profile', 'ProfileController@index');
 	Route::post('/profile', 'ProfileController@store');
 	Route::get('/logout', 'AuthController@logout');
-    Route::post('/comment', 'CommentsController@store');
 });
 
 Route::group(['middleware'	=>	'guest'], function(){
@@ -61,10 +58,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
 	Route::resource('/posts', 'PostsController');
     Route::resource('/articles', 'ArticlesController');
     Route::resource('/videoposts', 'VideopostsController');
-    Route::get('/comments', 'CommentsController@index');
-    Route::get('/comments/toggle/{id}', 'CommentsController@toggle');
-    Route::delete('/comments/{id}/destroy', 'CommentsController@destroy')->name('comments.destroy');
-    Route::resource('/subscribers', 'SubscribersController');
     Route::resource('/about', 'AboutController');
     Route::resource('/members', 'MembersController');
     Route::resource('/albums', 'AlbumsController');

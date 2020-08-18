@@ -51,9 +51,5 @@ class AppServiceProvider extends ServiceProvider
             $view->with('projects', Project::orderBy('created_at', 'desc')->take(3)->get());
             $view->with('facts', Facts::all());
         });
-
-        view()->composer('admin._sidebar', function($view){
-            $view->with('newCommentsCount', Comment::where('status', 0)->count());
-        });
     }
 }

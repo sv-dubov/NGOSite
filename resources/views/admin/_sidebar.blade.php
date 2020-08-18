@@ -16,14 +16,5 @@
     <li><a href="{{route('projects.index')}}"><i class="fa fa-database"></i> <span>Projects</span></a></li>
     <li><a href="{{route('reports.index')}}"><i class="fa fa-file-archive-o"></i> <span>Reports</span></a></li>
     <li><a href="{{route('facts.index')}}"><i class="fa fa-newspaper-o"></i> <span>Facts</span></a></li>
-    <li>
-        <a href="/admin/comments">
-            <i class="fa fa-commenting"></i> <span>Comments</span>
-            <span class="pull-right-container">
-                <small class="label pull-right bg-red">{{$newCommentsCount}}</small>
-            </span>
-        </a>
-    </li>
     <li><a href="{{route('users.index')}}"><i class="fa fa-users"></i> <span>Users</span></a></li>
-    <li><a href="{{route('subscribers.index')}}"><i class="fa fa-user-plus"></i> <span>Subscribers</span></a></li>
 </ul>
