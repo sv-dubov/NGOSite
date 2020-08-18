@@ -6,8 +6,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Add article
-                <small>good words...</small>
+                Add video
             </h1>
         </section>
         <!-- Main content -->

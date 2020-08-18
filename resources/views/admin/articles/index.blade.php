@@ -6,13 +6,10 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
-                <small>it all starts here</small>
+                Welcome!
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
             </ol>
         </section>
         <!-- Main content -->
@@ -46,10 +43,6 @@
                                 <td>{{$article->getCategoryTitle()}}</td>
                                 <td>{{$article->status}}</td>
                                 <td>{{$article->created_at}}</td>
-                            <!-- <td>{{$article->getTagsTitles()}}</td>
-                            <td>
-                                <img src="{{$article->getImage()}}" alt="" width="100">
-                            </td> -->
                                 <td>
                                     <a href="{{route('articles.edit', $article->id)}}" class="fa fa-pencil"></a>
                                     {{Form::open(['route'=>['articles.destroy', $article->id], 'method'=>'delete'])}}

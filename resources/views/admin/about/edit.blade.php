@@ -7,7 +7,6 @@
         <section class="content-header">
             <h1>
                 Edit about
-                <small>good words...</small>
             </h1>
         </section>
         <!-- Main content -->
@@ -59,5 +58,4 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
 @endsection

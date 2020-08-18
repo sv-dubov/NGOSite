@@ -7,7 +7,6 @@
         <section class="content-header">
             <h1>
                 Edit video
-                <small>good words...</small>
             </h1>
         </section>
         <!-- Main content -->

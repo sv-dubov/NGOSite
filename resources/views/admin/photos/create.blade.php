@@ -6,8 +6,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Add album
-                <small>good words...</small>
+                Add photo
             </h1>
         </section>
         <!-- Main content -->
