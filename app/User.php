@@ -36,11 +36,6 @@ class User extends Authenticatable
         return $this->hasMany(Article::class);
     }
 
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
-    }
-
     public static function add($fields)
     {
         $user = new static;

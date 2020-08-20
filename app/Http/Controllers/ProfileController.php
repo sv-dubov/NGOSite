@@ -32,6 +32,6 @@ class ProfileController extends Controller
         $user->generatePassword($request->get('password'));
         $user->uploadAvatar($request->file('avatar'));
 
-        return redirect()->back()->with('status', 'Profile updated successfuly');
+        return redirect()->back()->with('status', 'Profile updated successfully');
     }
 }

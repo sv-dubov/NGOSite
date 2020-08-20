@@ -45,7 +45,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                @foreach($users as $user)
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <!-- Messages: style can be found in dropdown.less-->
@@ -77,7 +76,6 @@
                         </li>
                     </ul>
                 </div>
-                @endforeach
             </nav>
         </header>
         <!-- =============================================== -->
@@ -87,7 +85,6 @@
             <section class="sidebar">
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
-                    @foreach($users as $user)
                     <div class="pull-left image">
                         <img src="{{$user->getImage()}}" class="img-circle" alt="">
                     </div>
@@ -95,8 +92,8 @@
                         <p>{{$user->name}}</p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
-                    @endforeach
                 </div>
+                </br>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 @include('admin._sidebar')
             </section>

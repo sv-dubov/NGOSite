@@ -18,12 +18,11 @@ class AuthController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:users',
             'email'    => 'required|email|unique:users',
-            'password' => 'required'
+            'password' => 'required|min:8|'
+            //'password' => 'required|min:8|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/'
         ]);
-
         $user = User::add($request->all());
         $user->generatePassword($request->get('password'));
-
         return redirect('/login');
     }
 
@@ -45,7 +44,6 @@ class AuthController extends Controller
         ])) {
             return redirect('/');
         }
-
         return redirect()->back()->with('status', 'Wrong login or password');
     }
 
