@@ -13,7 +13,7 @@
                                     <div class="post-thumb">
                                         <a href="{{route('videos.show', $videopost->slug)}}"><img src="{{$videopost->getImage()}}" alt=""></a>
                                         <a href="{{route('videos.show', $videopost->slug)}}" class="post-thumb-overlay text-center">
-                                            <div class="text-uppercase text-center">View Video</div>
+                                            <div class="text-uppercase text-center">View video</div>
                                         </a>
                                     </div>
                                     <div class="post-content">

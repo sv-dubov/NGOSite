@@ -13,7 +13,7 @@
                             <div class="post-thumb">
                                 <a href="{{route('post.show', $post->slug)}}"><img src="{{$post->getImage()}}" alt=""></a>
                                 <a href="{{route('post.show', $post->slug)}}" class="post-thumb-overlay text-center">
-                                    <div class="text-uppercase text-center">View Post</div>
+                                    <div class="text-uppercase text-center">View news</div>
                                 </a>
                             </div>
                             <div class="post-content">
@@ -43,5 +43,4 @@
     </div>
 </div>
 <!-- end main content-->
-
 @endsection
