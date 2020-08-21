@@ -19,7 +19,7 @@
                             <div class="entry-header text-center">
                                 @if($article->hasCategory())
                                     <h6>
-                                        <a href="{{route('category.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
+                                        <a href="{{route('acategory.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
                                 <h1 class="entry-title">{{$article->title}}</h1>
@@ -33,7 +33,7 @@
                             </br>
                             @foreach($article->tags as $tag)
                                 <div class="tag">
-                                    <a href="{{route('tag.show', $tag->slug)}}">{{$tag->title}}</a>
+                                    <a href="{{route('atag.show', $tag->slug)}}">{{$tag->title}}</a>
                                 </div>
                             @endforeach
                             <div class="social-share">
@@ -52,7 +52,7 @@
                         <div class="col-md-6">
                             @if($article->hasPrevious())
                                 <div class="single-blog-box">
-                                    <a href="{{route('articles.show', $article->getPrevious()->slug)}}">
+                                    <a href="{{route('article.show', $article->getPrevious()->slug)}}">
                                         <img src="{{$article->getPrevious()->getImage()}}" alt="">
                                         <div class="overlay">
                                             <div class="promo-text">
@@ -67,7 +67,7 @@
                         <div class="col-md-6">
                             @if($article->hasNext())
                                 <div class="single-blog-box">
-                                    <a href="{{route('articles.show', $article->getNext()->slug)}}">
+                                    <a href="{{route('article.show', $article->getNext()->slug)}}">
                                         <img src="{{$article->getNext()->getImage()}}" alt="">
                                         <div class="overlay">
                                             <div class="promo-text">

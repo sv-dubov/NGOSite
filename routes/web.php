@@ -19,8 +19,8 @@ Route::get('/', 'HomeController@index');
 //Route::get('/category/{slug}', 'HomeController@category')->name('category.show');
 Route::get('/posts', 'PostController@index');
 Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
-Route::get('/posts/tag/{slug}', 'PostController@tag')->name('tag.show');
-Route::get('/posts/category/{slug}', 'PostController@category')->name('category.show');
+Route::get('/posts/tag/{slug}', 'PostController@tag')->name('ptag.show');
+Route::get('/posts/category/{slug}', 'PostController@category')->name('pcategory.show');
 Route::get('/team', 'TeamController@index');
 Route::get('/projects', 'ProjectController@index');
 Route::get('/reports', 'ReportController@index');
@@ -30,12 +30,12 @@ Route::get('/gallery/{slug}', 'GalleryController@show')->name('gallery.show');
 Route::get('/photo/{id}', 'GalleryController@photo')->name('gallery.photo');
 Route::get('/videos', 'VideoController@index');
 Route::get('/videos/{slug}', 'VideoController@show')->name('videos.show');
-Route::get('/videos/tag/{slug}', 'VideoController@tag')->name('tag.show');
-Route::get('/videos/category/{slug}', 'VideoController@category')->name('category.show');
+Route::get('/videos/tag/{slug}', 'VideoController@tag')->name('vtag.show');
+Route::get('/videos/category/{slug}', 'VideoController@category')->name('vcategory.show');
 Route::get('/articles', 'ArticleController@index');
 Route::get('/articles/{slug}', 'ArticleController@show')->name('article.show');
-Route::get('/articles/tag/{slug}', 'ArticleController@tag')->name('tag.show');
-Route::get('/articles/category/{slug}', 'ArticleController@category')->name('category.show');
+Route::get('/articles/tag/{slug}', 'ArticleController@tag')->name('atag.show');
+Route::get('/articles/category/{slug}', 'ArticleController@category')->name('acategory.show');
 
 Route::group(['middleware'	=>	'auth'], function(){
     Route::get('/profile', 'ProfileController@index');

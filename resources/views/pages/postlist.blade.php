@@ -13,23 +13,20 @@
                             <div class="post-thumb">
                                 <a href="{{route('post.show', $post->slug)}}"><img src="{{$post->getImage()}}" alt=""></a>
                                 <a href="{{route('post.show', $post->slug)}}" class="post-thumb-overlay text-center">
-                                    <div class="text-uppercase text-center">View news</div>
+                                    <div class="text-center">View news</div>
                                 </a>
                             </div>
                             <div class="post-content">
-                                <header class="entry-header text-center text-uppercase">
+                                <div class="entry-header text-center">
                                     @if($post->hasCategory())
                                     <h6>
-                                        <a href="{{route('category.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a>
+                                        <a href="{{route('pcategory.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a>
                                     </h6>
                                     @endif
                                     <h1 class="entry-title"><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h1>
-                                </header>
+                                </div>
                                 <div class="entry-content">
-                                    {!!$post->description!!}
-                                    <div class="social-share">
-                                        <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
-                                    </div>
+                                    <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                                 </div>
                             </div>
                         </article>
@@ -38,7 +35,7 @@
                 </div>
                 {{$posts->links()}}
             </div>
-            @include('pages._sidebar')
+            {{--@include('pages._sidebar')--}}
         </div>
     </div>
 </div>

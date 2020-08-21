@@ -13,22 +13,20 @@
                                     <div class="post-thumb">
                                         <a href="{{route('videos.show', $videopost->slug)}}"><img src="{{$videopost->getImage()}}" alt=""></a>
                                         <a href="{{route('videos.show', $videopost->slug)}}" class="post-thumb-overlay text-center">
-                                            <div class="text-uppercase text-center">View video</div>
+                                            <div class="text-center">View video</div>
                                         </a>
                                     </div>
                                     <div class="post-content">
-                                        <header class="entry-header text-center text-uppercase">
+                                        <div class="entry-header text-center">
                                             @if($videopost->hasCategory())
                                                 <h6>
-                                                    <a href="{{route('category.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
+                                                    <a href="{{route('vcategory.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
                                                 </h6>
                                             @endif
                                             <h1 class="entry-title"><a href="{{route('videos.show', $videopost->slug)}}">{{$videopost->title}}</a></h1>
-                                        </header>
+                                        </div>
                                         <div class="entry-content">
-                                            <div class="social-share">
-                                                <span class="social-share-title pull-left text-capitalize">{{$videopost->getDate()}}</span>
-                                            </div>
+                                            <span class="social-share-title pull-left text-capitalize">{{$videopost->getDate()}}</span>
                                         </div>
                                     </div>
                                 </article>
@@ -37,7 +35,7 @@
                     </div>
                     {{$videoposts->links()}}
                 </div>
-                @include('pages._sidebar')
+                {{--@include('pages._sidebar')--}}
             </div>
         </div>
     </div>

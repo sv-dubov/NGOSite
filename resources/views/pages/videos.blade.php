@@ -18,7 +18,7 @@
                                 <div class="entry-header text-center">
                                     @if($videopost->hasCategory())
                                         <h6>
-                                            <a href="{{route('category.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
+                                            <a href="{{route('vcategory.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
                                         </h6>
                                     @endif
                                     <h1 class="entry-title"><a href="{{route('videos.show', $videopost->slug)}}">{{$videopost->title}}</a></h1>

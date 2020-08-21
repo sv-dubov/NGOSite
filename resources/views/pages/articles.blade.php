@@ -18,7 +18,7 @@
                                 <div class="entry-header text-center">
                                     @if($article->hasCategory())
                                         <h6>
-                                            <a href="{{route('category.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
+                                            <a href="{{route('acategory.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
                                         </h6>
                                     @endif
                                     <h1 class="entry-title"><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h1>

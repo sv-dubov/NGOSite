@@ -19,7 +19,7 @@
                             <div class="entry-header text-center">
                                 @if($post->hasCategory())
                                     <h6>
-                                        <a href="{{route('category.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a>
+                                        <a href="{{route('pcategory.show', $post->category->slug)}}"> {{$post->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
                                 <h1 class="entry-title">{{$post->title}}</h1>
@@ -33,7 +33,7 @@
                             </br>
                             @foreach($post->tags as $tag)
                                 <div class="tag">
-                                    <a href="{{route('tag.show', $tag->slug)}}">{{$tag->title}}</a>
+                                    <a href="{{route('ptag.show', $tag->slug)}}">{{$tag->title}}</a>
                                 </div>
                             @endforeach
                             <div class="social-share">
@@ -87,5 +87,4 @@
     </div>
     </br>
     <!-- end main content-->
-
 @endsection

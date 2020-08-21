@@ -19,7 +19,7 @@
                             <div class="entry-header text-center">
                                 @if($videopost->hasCategory())
                                     <h6>
-                                        <a href="{{route('category.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
+                                        <a href="{{route('vcategory.show', $videopost->category->slug)}}"> {{$videopost->getCategoryTitle()}}</a>
                                     </h6>
                                 @endif
                                 <h1 class="entry-title">{{$videopost->title}}</h1>
@@ -33,7 +33,7 @@
                             </br>
                             @foreach($videopost->tags as $tag)
                                 <div class="tag">
-                                    <a href="{{route('tag.show', $tag->slug)}}">{{$tag->title}}</a>
+                                    <a href="{{route('vtag.show', $tag->slug)}}">{{$tag->title}}</a>
                                 </div>
                             @endforeach
                             <div class="social-share">

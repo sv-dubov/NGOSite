@@ -13,14 +13,14 @@
                                     <div class="post-thumb">
                                         <a href="{{route('article.show', $article->slug)}}"><img src="{{$article->getImage()}}" alt=""></a>
                                         <a href="{{route('article.show', $article->slug)}}" class="post-thumb-overlay text-center">
-                                            <div class="text-uppercase text-center">View Article</div>
+                                            <div class="text-center">View article</div>
                                         </a>
                                     </div>
                                     <div class="post-content">
-                                        <div class="entry-header text-center text-uppercase">
+                                        <div class="entry-header text-center">
                                             @if($article->hasCategory())
                                                 <h6>
-                                                    <a href="{{route('category.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
+                                                    <a href="{{route('acategory.show', $article->category->slug)}}"> {{$article->getCategoryTitle()}}</a>
                                                 </h6>
                                             @endif
                                             <h1 class="entry-title"><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h1>
