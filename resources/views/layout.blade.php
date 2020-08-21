@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="/images/fav.jpg">
     <!-- common css -->
     <link rel="stylesheet" href="/css/front2.css">
+    <link rel="stylesheet" href="/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/plugins/slider/css/owl.theme.default.css">
     @yield('assets')
 </head>
 
@@ -26,7 +28,7 @@
                             <span>|</span></li>
                         <li>
                             <i class="fas fa-phone-volume"></i>
-                            +050 101 76 89</li>
+                            +38 050 101 76 89</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 folouws">
@@ -175,6 +177,8 @@
 </div>
 <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 <!-- js files -->
+<script src="/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="/plugins/slider/js/owl.carousel.min.js"></script>
 <script src="/js/front2.js"></script>
 @stack('scripts')
 </body>
