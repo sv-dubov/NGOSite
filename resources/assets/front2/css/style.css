@@ -784,7 +784,6 @@ header {
 .gallery_product {
   margin-bottom: 30px; }
 
-
 /* =============== post css ===================*/
 .main-content {
   margin-top: 50px;
@@ -862,7 +861,6 @@ a.more-link:hover {
 .post-content {
   padding: 0 43px;
   overflow: hidden;
-
 }
 
 .post .social-share {
@@ -918,7 +916,6 @@ a.more-link:hover {
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
-
 }
 
 .post-thumb-overlay div {
@@ -940,7 +937,6 @@ a.more-link:hover {
 }
 
 /*single blog*/
-
 .single-blog-box {
   position: relative;
   text-align: center;
@@ -1007,7 +1003,6 @@ a.more-link:hover {
 }
 
 /* =============== tag css ===================*/
-
 .tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
@@ -1055,7 +1050,6 @@ a.more-link:hover {
 }
 
 /* =============== Social share ===================*/
-
 .social-share ul li {
   list-style: none;
   display: inline-block;
@@ -1072,7 +1066,6 @@ a.more-link:hover {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #C2C2C2;
-
 }
 
 .widget .social-share ul li a i {
@@ -1086,7 +1079,6 @@ a.more-link:hover {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #C2C2C2;
-
 }
 
 .social-share ul li a i:hover {
@@ -1096,7 +1088,6 @@ a.more-link:hover {
 }
 
 /*================== owl carousel ==============*/
-
 #widget-feature:hover .owl-controls .owl-buttons .owl-prev {
   left: 10px;
 }
@@ -1150,6 +1141,12 @@ a.more-link:hover {
     font-weight: 600;
 }
 
+.pagination li {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
     margin-left: 0;
@@ -1163,7 +1160,7 @@ a.more-link:hover {
 .pagination > li > span:hover {
     z-index: 2;
     color: #ffffff;
-    background-color: #3cc88f;
+    background-color: #5fbfc8;
 }
 
 .pagination > li:last-child > a,
@@ -1180,11 +1177,10 @@ a.more-link:hover {
 .pagination > .active > span:hover {
     z-index: 3;
     color: #fff;
-    background-color: #3cc88f;
+    background-color: #5fbfc8;
 }
 
 /* =============== Scroll Back to Top Widget ===================*/
-
 #back2Top {
     width: 40px;
     line-height: 40px;
@@ -1210,6 +1206,5 @@ a.more-link:hover {
     background-color: #3cc88f;
     color: #000;
 }
-
 
 /*# sourceMappingURL=style.css.map */

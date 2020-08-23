@@ -157,7 +157,7 @@
     </section>
 
     <!--  ************************* About Us Starts Here ************************** -->
-    <div class="about-us container-fluid">
+    {{--<div class="about-us container-fluid">
         <div class="container">
             <div class="row natur-row no-margin w-100">
                 <div class="text-part col-md-6">
@@ -209,9 +209,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     <!-- ################# Mission Vision Start Here #######################--->
-    <section class="container-fluid mission-vision">
+    {{--<section class="container-fluid mission-vision">
         <div class="container">
             <div class="row mission">
                 <div class="col-md-6 mv-det">
@@ -232,7 +232,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
     <!-- ################# Recent Projects Start Here #######################--->
     <section class="events">
         <div class="container">
