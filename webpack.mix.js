@@ -70,9 +70,8 @@ mix.styles([
     'resources/assets/front2/css/bootstrap.min.css',
     'resources/assets/front2/css/all.min.css',
     'resources/assets/front2/css/animate.min.css',
-    'resources/assets/front2/css/fontawsom-all.min',
-/*    'resources/assets/front2/plugins/slider/css/owl.carousel.min.css',
-    'resources/assets/front2/plugins/slider/css/owl.theme.default.css',*/
+    'resources/assets/front2/plugins/slider/css/owl.carousel.min.css',
+    'resources/assets/front2/plugins/slider/css/owl.theme.default.css',
     'resources/assets/front2/css/style.css',
 ],'public/css/front2.css');
 
@@ -82,10 +81,10 @@ mix.styles([
 
 mix.scripts([
     'resources/assets/front2/js/jquery-3.2.1.min.js',
-    'resources/assets/front2/js/bootstrap.min.js',
     'resources/assets/front2/js/popper.min.js',
-/*    'resources/assets/front2/plugins/scroll-fixed/jquery-scrolltofixed-min.js',
-    'resources/assets/front2/plugins/slider/js/owl.carousel.min.js',*/
+    'resources/assets/front2/js/bootstrap.min.js',
+    'resources/assets/front2/plugins/scroll-fixed/jquery-scrolltofixed-min.js',
+    'resources/assets/front2/plugins/slider/js/owl.carousel.min.js',
     'resources/assets/front2/js/scripts.js',
     'resources/assets/front2/js/scroll.js'
 ], 'public/js/front2.js');

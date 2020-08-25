@@ -1,13 +1,5 @@
 <div class="col-md-4" data-sticky_column>
     <div class="primary-sidebar">
-        <aside class="widget news-letter">
-            <h3 class="widget-title text-center">Get Newsletter</h3>
-            <form action="/subscribe" method="post">
-                {{csrf_field()}}
-                <input type="email" name="email" placeholder="Your e-mail address">
-                <input type="submit" value="Subscribe Now" class="text-center btn btn-subscribe">
-            </form>
-        </aside>
         <aside class="widget">
             <h3 class="widget-title text-center">Articles</h3>
             @foreach($featuredArticles as $article)
@@ -56,7 +48,7 @@
             </div>
             @endforeach
         </aside>
-        <aside class="widget border pos-padding">
+{{--        <aside class="widget border pos-padding">
             <h3 class="widget-title text-center">Categories</h3>
             <ul>
                 @foreach($categories as $category)
@@ -66,6 +58,14 @@
                 </li>
                 @endforeach
             </ul>
-        </aside>
+        </aside>--}}
+{{--        <aside class="widget news-letter">
+            <h3 class="widget-title text-center">Get Newsletter</h3>
+            <form action="/subscribe" method="post">
+                {{csrf_field()}}
+                <input type="email" name="email" placeholder="Your e-mail address">
+                <input type="submit" value="Subscribe Now" class="text-center btn btn-subscribe">
+            </form>
+        </aside>--}}
     </div>
 </div>
