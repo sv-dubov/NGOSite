@@ -9,10 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/fav.jpg">
     <!-- common css -->
-    <link rel="stylesheet" href="css/front/bootstrap.min.css">
-    <link rel="stylesheet" href="css/front/all.min.css">
-    <link rel="stylesheet" href="css/front/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/front2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/front2.css" />
     @yield('assets')
 </head>
 
@@ -178,12 +175,8 @@
 </div>
 <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 <!-- js files -->
-<script src="js/front/jquery-3.2.1.min.js"></script>
-<script src="js/front/popper.min.js"></script>
-<script src="js/front/bootstrap.min.js"></script>
-<script src="js/front/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-{{--<script src="/public/js/front/plugins/slider/js/owl.carousel.min.js"></script>--}}
-<script src="js/front2.js"></script>
+<script src="/js/front2.js"></script>
+<script src="/js/carousel.js"></script>
 @stack('scripts')
 </body>
 

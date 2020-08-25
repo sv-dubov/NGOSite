@@ -128,7 +128,7 @@ img {
 a {
   text-decoration: none;
   outline: none;
-  color: #444; }
+  color: #27805b; }
 
 a:hover {
   color: #444; }
@@ -464,7 +464,7 @@ header {
   padding: 5px !important; }
 
 /* =================== Slider Style Starts Here =================== */
-/*.slider {
+.slider {
     position: relative;
     width: 90%;
     text-align: center;
@@ -579,7 +579,7 @@ header {
     height: 14px;
     margin: 0px 0px 10px 10px;
     filter: Alpha(Opacity=50);
-    !*IE7 fix*!
+    /*IE7 fix*/
     opacity: 0.8;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -596,14 +596,14 @@ header {
 .slider .owl-controls.clickable .owl-page:hover span {
     background-color: #fff;
     filter: Alpha(Opacity=100);
-    !*IE7 fix*!
+    /*IE7 fix*/
     opacity: 1;
 }
 
 .slider .col-lg-offset-2 {
     float: none;
     margin: auto;
-}*/
+}
 
 /* ===================================== About CSS ================================== */
 .about-us {
