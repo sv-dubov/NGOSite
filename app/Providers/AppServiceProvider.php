@@ -9,7 +9,7 @@ use App\Article;
 use App\Videopost;
 use App\Facts;
 use App\Project;
-use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -52,8 +52,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('facts', Facts::all());
         });
 
-        view()->composer('admin.layout', function($view){
-            $view->with('users', User::all());
+        view()->composer('admin.*', function($view){
+            $view->with('user', Auth::user());
         });
     }
 }
