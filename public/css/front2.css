@@ -1335,8 +1335,12 @@ a.more-link:hover {
     padding-top: 0;
 }
 
+.widget-title {
+    color: #3cc88f
+}
+
 .p-content a {
-    font-size: 12px;
+    font-size: 16px;
     color: #333333;
     text-decoration: none;
     display: block;
@@ -1345,7 +1349,7 @@ a.more-link:hover {
 }
 
 .p-content a:hover {
-    color: #00BFF3
+    color: #27805b
 }
 
 .p-content span {

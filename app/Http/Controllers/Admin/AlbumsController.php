@@ -12,7 +12,7 @@ class AlbumsController extends Controller
     {
         $albums = Album::all();
         //$albums = Album::with('Photos')->get();
-        return view('albums.index')->with('albums', $albums);
+        return view('admin.albums.index', ['albums' => $albums]);
     }
 
     public function create()
