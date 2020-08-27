@@ -5,7 +5,7 @@
     <div class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     @foreach($articles as $article)
                         <article class="post">
                             <div class="post-thumb">
@@ -44,5 +44,6 @@
             </div>
         </div>
     </div>
+    </br>
     <!-- end main content-->
 @endsection

@@ -177,7 +177,6 @@
 <!-- js files -->
 <script src="/js/front2.js"></script>
 <script src="/js/carousel.js"></script>
-{{--<script src="/js/sidebar.js"></script>--}}
 @stack('scripts')
 </body>
 

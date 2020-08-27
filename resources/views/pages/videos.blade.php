@@ -5,7 +5,7 @@
     <div class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     @foreach($videoposts as $videopost)
                         <article class="post">
                             <div class="post-thumb">

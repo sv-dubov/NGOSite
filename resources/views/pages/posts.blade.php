@@ -5,7 +5,7 @@
     <div class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     @foreach($posts as $post)
                         <article class="post">
                             <div class="post-thumb">
@@ -41,7 +41,6 @@
                     @endforeach
                     {{$posts->links()}}
                 </div>
-                @include('pages._sidebar')
             </div>
         </div>
     </div>

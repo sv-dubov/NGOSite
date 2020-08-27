@@ -35,9 +35,10 @@
                 </div>
                 {{$posts->links()}}
             </div>
-            {{--@include('pages._sidebar')--}}
+            @include('pages._sidebar')
         </div>
     </div>
 </div>
+</br>
 <!-- end main content-->
 @endsection

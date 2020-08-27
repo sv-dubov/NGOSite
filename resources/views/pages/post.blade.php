@@ -5,7 +5,7 @@
     <div class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-8">
                     @if(session('status'))
                         <div class="alert alert-danger">
                             {{session('status')}}
@@ -82,6 +82,7 @@
                     </div>
                     <!--blog next previous end-->
                 </div>
+                @include('pages._sidebar')
             </div>
         </div>
     </div>

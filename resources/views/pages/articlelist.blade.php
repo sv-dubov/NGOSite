@@ -37,8 +37,10 @@
                     </div>
                     {{$articles->links()}}
                 </div>
+                @include('pages._sidebar')
             </div>
         </div>
     </div>
+    </br>
     <!-- end main content-->
 @endsection
