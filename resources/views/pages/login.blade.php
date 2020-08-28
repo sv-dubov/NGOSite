@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
     <!--main content start-->
     <div class="main-content">
         <div class="container">
@@ -20,16 +19,21 @@
                         <form class="form-horizontal contact-form" role="form" method="post" action="/login">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <div class="col-md-12">
+                                <div class="col-md-8">
                                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" value="{{old('email')}}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12">
+                                <div class="col-md-8">
                                     <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-sm btn-success">Login</button>
+                            <div style="margin-top:10px;" class="row">
+                                <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                                <div class="col-sm-8">
+                                    <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     </br>
@@ -39,5 +43,4 @@
         </div>
     </div>
     <!-- end main content-->
-
 @endsection
