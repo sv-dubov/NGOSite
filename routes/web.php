@@ -25,6 +25,8 @@ Route::get('/team', 'TeamController@index');
 Route::get('/projects', 'ProjectController@index');
 Route::get('/reports', 'ReportController@index');
 Route::get('/about', 'AboutUsController@index');
+Route::get('/contact', 'ContactController@contactForm');
+Route::post('/contact', 'ContactController@contact');
 Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
 //Route::get('/gallery/{id}', 'GalleryController@show')->name('gallery.show');
 Route::get('/gallery/{slug}', 'GalleryController@show')->name('gallery.show');
@@ -65,6 +67,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/projects', 'ProjectsController');
     Route::resource('/reports', 'ReportsController');
     Route::resource('/facts', 'FactsController');
+    Route::resource('/contacts', 'ContactsController');
     Route::get('/photos/create/{id}', 'PhotosController@create')->name('photos.create');
     Route::post('/photos/store', 'PhotosController@store')->name('photos.store');
     Route::get('/photos/{id}', 'PhotosController@show')->name('photos.show');

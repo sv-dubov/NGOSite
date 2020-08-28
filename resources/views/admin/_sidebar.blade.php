@@ -17,4 +17,5 @@
     <li><a href="{{route('reports.index')}}"><i class="fa fa-file-archive-o"></i> <span>Reports</span></a></li>
     <li><a href="{{route('facts.index')}}"><i class="fa fa-newspaper-o"></i> <span>Facts</span></a></li>
     <li><a href="{{route('users.index')}}"><i class="fa fa-users"></i> <span>Users</span></a></li>
+    <li><a href="{{route('contacts.index')}}"><i class="fa fa-envelope-o"></i> <span>Messages</span></a></li>
 </ul>

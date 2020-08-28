@@ -1,0 +1,73 @@
+@extends('layout')
+
+@section('content')
+    <!--main content start-->
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="margin-top:0px;" class="row no-margin">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.44679028099!2d26.256706315466623!3d50.61881638310027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f134609e1331f%3A0x4b4b27390f364d81!2z0JrQvtC80L8n0Y7RgtC10YDQvdCwINCQ0LrQsNC00LXQvNGW0Y8g0KjQkNCT!5e0!3m2!1suk!2sua!4v1598616301039!5m2!1suk!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="row contact-rooo no-margin">
+                        <div style="padding:20px" class="col-sm-7">
+                            <h2>Send Message</h2><br>
+                            @include('admin.errors')
+                            <br>
+                            <form class="form-horizontal contact-form" role="form" method="post" action="/contact">
+                                {{csrf_field()}}
+                                <div class="form-group">
+                                    <div class="col-sm-3"><label>Enter Name</label><span class="asterisk_input"></span></div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                               value="{{old('name')}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-3"><label>E-mail Address</label><span class="asterisk_input"></span></div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="email" name="email"
+                                               placeholder="E-mail" value="{{old('email')}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-3"><label>Mobile Number</label><span> </span></div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                               placeholder="Phone" value="{{old('phone')}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-3"><label>Enter Message</label><span class="asterisk_input"></span></div>
+                                    <div class="col-md-8">
+                                        <textarea rows="5" class="form-control" id="message" name="message"
+                                                  placeholder="Enter Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <div style="margin-top:10px;" class="row">
+                                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                                    <div class="col-sm-8">
+                                        <button type="submit" class="btn btn-primary btn-sm">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-5">
+                            <div style="margin:50px" class="serv">
+                                <h2 style="margin-top:10px;">Our Address</h2>
+                                Soborna Street, <br>
+                                33, Building<br>
+                                Rivne, Ukraine<br>
+                                Phone: +38 0501017689<br>
+                                E-mail: superngo@ukr.net<br>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+                    <!--end leave comment-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main content-->
+@endsection
