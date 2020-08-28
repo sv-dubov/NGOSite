@@ -20,6 +20,6 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
         $contact = Contact::add($request->all());
-        return redirect('/contact');
+        return redirect()->back()->with('status', 'Your message was sent. We will answer you as soon, as we can.');
     }
 }
