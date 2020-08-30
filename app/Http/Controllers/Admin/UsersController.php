@@ -73,4 +73,18 @@ class UsersController extends Controller
         User::find($id)->remove();
         return redirect()->route('users.index');
     }
+
+    public function toggle($id)
+    {
+        $user = User::find($id);
+        $user->toggleAdmin();
+        return redirect()->back();
+    }
+
+    public function status($id)
+    {
+        $user = User::find($id);
+        $user->toggleBan();
+        return redirect()->back();
+    }
 }

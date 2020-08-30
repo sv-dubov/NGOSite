@@ -105,12 +105,12 @@ class User extends Authenticatable
         $this->save();
     }
 
-    public function toggleAdmin($value)
+    public function toggleAdmin()
     {
-        if ($value == null) {
-            return $this->makeNormal();
+        if ($this->is_admin == 0) {
+            return $this->makeAdmin();
         }
-        return $this->makeAdmin();
+        return $this->makeNormal();
     }
 
     public function ban()
@@ -125,9 +125,9 @@ class User extends Authenticatable
         $this->save();
     }
 
-    public function toggleBan($value)
+    public function toggleBan()
     {
-        if ($value == null) {
+        if ($this->status == User::IS_BANNED) {
             return $this->unban();
         }
         return $this->ban();

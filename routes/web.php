@@ -58,6 +58,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/categories', 'CategoriesController');
     Route::resource('/tags', 'TagsController');
     Route::resource('/users', 'UsersController');
+    Route::get('/users/toggle/{id}', 'UsersController@toggle');
+    Route::get('/users/status/{id}', 'UsersController@status');
 	Route::resource('/posts', 'PostsController');
     Route::resource('/articles', 'ArticlesController');
     Route::resource('/videoposts', 'VideopostsController');
