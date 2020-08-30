@@ -16,13 +16,14 @@
 <!-- Page Content -->
 <div class="container page-top">
     <a class="btn btn-primary" href="{{route('gallery.index')}}">Back to Albums</a>
+    <br><br>
     @if(count($album->photos) > 0)
         <?php
         $colcount = count($album->photos);
         $i = 1;
         ?>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <article class="post">
                     <div class="post-content">
                         </br>

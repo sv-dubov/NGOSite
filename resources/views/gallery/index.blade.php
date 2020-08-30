@@ -15,13 +15,13 @@
                             @if($i == $colcount)
                                 <div class='col-lg-3 col-md-4 col-xs-6 thumb'>
                                     <a href="{{route('gallery.show', $album->slug)}}"> {{--may be by album id--}}
-                                        <img class="thumbnail" src="/uploads/albums/covers/{{$album->cover_image}}" width="400" alt="{{$album->name}}">
+                                        <img class="thumbnail" src="/uploads/albums/covers/{{$album->cover_image}}" width="400" style="border-radius: 5px;" alt="{{$album->name}}">
                                     </a>
                                     <h4>{{$album->name}}</h4>
                                     @else
                                         <div class='col-lg-3 col-md-4 col-xs-6 thumb'>
                                             <a href="{{route('gallery.show', $album->slug)}}"> {{--may be by album id--}}
-                                                <img class="thumbnail" src="/uploads/albums/covers/{{$album->cover_image}}" width="400" alt="{{$album->name}}">
+                                                <img class="thumbnail" src="/uploads/albums/covers/{{$album->cover_image}}" width="400" style="border-radius: 5px;" alt="{{$album->name}}">
                                             </a>
                                             <br>
                                             <h4>{{$album->name}}</h4>
@@ -38,6 +38,7 @@
             @else
                 <p>No Albums To Display</p>
             @endif
+            <br>
         </div>
     </div>
     <!-- end main content-->
