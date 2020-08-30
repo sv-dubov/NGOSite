@@ -28,11 +28,13 @@
                     <hr>
                     <img src="/uploads/albums/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
                     <br><br>
+                    <a href="{{route('photos.edit', $photo->id)}}" class="btn btn-warning">Edit photo</a>
+                    <br><br>
                     {{Form::open(['route'=>['photos.destroy', $photo->id], 'method'=>'delete'])}}
                     <button class="btn btn-danger pull-left" onclick="return confirm('Are you sure?')" type="submit">Delete photo</button>
                     {{Form::close()}}
-                    <hr>
-                    <small>Size: {{$photo->size}}</small>
+                    <br><br>
+                    <h4>Size: {{$photo->size}}</h4>
                 </div>
                 <!-- /.box-body -->
             </div>

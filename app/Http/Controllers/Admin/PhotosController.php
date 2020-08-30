@@ -38,8 +38,26 @@ class PhotosController extends Controller
         $photo->size = $request->file('photo')->getSize();
         $photo->photo = $filenameToStore;
         $photo->save();
-
         return redirect('/admin/albums/'.$request->input('album_id'))->with('success', 'Photo Uploaded');
+    }
+
+    public function edit($id)
+    {
+        $photo = Photo::find($id);
+        return view('admin.photos.edit', ['photo'=>$photo]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'photo' => 'image|max:2048'
+        ]);
+        $photo = Photo::find($id);
+        $photo->title = $request->input('title');
+        $photo->description = $request->input('description');
+        $photo->save();
+        return redirect('/admin/albums/'.$request->input('album_id'))->with('success', 'Photo Updated');
     }
 
     public function show($id){
