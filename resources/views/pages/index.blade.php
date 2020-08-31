@@ -98,16 +98,24 @@
         <div class="container">
             <div class="session-title row">
                 <h2><a href="/team"> Meet our Team </a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est arcu. Donec hendrerit velit</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut
+                    est arcu. Donec hendrerit velit</p>
             </div>
-            <div class="row team-row">
+            <div class="row">
                 @foreach($members as $member)
-                    <div class="col-md-3 col-sm-6">
-                        <div class="single-usr">
-                            <img src="{{$member->getImage()}}" width="200" height="200" alt="">
-                            <div class="det-o">
-                                <h4>{{$member->name}}</h4>
-                                <i>{{$member->position}}</i>
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+                            <div class="team-front">
+                                <img src="{{$member->getImage()}}" class="img-fluid"/>
+                                <h3>{{$member->name}}</h3>
+                                <p>{{$member->position}}</p>
+                            </div>
+                            <div class="team-back">
+                                {{--<span>{!!$member->description!!}</span>--}}
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, Lorem
+                                ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque.</p>
                             </div>
                         </div>
                     </div>
@@ -115,6 +123,7 @@
             </div>
         </div>
     </section>
+    <br>
     <!-- ################# Achievements in Numbers Starts Here #######################--->
     <div class="stats-message">
         <div class="inner-lay">
