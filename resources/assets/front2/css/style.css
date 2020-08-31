@@ -1132,19 +1132,19 @@ a.more-link:hover {
 }
 
 .pagination > li > a, .pagination > li > span {
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: 5px;
-    line-height: 1.42857143;
-    color: #333;
-    text-decoration: none;
-    background-color: #fff;
-    border: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    font-weight: 600;
-}
+     position: relative;
+     float: left;
+     padding: 6px 12px;
+     margin-left: 5px;
+     line-height: 1.42857143;
+     color: #333;
+     text-decoration: none;
+     background-color: #fff;
+     border: 0;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;
+     font-weight: 600;
+ }
 
 .pagination li {
     display: inline;
@@ -1165,7 +1165,7 @@ a.more-link:hover {
 .pagination > li > span:hover {
     z-index: 2;
     color: #ffffff;
-    background-color: #5fbfc8;
+    background-color: #3cc88f;
 }
 
 .pagination > li:last-child > a,
@@ -1182,7 +1182,15 @@ a.more-link:hover {
 .pagination > .active > span:hover {
     z-index: 3;
     color: #fff;
-    background-color: #5fbfc8;
+    background-color: #3cc88f;
+    border-color: #3cc88f;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: green;
+    border-color: green;
 }
 
 /* =============== Scroll Back to Top Widget ===================*/
