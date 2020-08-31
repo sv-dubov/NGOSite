@@ -28,38 +28,22 @@
             <div class="col-md-4 col-sm-12">
                 <h2>Useful Links</h2>
                 <ul class="list-unstyled link-list">
-                    <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="about" href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="portfolio" href="/team">Team</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="products" href="/projects">Our projects</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="gallery" href="/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="contact" href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 map-img">
                 <h2>Contact Us</h2>
                 <address class="md-margin-bottom-40">
-                    BlueDart <br>
-                    Marthandam (K.K District) <br>
-                    Tamil Nadu, IND <br>
-                    Phone: +91 9159669599 <br>
-                    Email: <a href="mailto:info@anybiz.com" class="">info@bluedart.in</a><br>
-                    Web: <a href="smart-eye.html" class="">www.bluedart.in</a>
+                    Soborna Street, <br>
+                    33, Building<br>
+                    Rivne, Ukraine<br>
+                    Phone: +38 0501017689<br>
+                    E-mail: superngo@ukr.net<br>
                 </address>
-            </div>
-        </div>
-
-        <div class="nav-box row clearfix">
-            <div class="inner col-md-9 clearfix">
-                <ul class="footer-nav clearfix">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Servies</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="donate-link col-md-3"><a href="donate.html" class="btn btn-primary "><span class="btn-title">Donate Now</span></a>
             </div>
         </div>
     </div>
@@ -68,10 +52,10 @@
     <div class="container">
         <a href="#">2020 &copy; All Rights Reserved</a>
         <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook-f"></i></a>
-            </span>
+                <a href="https://github.com/sv-dubov"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/dubov_rv"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/sviatoslav.dubov"><i class="fab fa-facebook-f"></i></a>
+        </span>
     </div>
 </div>
 <a id="back2Top" title="Back to top" href="#">&#10148;</a>
