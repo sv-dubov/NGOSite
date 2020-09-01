@@ -36,12 +36,12 @@
                                     <a href="{{route('ptag.show', $tag->slug)}}">{{$tag->title}}</a>
                                 </div>
                             @endforeach
-                            <div class="social-share">
+                            <div class="social-share" id="social-links">
                                 <small>{{$post->getDate()}}</small>
                                 <ul class="text-center pull-right">
-                                    <li><a class="s-facebook" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a class="s-twitter" href="#"><i class="fab fa-twitter-square"></i></a></li>
-                                    <li><a class="s-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="s-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a class="s-twitter" href="https://twitter.com/intent/tweet?text=my share text&amp;url="><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a class="s-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
