@@ -14,6 +14,14 @@ class ContactsController extends Controller
         return view('admin.contacts.index', ['contacts' => $contacts]);
     }
 
+    public function show($id)
+    {
+        $contacts = Contact::find($id);
+        return view('admin.contacts.show', ['contacts'=>$contacts]);
+/*        $article = Article::where('slug', $slug)->orderBy('date', 'desc')->firstOrFail();
+        return view('pages.article', compact('article'));*/
+    }
+
     public function destroy($id)
     {
         Contact::find($id)->remove();

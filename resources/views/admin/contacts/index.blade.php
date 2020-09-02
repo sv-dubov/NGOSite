@@ -18,8 +18,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>E-mail</th>
-                            <th>Phone</th>
-                            <th>Message</th>
+                            <th>Details</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -29,8 +28,9 @@
                                 <td>{{$contact->id}}</td>
                                 <td>{{$contact->name}}</td>
                                 <td>{{$contact->email}}</td>
-                                <td>{{$contact->phone}}</td>
-                                <td>{{$contact->message}}</td>
+                                <td>
+                                    <a class="fa fa-commenting-o" href="{{route('contacts.show', $contact->id)}}"></a>
+                                </td>
                                 <td>{{Form::open(['route'=>['contacts.destroy', $contact->id], 'method'=>'delete'])}}
                                     <button onclick="return confirm('Are you sure?')" type="submit" class="delete">
                                         <i class="fa fa-remove"></i>

@@ -70,6 +70,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/reports', 'ReportsController');
     Route::resource('/facts', 'FactsController');
     Route::resource('/contacts', 'ContactsController');
+    Route::get('/contacts/{id}', 'ContactsController@show')->name('contacts.show');
     Route::get('/photos/create/{id}', 'PhotosController@create')->name('photos.create');
     Route::get('/photos/edit/{id}', 'PhotosController@edit')->name('photos.edit');
     Route::put('/photos/update/{id}', 'PhotosController@update')->name('photos.update');
