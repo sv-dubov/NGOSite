@@ -41,7 +41,11 @@
                                 <td>{{$videopost->id}}</td>
                                 <td>{{$videopost->title}}</td>
                                 <td>{{$videopost->getCategoryTitle()}}</td>
-                                <td>{{$videopost->status}}</td>
+                                @if($videopost->status == 1)
+                                    <td>Published</td>
+                                @else
+                                    <td>Not published</td>
+                                @endif
                                 <td>{{$videopost->created_at}}</td>
                                 <td>
                                     <a href="{{route('videoposts.edit', $videopost->id)}}" class="fa fa-pencil"></a>

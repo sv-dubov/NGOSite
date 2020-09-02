@@ -1,7 +1,6 @@
 @extends('admin.layout')
 
 @section('content')
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -18,12 +17,12 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listing posts</h3>
+                    <h3 class="box-title">Listing news</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="form-group">
-                        <a href="{{route('posts.create')}}" class="btn btn-success">Add</a>
+                        <a href="{{route('posts.create')}}" class="btn btn-success">Add news</a>
                     </div>
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
@@ -33,8 +32,6 @@
                             <th>Category</th>
                             <th>Status</th>
                             <th>Created at</th>
-                            <!-- <th>Tags</th> -->
-                            <!-- <th>Image</th> -->
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -44,12 +41,12 @@
                                 <td>{{$post->id}}</td>
                                 <td>{{$post->title}}</td>
                                 <td>{{$post->getCategoryTitle()}}</td>
-                                <td>{{$post->status}}</td>
+                                @if($post->status == 1)
+                                    <td>Published</td>
+                                @else
+                                    <td>Not published</td>
+                                @endif
                                 <td>{{$post->created_at}}</td>
-                            <!-- <td>{{$post->getTagsTitles()}}</td>
-                            <td>
-                                <img src="{{$post->getImage()}}" alt="" width="100">
-                            </td> -->
                                 <td>
                                     <a href="{{route('posts.edit', $post->id)}}" class="fa fa-pencil"></a>
                                     {{Form::open(['route'=>['posts.destroy', $post->id], 'method'=>'delete'])}}

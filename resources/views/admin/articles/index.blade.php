@@ -41,7 +41,11 @@
                                 <td>{{$article->id}}</td>
                                 <td>{{$article->title}}</td>
                                 <td>{{$article->getCategoryTitle()}}</td>
-                                <td>{{$article->status}}</td>
+                                @if($article->status == 1)
+                                    <td>Published</td>
+                                @else
+                                    <td>Not published</td>
+                                @endif
                                 <td>{{$article->created_at}}</td>
                                 <td>
                                     <a href="{{route('articles.edit', $article->id)}}" class="fa fa-pencil"></a>

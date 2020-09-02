@@ -18,8 +18,6 @@ class ContactsController extends Controller
     {
         $contacts = Contact::find($id);
         return view('admin.contacts.show', ['contacts'=>$contacts]);
-/*        $article = Article::where('slug', $slug)->orderBy('date', 'desc')->firstOrFail();
-        return view('pages.article', compact('article'));*/
     }
 
     public function destroy($id)
