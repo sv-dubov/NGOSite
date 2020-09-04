@@ -42,7 +42,6 @@ class AppServiceProvider extends ServiceProvider
             $view->with('recentPosts', Post::getRecentPosts());
             $view->with('articles', Article::orderBy('date', 'desc')->take(3)->get());
             $view->with('videoposts', Videopost::orderBy('date', 'desc')->take(3)->get());
-            //$view->with('categories', Category::all());
         });
 
         view()->composer('pages.index', function($view){

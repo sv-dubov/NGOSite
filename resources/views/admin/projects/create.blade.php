@@ -25,7 +25,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Year</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="year"
+                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="" name="year"
                                    value="{{old('year')}}">
                         </div>
                         <div class="form-group">
