@@ -148,8 +148,8 @@
     <section class="events">
         <div class="container">
             <div class="session-title row">
-                <h2><a href="/projects"> Recent Projects </a></h2>
-                <p>The last three projects of our team</p>
+                <h2><a href="/projects"> Our Projects </a></h2>
+                <p>The last projects of our team</p>
             </div>
             <div class="event-ro row">
                 @foreach($projects as $project)

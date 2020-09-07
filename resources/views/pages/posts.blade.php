@@ -28,12 +28,12 @@
                                         <a href="{{route('post.show', $post->slug)}}" class="more-link">Continue Reading</a>
                                     </div>
                                 </div>
-                                <div class="social-share">
+                                <div class="social-share" id="social-links">
                                     <small>{{$post->getDate()}}</small>
                                     <ul class="text-center pull-right">
-                                        <li><a class="s-facebook" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                        <li><a class="s-twitter" href="#"><i class="fab fa-twitter-square"></i></a></li>
-                                        <li><a class="s-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a class="s-facebook" href="https://www.facebook.com/sharer/sharer.php?u="><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a class="s-twitter" href="https://twitter.com/intent/tweet?url="><i class="fab fa-twitter-square"></i></a></li>
+                                        <li><a class="s-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url="><i class="fab fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

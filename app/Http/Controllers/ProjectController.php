@@ -10,7 +10,9 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $groups = Project::all()->groupBy('year');
+        $groups = Project::all()->groupBy('year')->sortByDesc(function ($product, $key) {
+            return $key;
+        });
         $groupsByYear = $groups;
         return view('pages.projects', ['groupsByYear' => $groupsByYear]);
     }

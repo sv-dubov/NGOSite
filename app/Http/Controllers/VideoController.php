@@ -6,6 +6,7 @@ use App\Category;
 use App\Videopost;
 use App\Tag;
 use Illuminate\Http\Request;
+use Jorenvh\Share\Share;
 
 class VideoController extends Controller
 {
@@ -34,5 +35,13 @@ class VideoController extends Controller
         $category = Category::where('slug', $slug)->firstOrFail();
         $videoposts = $category->videoposts()->paginate(2);
         return view('pages.videolist', ['videoposts'  =>  $videoposts]);
+    }
+
+    public function share()
+    {
+        Share::currentPage()
+            ->facebook()
+            ->twitter()
+            ->linkedin();
     }
 }

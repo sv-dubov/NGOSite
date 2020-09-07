@@ -55,9 +55,4 @@ class Project extends Model
         }
         return '/uploads/projects/covers/' . $this->cover_image;
     }
-
-    public static function getSortedProjects()
-    {
-        return self::orderBy('year','desc')->get();
-    }
 }

@@ -38,7 +38,9 @@ class PostController extends Controller
 
     public function share()
     {
-        Share::currentPage()->facebook();
-        //(new \Jorenvh\Share\Share)->currentPage()->facebook();
+        Share::currentPage()
+            ->facebook()
+            ->twitter()
+            ->linkedin();
     }
 }
