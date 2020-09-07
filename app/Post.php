@@ -248,9 +248,4 @@ class Post extends Model
     {
         return self::orderBy('created_at','desc')->take(3)->get();
     }
-
-    public function getComments()
-    {
-        return $this->comments()->where('status', 1)->get();
-    }
 }

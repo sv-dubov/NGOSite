@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 folouws">
                     <ul class="ulright">
-                        <li> <small>Folow Us </small>:</li>
+                        <li> <small>Follow Us </small>:</li>
                         <li>
                             <a href="https://www.facebook.com/sviatoslav.dubov"><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -63,7 +63,7 @@
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo">
                     <a href="/">
-                        <img src="/images/logo.jpg" alt="">
+                        <img src="/images/logoSuperNGO.png" alt="">
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none small-menu fa-bars"></i></a>
                     </a>
                 </div>

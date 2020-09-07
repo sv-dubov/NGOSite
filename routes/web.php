@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
-//Route::get('/post/{slug}', 'HomeController@show')->name('post.show');
-//Route::get('/tag/{slug}', 'HomeController@tag')->name('tag.show');
-//Route::get('/category/{slug}', 'HomeController@category')->name('category.show');
 Route::get('/posts', 'PostController@index');
 Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
 Route::get('/posts/tag/{slug}', 'PostController@tag')->name('ptag.show');

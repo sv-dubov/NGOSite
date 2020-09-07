@@ -12,7 +12,6 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        //$posts = Post::paginate(2);
         $articles = Article::where('status', Article::IS_PUBLIC)->orderBy('date', 'desc')->paginate(2);
         return view('pages.articles')->with('articles', $articles);
     }

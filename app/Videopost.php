@@ -233,9 +233,4 @@ class Videopost extends Model
     {
         return self::where('is_featured', 1)->take(3)->get();
     }
-
-    public static function getRecentPosts()
-    {
-        return self::orderBy('created_at','desc')->take(3)->get();
-    }
 }

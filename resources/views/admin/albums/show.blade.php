@@ -37,7 +37,7 @@
                                     @foreach($album->photos as $photo)
                                             <div class="col-lg-3 col-md-4 col-6">
                                                 <a href="{{route('photos.show', $photo->id)}}" class="d-block mb-4 h-100">
-                                                    <img class="img-fluid img-thumbnail" src="/uploads/albums/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+                                                    <img class="img-fluid img-thumbnail" style="width: 100%; height: 200px;" src="/uploads/albums/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
                                                 </a>
                                                 <br>
                                                 <h4>{{$photo->title}}</h4>

@@ -50,14 +50,14 @@
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="{{$user->getImage()}}" class="user-image" alt="">
-                                <span class="hidden-xs">{{$user->name}}</span>
+                                <img src="{{$auser->getImage()}}" class="user-image" alt="">
+                                <span class="hidden-xs">{{$auser->name}}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="{{$user->getImage()}}" class="img-circle" alt="">
-                                    <p>{{$user->name}}</p>
+                                    <img src="{{$auser->getImage()}}" class="img-circle" alt="">
+                                    <p>{{$auser->name}}</p>
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -86,10 +86,10 @@
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="{{$user->getImage()}}" class="img-circle" alt="">
+                        <img src="{{$auser->getImage()}}" class="img-circle" alt="">
                     </div>
                     <div class="pull-left info">
-                        <p>{{$user->name}}</p>
+                        <p>{{$auser->name}}</p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>

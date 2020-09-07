@@ -21,9 +21,8 @@
                             <th>ID</th>
                             <th>Username</th>
                             <th>E-mail</th>
-                            <th>Avatar</th>
                             <th>Make admin</th>
-                            <th>Ban user</th>
+                            <th>Ban</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -35,9 +34,6 @@
                                 <td>{{$user->id}}</td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
-                                <td>
-                                    <img src="{{$user->getImage()}}" alt="" class="img-responsive" width="150">
-                                </td>
                                 <td>
                                     @if($user->is_admin == 1)
                                         <a href="/admin/users/toggle/{{$user->id}}" class="fa fa-lock"></a>

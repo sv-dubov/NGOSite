@@ -6,6 +6,7 @@ use App\ImageSlider;
 use App\Member;
 use App\Post;
 use App\Article;
+use App\User;
 use App\Videopost;
 use App\Facts;
 use App\Project;
@@ -34,11 +35,7 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer('pages._sidebar', function($view){
             $view->with('featuredVideo', Videopost::getFeaturedOnHomepage());
-            //$view->with('popularPosts', Post::getPopularPosts());
-            //$view->with('featuredPosts', Post::where('is_featured', 1)->take(3)->get());
             $view->with('featuredArticles', Article::getFeaturedArticles());
-            //$view->with('featuredPosts', Post::getFeaturedPosts());
-            //$view->with('recentPosts', Post::orderBy('date', 'desc')->take(3)->get());
             $view->with('recentPosts', Post::getRecentPosts());
             $view->with('articles', Article::orderBy('date', 'desc')->take(3)->get());
             $view->with('videoposts', Videopost::orderBy('date', 'desc')->take(3)->get());
@@ -58,7 +55,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer('admin.*', function($view){
-            $view->with('user', Auth::user());
+            $view->with('auser', Auth::user());
         });
     }
 }
