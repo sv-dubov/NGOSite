@@ -57,5 +57,9 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('admin.*', function($view){
             $view->with('auser', Auth::user());
         });
+
+        view()->composer('pages._sidemember', function($view){
+            $view->with('members', Member::getAll());
+        });
     }
 }

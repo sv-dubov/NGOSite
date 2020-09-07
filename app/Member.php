@@ -68,4 +68,9 @@ class Member extends Model
         }
         return '/uploads/' . $this->image;
     }
+
+    public static function getAll()
+    {
+        return self::orderBy('name')->get();
+    }
 }

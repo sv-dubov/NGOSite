@@ -110,12 +110,10 @@
                                 <h3>{{$member->name}}</h3>
                                 <p>{{$member->position}}</p>
                             </div>
-                            <div class="team-back">
-                                {{--<span>{!!$member->description!!}</span>--}}
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, Lorem
-                                ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque.</p>
+                            <div class="team-back text-center">
+                                <div class="link">
+                                    <a href="{{route('member.show', $member->slug)}}">View full info </a><i class="fas fa-long-arrow-alt-left"></i>
+                                </div>
                             </div>
                         </div>
                     </div>

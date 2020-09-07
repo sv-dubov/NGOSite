@@ -13,4 +13,10 @@ class TeamController extends Controller
         $members = Member::all();
         return view('pages.team')->with('members', $members);
     }
+
+    public function show($slug)
+    {
+        $member = Member::where('slug', $slug)->firstOrFail();
+        return view('pages.member', compact('member'));
+    }
 }
