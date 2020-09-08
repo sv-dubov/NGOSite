@@ -22,7 +22,9 @@
                             </figure>
                             <div class="blog-detail">
                                 <small>{{$post->getDate()}}</small>
-                                <h4><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h4>
+                                <div class="desc-wrapper">
+                                    <h4><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h4>
+                                </div>
                                 <div class="desc-wrapper">
                                     <p>{!!$post->description!!}</p>
                                 </div>
@@ -52,7 +54,9 @@
                             </figure>
                             <div class="blog-detail">
                                 <small>{{$article->getDate()}}</small>
-                                <h4><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h4>
+                                <div class="desc-wrapper">
+                                    <h4><a href="{{route('article.show', $article->slug)}}">{{$article->title}}</a></h4>
+                                </div>
                                 <div class="desc-wrapper">
                                     <p>{!!$article->description!!}</p>
                                 </div>
@@ -82,7 +86,9 @@
                             </figure>
                             <div class="blog-detail">
                                 <small>{{$videopost->getDate()}}</small>
-                                <h4><a href="{{route('videos.show', $videopost->slug)}}">{{$videopost->title}}</a></h4>
+                                <div class="desc-wrapper">
+                                    <h4><a href="{{route('videos.show', $videopost->slug)}}">{{$videopost->title}}</a></h4>
+                                </div>
                                 <div class="link">
                                     <a href="{{route('videos.show', $videopost->slug)}}">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
                                 </div>
