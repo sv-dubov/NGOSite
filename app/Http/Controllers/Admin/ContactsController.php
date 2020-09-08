@@ -25,4 +25,11 @@ class ContactsController extends Controller
         Contact::find($id)->remove();
         return redirect()->route('contacts.index');
     }
+
+    public function status($id)
+    {
+        $contacts = Contact::find($id);
+        $contacts->toggleRead();
+        return redirect()->back();
+    }
 }

@@ -19,7 +19,8 @@
                             <th>Name</th>
                             <th>E-mail</th>
                             <th>Details</th>
-                            <th>Actions</th>
+                            <th>Status</th>
+                            <th>Delete</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -30,6 +31,13 @@
                                 <td>{{$contact->email}}</td>
                                 <td>
                                     <a class="fa fa-commenting-o" href="{{route('contacts.show', $contact->id)}}"></a>
+                                </td>
+                                <td>
+                                    @if($contact->status == 0)
+                                        <a href="/admin/contacts/status/{{$contact->id}}" >Unread</a>
+                                    @else
+                                        <a href="/admin/contacts/status/{{$contact->id}}" >Read</a>
+                                    @endif
                                 </td>
                                 <td>{{Form::open(['route'=>['contacts.destroy', $contact->id], 'method'=>'delete'])}}
                                     <button onclick="return confirm('Are you sure?')" type="submit" class="delete">

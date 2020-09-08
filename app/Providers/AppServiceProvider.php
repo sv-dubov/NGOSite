@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Contact;
 use App\ImageSlider;
 use App\Member;
 use App\Post;
@@ -60,6 +61,10 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('pages._sidemember', function($view){
             $view->with('members', Member::getAll());
+        });
+
+        view()->composer('admin._sidebar', function($view){
+            $view->with('newMessagesCount', Contact::where('status', 0)->count());
         });
     }
 }
