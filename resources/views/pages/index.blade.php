@@ -161,7 +161,6 @@
                         <div class="event-box">
                             <img src="{{$project->getImage()}}" width="200" height="200" alt="">
                             <h4>{{$project->title}}</h4>
-                            <p>{!!$project->description!!}</p>
                         </div>
                     </div>
                 @endforeach

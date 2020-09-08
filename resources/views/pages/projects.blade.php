@@ -23,7 +23,7 @@
                                                 <a href="#" data-toggle="collapse" data-target="#collapse{{$project->id}}">{{$project->title}}</a>
                                             </div>
                                             <div class="card-body collapse" data-parent="#child1" id="collapse{{$project->id}}">
-                                                <p>{!!$project->description!!}</p>
+                                                {!!$project->description!!}
                                             </div>
                                         </div>
                                     </div>
