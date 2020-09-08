@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 folouws">
                     <ul class="ulright">
-                        <li> <small>Folow Us </small>:</li>
+                        <li> <small>Follow us </small>:</li>
                         <li>
                             <a href="https://www.facebook.com/sviatoslav.dubov"><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -42,7 +42,7 @@
                             <a href="https://www.instagram.com/sbf_rivne/"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/sviatoslav-dubov-94117979/"><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -86,10 +86,10 @@
                             <a class="nav-link" href="/gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About Us</a>
+                            <a class="nav-link" href="/about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact US</a>
+                            <a class="nav-link" href="/contact">Contact us</a>
                         </li>
                     </ul>
                 </div>

@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 folouws">
                     <ul class="ulright">
-                        <li> <small>Follow Us </small>:</li>
+                        <li> <small>Follow us </small>:</li>
                         <li>
                             <a href="https://www.facebook.com/sviatoslav.dubov"><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -42,7 +42,7 @@
                             <a href="https://www.instagram.com/sbf_rivne/"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/sviatoslav-dubov-94117979/"><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -86,10 +86,10 @@
                             <a class="nav-link" href="/gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About Us</a>
+                            <a class="nav-link" href="/about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact US</a>
+                            <a class="nav-link" href="/contact">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -119,21 +119,21 @@
             <div class="col-md-4 col-sm-12">
                 <h2>Terms of use</h2>
                 <p>
-                    При повному або частковому використаннi матерiалiв посилання на cvu.com.ua є обов'язковим. Вiдповiдальнiсть за достовiрнiсть інформації несуть автори матерiалiв. Вiдповiдальнiсть за достовiрнiсть рекламної iнформацiї несуть рекламодавцi.
+                    При повному або частковому використаннi матерiалiв посилання на superngo.com є обов'язковим. Вiдповiдальнiсть за достовiрнiсть інформації несуть автори матерiалiв. Вiдповiдальнiсть за достовiрнiсть рекламної iнформацiї несуть рекламодавцi.
                 </p>
             </div>
             <div class="col-md-4 col-sm-12">
                 <h2>Useful Links</h2>
                 <ul class="list-unstyled link-list">
                     <li><a ui-sref="about" href="/about">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="portfolio" href="/team">Team</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="portfolio" href="/team">Our team</a><i class="fa fa-angle-right"></i></li>
                     <li><a ui-sref="products" href="/projects">Our projects</a><i class="fa fa-angle-right"></i></li>
                     <li><a ui-sref="gallery" href="/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
                     <li><a ui-sref="contact" href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 map-img">
-                <h2>Contact Us</h2>
+                <h2>Contact us</h2>
                 <address class="md-margin-bottom-40">
                     Soborna Street, <br>
                     33, Building<br>
