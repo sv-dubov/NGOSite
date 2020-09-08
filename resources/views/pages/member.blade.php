@@ -9,7 +9,7 @@
                     <a class="btn btn-primary" href="{{route('team.index')}}">Back to Team</a>
                     <br><br>
                     <article class="post">
-                        <div class="member-img">
+                        <div class="post-thumb">
                             <img src="{{$member->getImage()}}" alt="">
                         </div>
                         <div class="post-content">

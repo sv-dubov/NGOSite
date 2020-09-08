@@ -27,9 +27,11 @@
                             <div class="entry-content">
                                 {!!$post->content!!}
                             </div>
-                            <div class="entry-content">
-                                {!!$post->author!!}
+                            </br>
+                            <div class="post-author">
+                                {{$post->author}}
                             </div>
+                            </br>
                             </br>
                             @foreach($post->tags as $tag)
                                 <div class="tag">

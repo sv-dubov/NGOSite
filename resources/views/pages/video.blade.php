@@ -27,9 +27,11 @@
                             <div class="entry-content">
                                 {!!$videopost->content!!}
                             </div>
-                            <div class="entry-content">
-                                {!!$videopost->author!!}
+                            </br>
+                            <div class="post-author">
+                                {{$videopost->author}}
                             </div>
+                            </br>
                             </br>
                             @foreach($videopost->tags as $tag)
                                 <div class="tag">

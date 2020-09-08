@@ -1000,11 +1000,14 @@ article {
 }
 
 .entry-header h1 a:hover {
-  color: #3cc88f;
+    color: #3cc88f;
 }
 
 .post-thumb img {
-  width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 a.more-link {
@@ -1035,6 +1038,10 @@ a.more-link:hover {
 .post-content {
   padding: 0 43px;
   overflow: hidden;
+}
+
+.post-author {
+    font-weight: bold;
 }
 
 .post .social-share {
