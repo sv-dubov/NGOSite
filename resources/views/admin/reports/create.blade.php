@@ -18,7 +18,6 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add report</h3>
                     @include('admin.errors')
                 </div>
                 <div class="box-body">
@@ -34,7 +33,7 @@
                                    value="{{old('title')}}">
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Description</label>
                             <textarea name="description" id="" cols="30" rows="10"

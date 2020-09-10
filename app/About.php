@@ -46,14 +46,14 @@ class About extends Model
     public function setDraft()
     {
         //$this->status = 0;
-        $this->status = About::IS_DRAFT;
+        $this->is_published = About::IS_DRAFT;
         $this->save();
     }
 
     public function setPublic()
     {
         //$this->status = 1;
-        $this->status = About::IS_PUBLIC;
+        $this->is_published = About::IS_PUBLIC;
         $this->save();
     }
 

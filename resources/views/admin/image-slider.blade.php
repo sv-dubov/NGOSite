@@ -56,7 +56,8 @@
                         </div>
                     </form>
                     <br>
-                    <h5 style="color: darkred">Recommended size for images: 1500 * 600</h5>
+                    <h5 style="color: darkred">Recommended height and weight for images: 1500 * 600 pixels</h5>
+                    <h5 style="color: darkred">Image size must be under 2MB</h5>
                     <br/>
                     <div class="row">
                         <div class='list-group gallery'>

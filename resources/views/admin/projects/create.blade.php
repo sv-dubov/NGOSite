@@ -18,7 +18,6 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add project</h3>
                     @include('admin.errors')
                 </div>
                 <div class="box-body">
@@ -36,10 +35,10 @@
                         <div class="form-group">
                             <label for="exampleInputFile">Cover image</label>
                             <input type="file" id="exampleInputFile" name="cover_image">
-                            <p class="help-block">Some message about image formats...</p>
+                            <p class="help-block">Image size must be under 2MB</p>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Description</label>
                             <textarea name="description" id="" cols="30" rows="10"

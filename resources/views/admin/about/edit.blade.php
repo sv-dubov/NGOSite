@@ -6,7 +6,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Edit about
+                Edit About us
             </h1>
         </section>
         <!-- Main content -->
@@ -19,7 +19,6 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit about page</h3>
                     @include('admin.errors')
                 </div>
                 <div class="box-body">
@@ -31,14 +30,14 @@
                         <!-- checkbox -->
                         <div class="form-group">
                             <label>
-                                {{Form::checkbox('status', '1', $about->is_published, ['class'=>'minimal'])}}
+                                {{Form::checkbox('is_published', '1', $about->is_published, ['class'=>'minimal'])}}
                             </label>
                             <label>
                                 Publish on Main page
                             </label>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Full text</label>
                             <textarea name="content" id="" cols="30" rows="10" class="form-control">{{$about->content}}</textarea>

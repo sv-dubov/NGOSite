@@ -15,7 +15,6 @@
             <div class="box">
                 {!! Form::open(['route' => 'tags.store']) !!}
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add tag</h3>
                     @include('admin.errors')
                 </div>
                 <div class="box-body">

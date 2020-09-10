@@ -19,7 +19,6 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit member</h3>
                     @include('admin.errors')
                 </div>
                 <div class="box-body">
@@ -36,10 +35,10 @@
                             <img src="{{$member->getImage()}}" alt="" class="img-responsive" width="200">
                             <label for="exampleInputFile">Image</label>
                             <input type="file" id="exampleInputFile" name="image">
-                            <p class="help-block">Some message about image formats...</p>
+                            <p class="help-block">Image size must be under 2MB</p>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Description</label>
                             <textarea name="description" id="" cols="30" rows="10" class="form-control">{{$member->description}}</textarea>

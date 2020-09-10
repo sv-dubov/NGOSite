@@ -17,12 +17,12 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listing albums</h3>
+                    <h3 class="box-title">Listing galleries</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="form-group">
-                        <a href="{{route('albums.create')}}" class="btn btn-success">Add</a>
+                        <a href="{{route('albums.create')}}" class="btn btn-success">Add gallery</a>
                     </div>
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>

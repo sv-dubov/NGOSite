@@ -25,7 +25,8 @@ class AboutController extends Controller
             'title'	=> 'required'
         ]);
 
-        About::create($request->all());
+        $about = About::create($request->all());
+        $about->toggleStatus($request->get('is_published'));
         return redirect()->route('about.index');
     }
 
@@ -44,6 +45,7 @@ class AboutController extends Controller
         $about = About::find($id);
         $about->slug = null; //change slug in DB
         $about->update($request->all());
+        $about->toggleStatus($request->get('is_published'));
         return redirect()->route('about.index');
     }
 

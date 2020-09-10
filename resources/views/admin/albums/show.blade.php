@@ -17,12 +17,12 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listing photos in album</h3>
+                    <h3 class="box-title">Listing photos in gallery</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                     <a class="btn btn-default" href="{{route('albums.index')}}">Back</a>
-                    <a class="btn btn-success" href="{{route('photos.create', $album->id)}}">Upload Photo To Album</a>
+                    <a class="btn btn-success" href="{{route('photos.create', $album->id)}}">Upload photo to Gallery</a>
                     <hr>
                     @if(count($album->photos) > 0)
                         <?php
@@ -47,7 +47,7 @@
                             </div>
                             <!-- /.container -->
                     @else
-                        <p>No Photos To Display</p>
+                        <p>No photos to display</p>
                     @endif
                 </div>
                 <!-- /.box-body -->

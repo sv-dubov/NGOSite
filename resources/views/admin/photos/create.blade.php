@@ -18,7 +18,6 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add photo to album</h3>
                     @include('admin.errors')
                 </div>
                 {{Form::hidden('album_id', $album_id)}}
@@ -31,10 +30,10 @@
                         <div class="form-group">
                             <label for="exampleInputFile">Photo</label>
                             <input type="file" id="exampleInputFile" name="photo">
-                            <p class="help-block">Some message about image formats...</p>
+                            <p class="help-block">Image size must be under 2MB</p>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Description</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="description" value="{{old('description')}}">

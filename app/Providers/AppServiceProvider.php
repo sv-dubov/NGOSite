@@ -7,7 +7,6 @@ use App\ImageSlider;
 use App\Member;
 use App\Post;
 use App\Article;
-use App\User;
 use App\Videopost;
 use App\Facts;
 use App\Project;

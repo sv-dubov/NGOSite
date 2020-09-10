@@ -22,7 +22,7 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="form-group">
-                        <a href="{{route('categories.create')}}" class="btn btn-success">Add</a>
+                        <a href="{{route('categories.create')}}" class="btn btn-success">Add category</a>
                     </div>
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
