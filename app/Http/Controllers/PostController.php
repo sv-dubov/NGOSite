@@ -35,12 +35,4 @@ class PostController extends Controller
         $posts = $category->posts()->paginate(2);
         return view('pages.postlist', ['posts'  =>  $posts]);
     }
-
-    public function share()
-    {
-        Share::currentPage()
-            ->facebook()
-            ->twitter()
-            ->linkedin();
-    }
 }
