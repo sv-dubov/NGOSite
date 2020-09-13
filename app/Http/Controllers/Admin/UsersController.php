@@ -87,4 +87,11 @@ class UsersController extends Controller
         $user->toggleBan();
         return redirect()->back();
     }
+
+    public function toggleEditor($id)
+    {
+        $user = User::find($id);
+        $user->toggleEditor();
+        return redirect()->back();
+    }
 }

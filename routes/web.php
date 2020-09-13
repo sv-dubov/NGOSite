@@ -52,15 +52,9 @@ Route::group(['middleware'	=>	'guest'], function(){
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admin'], function () {
-    Route::get('/', 'DashboardController@index');
-    Route::resource('/categories', 'CategoriesController');
-    Route::resource('/tags', 'TagsController');
-    Route::resource('/users', 'UsersController');
     Route::get('/users/toggle/{id}', 'UsersController@toggle');
+    Route::get('/users/toggleEditor/{id}', 'UsersController@toggleEditor');
     Route::get('/users/status/{id}', 'UsersController@status');
-	Route::resource('/posts', 'PostsController');
-    Route::resource('/articles', 'ArticlesController');
-    Route::resource('/videoposts', 'VideopostsController');
     Route::resource('/about', 'AboutController');
     Route::resource('/members', 'MembersController');
     Route::resource('/albums', 'AlbumsController');
@@ -80,4 +74,15 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::get('/image-slider', 'ImageSlidersController@index')->name('image-slider.index');
     Route::post('/image-slider', 'ImageSlidersController@upload');
     Route::delete('/image-slider/{id}', 'ImageSlidersController@destroy');
+});
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', ['middleware' => ['admin','editor']]], function () {
+    Route::get('/', 'DashboardController@index');
+    Route::resource('/categories', 'CategoriesController');
+    Route::resource('/tags', 'TagsController');
+    Route::resource('/posts', 'PostsController');
+    Route::resource('/articles', 'ArticlesController');
+    Route::resource('/videoposts', 'VideopostsController');
+    //Route::get('/users', 'UsersController@index');
+    Route::resource('/users', 'UsersController');
 });

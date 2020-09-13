@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin</title>
+    <title>Admin page</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="/css/admin.css">
@@ -34,7 +34,7 @@
             <!-- Logo -->
             <a href="../../index2.html" class="logo">
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b></span>
+                <span class="logo-lg"><b>Admin page</b></span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">

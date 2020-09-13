@@ -11,9 +11,10 @@
                     <h3 class="box-title">Listing users</h3>
                 </div>
                 <!-- /.box-header -->
+                @if($auser->is_admin == 1)
                 <div class="box-body">
                     <div class="form-group">
-                        <a href="{{route('users.create')}}" class="btn btn-success">Add</a>
+                        <a href="{{route('users.create')}}" class="btn btn-success">Add user</a>
                     </div>
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
@@ -22,6 +23,7 @@
                             <th>Username</th>
                             <th>E-mail</th>
                             <th>Make admin</th>
+                            <th>Make editor</th>
                             <th>Ban</th>
                             <th>Actions</th>
                         </tr>
@@ -42,13 +44,21 @@
                                     @endif
                                  </td>
                                 <td>
+                                    @if($user->is_editor == 1)
+                                        <a href="/admin/users/toggleEditor/{{$user->id}}" class="fa fa-lock"></a>
+                                    @else
+                                        <a href="/admin/users/toggleEditor/{{$user->id}}" class="fa fa-thumbs-o-up"></a>
+                                    @endif
+                                </td>
+                                <td>
                                     @if($user->status == 0)
                                         <a href="/admin/users/status/{{$user->id}}" class="fa fa-lock"></a>
                                     @else
                                         <a href="/admin/users/status/{{$user->id}}" class="fa fa-thumbs-o-up"></a>
                                     @endif
                                 </td>
-                                <td><a href="{{route('users.edit', $user->id)}}" class="fa fa-pencil"></a>
+                                <td>
+                                    <a href="{{route('users.edit', $user->id)}}" class="fa fa-pencil"></a>
                                     {{Form::open(['route'=>['users.destroy', $user->id], 'method'=>'delete'])}}
                                     <button onclick="return confirm('Are you sure?')" type="submit" class="delete">
                                         <i class="fa fa-remove"></i>
@@ -61,6 +71,7 @@
                     </table>
                 </div>
                 <!-- /.box-body -->
+                @endif
             </div>
             <!-- /.box -->
         </section>

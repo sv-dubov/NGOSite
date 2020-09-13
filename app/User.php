@@ -132,4 +132,24 @@ class User extends Authenticatable
         }
         return $this->ban();
     }
+
+    public function makeEditor()
+    {
+        $this->is_editor = 1;
+        $this->save();
+    }
+
+    public function makeUnEditor()
+    {
+        $this->is_editor = 0;
+        $this->save();
+    }
+
+    public function toggleEditor()
+    {
+        if ($this->is_editor == 0) {
+            return $this->makeEditor();
+        }
+        return $this->makeUnEditor();
+    }
 }
