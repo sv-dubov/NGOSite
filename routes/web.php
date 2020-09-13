@@ -68,6 +68,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'	=>	'admi
     Route::resource('/reports', 'ReportsController');
     Route::resource('/facts', 'FactsController');
     Route::resource('/contacts', 'ContactsController');
+    Route::resource('/missions', 'MissionController');
     Route::get('/contacts/{id}', 'ContactsController@show')->name('contacts.show');
     Route::get('/contacts/status/{id}', 'ContactsController@status');
     Route::get('/photos/create/{id}', 'PhotosController@create')->name('photos.create');

@@ -1,10 +1,5 @@
 <ul class="sidebar-menu">
     <li class="header">MAIN NAVIGATION</li>
-    <li class="treeview">
-        <a href="/admin">
-            <i class="fa fa-dashboard"></i> <span>Admin-panel</span>
-        </a>
-    </li>
     <li><a href="{{route('about.index')}}"><i class="fa fa-info-circle"></i> <span>About us</span></a></li>
     <li><a href="{{route('articles.index')}}"><i class="fa fa-sticky-note"></i> <span>Articles</span></a></li>
     <li><a href="{{route('categories.index')}}"><i class="fa fa-list-ul"></i> <span>Categories</span></a></li>
@@ -19,6 +14,7 @@
             </span>
         </a>
     </li>
+    <li><a href="{{route('missions.index')}}"><i class="fa fa-thumb-tack"></i> <span>Mission</span></a></li>
     <li><a href="{{route('posts.index')}}"><i class="fa fa-sticky-note-o"></i> <span>News</span></a></li>
     <li><a href="{{route('projects.index')}}"><i class="fa fa-database"></i> <span>Projects</span></a></li>
     <li><a href="{{route('reports.index')}}"><i class="fa fa-file-archive-o"></i> <span>Reports</span></a></li>

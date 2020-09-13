@@ -17,31 +17,29 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listing reports</h3>
+                    <h3 class="box-title">Listing mission and directions</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="form-group">
-                        <a href="{{route('reports.create')}}" class="btn btn-success">Add report</a>
+                        <a href="{{route('missions.create')}}" class="btn btn-success">Add item</a>
                     </div>
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Year</th>
                             <th>Title</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($reports as $report)
+                        @foreach($missions as $mission)
                             <tr>
-                                <td>{{$report->id}}</td>
-                                <td>{{$report->year}}</td>
-                                <td>{{$report->title}}</td>
+                                <td>{{$mission->id}}</td>
+                                <td>{{$mission->title}}</td>
                                 <td>
-                                    <a href="{{route('reports.edit', $report->id)}}" class="fa fa-pencil"></a>
-                                    {{Form::open(['route'=>['reports.destroy', $report->id], 'method'=>'delete'])}}
+                                    <a href="{{route('missions.edit', $mission->id)}}" class="fa fa-pencil"></a>
+                                    {{Form::open(['route'=>['missions.destroy', $mission->id], 'method'=>'delete'])}}
                                     <button onclick="return confirm('Are you sure?')" type="submit" class="delete">
                                         <i class="fa fa-remove"></i>
                                     </button>

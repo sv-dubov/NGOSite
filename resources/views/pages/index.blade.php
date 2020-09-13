@@ -99,6 +99,35 @@
             </div>
         </div>
     </section>
+    <!-- ################# Mission Vision Start Here #######################--->
+    <section class="container-fluid mission-vision">
+        <div class="container">
+            @foreach($missions as $mission)
+                @if ($loop->first)
+                    <div class="row mission">
+                        <div class="col-md-6 mv-det">
+                            <h1>{{$mission->title}}</h1>
+                            <p>{!!$mission->description!!}</p>
+                        </div>
+                        <div class="col-md-6 mv-img">
+                            <img src="{{$mission->getImage()}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if ($loop->last)
+                    <div class="row vision">
+                        <div class="col-md-6 mv-img">
+                            <img src="{{$mission->getImage()}}" alt="">
+                        </div>
+                        <div class="col-md-6 mv-det">
+                            <h1>{{$mission->title}}</h1>
+                            <p>{!!$mission->description!!}</p>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+    </section>
     <!--################### Our Team Starts Here #######################--->
     <section class="our-team team-11">
         <div class="container">

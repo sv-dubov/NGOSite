@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Contact;
 use App\ImageSlider;
 use App\Member;
+use App\Mission;
 use App\Post;
 use App\Article;
 use App\Videopost;
@@ -48,6 +49,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('members', Member::all());
             $view->with('projects', Project::orderBy('created_at', 'desc')->take(3)->get());
             $view->with('facts', Facts::all());
+            $view->with('missions', Mission::all());
         });
 
         view()->composer('partials._slider', function($view){
