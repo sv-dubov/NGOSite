@@ -24,11 +24,11 @@
             <div class="col-md-4 col-sm-12">
                 <h2>Useful Links</h2>
                 <ul class="list-unstyled link-list">
-                    <li><a ui-sref="about" href="/about">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="portfolio" href="/team">Our team</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="products" href="/projects">Our projects</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="gallery" href="/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="contact" href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/team">Our team</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/projects">Our projects</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/reports">Our reports</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 map-img">
