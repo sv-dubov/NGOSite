@@ -83,6 +83,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', ['middleware' => ['ad
     Route::resource('/posts', 'PostsController');
     Route::resource('/articles', 'ArticlesController');
     Route::resource('/videoposts', 'VideopostsController');
-    //Route::get('/users', 'UsersController@index');
     Route::resource('/users', 'UsersController');
 });

@@ -23,7 +23,6 @@ class Album extends Model
     }
 
     public function photos(){
-        //return $this->hasMany('App\Photo');
         return $this->hasMany(Photo::class);
     }
 
