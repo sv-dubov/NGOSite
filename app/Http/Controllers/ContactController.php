@@ -17,7 +17,8 @@ class ContactController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email'    => 'required|email',
-            'message' => 'required'
+            'message' => 'required',
+            'captcha' => 'required|captcha'
         ]);
         $contact = Contact::add($request->all());
         return redirect()->back()->with('status', 'Your message was sent. We will answer you as soon, as we can.');

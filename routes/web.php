@@ -37,6 +37,9 @@ Route::get('/articles', 'ArticleController@index');
 Route::get('/articles/{slug}', 'ArticleController@show')->name('article.show');
 Route::get('/articles/tag/{slug}', 'ArticleController@tag')->name('atag.show');
 Route::get('/articles/category/{slug}', 'ArticleController@category')->name('acategory.show');
+Route::get('contact-form', 'CaptchaServiceController@index');
+Route::post('captcha-validation', 'CaptchaServiceController@capthcaFormValidate');
+Route::get('reload-captcha', 'CaptchaServiceController@reloadCaptcha');
 
 Route::group(['middleware'	=>	'auth'], function(){
     Route::get('/profile', 'ProfileController@index');

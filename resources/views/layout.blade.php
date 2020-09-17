@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/fav.jpg">
     <!-- common css -->
-    <link rel="stylesheet" type="text/css" href="/css/front2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/front2.css"/>
     @yield('assets')
 </head>
 
