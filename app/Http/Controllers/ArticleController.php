@@ -6,7 +6,6 @@ use App\Category;
 use App\Tag;
 use App\Article;
 use Illuminate\Http\Request;
-use Jorenvh\Share\Share;
 
 class ArticleController extends Controller
 {
@@ -34,13 +33,5 @@ class ArticleController extends Controller
         $category = Category::where('slug', $slug)->firstOrFail();
         $articles = $category->articles()->paginate(2);
         return view('pages.articlelist', ['articles'  =>  $articles]);
-    }
-
-    public function share()
-    {
-        Share::currentPage()
-            ->facebook()
-            ->twitter()
-            ->linkedin();
     }
 }
