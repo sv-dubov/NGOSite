@@ -6,6 +6,7 @@ use App\Category;
 use App\Tag;
 use Illuminate\Http\Request;
 use App\Post;
+use Jorenvh\Share\Share;
 
 class PostController extends Controller
 {
@@ -18,7 +19,7 @@ class PostController extends Controller
     public function show($slug)
     {
         $post = Post::where('slug', $slug)->orderBy('date', 'desc')->firstOrFail();
-        return view('pages.post', compact('post'), ['share' => $this->share()]);
+        return view('pages.post', compact('post'));
     }
 
     public function tag($slug)
@@ -33,5 +34,13 @@ class PostController extends Controller
         $category = Category::where('slug', $slug)->firstOrFail();
         $posts = $category->posts()->paginate(2);
         return view('pages.postlist', ['posts'  =>  $posts]);
+    }
+
+    public function share()
+    {
+        Share::currentPage()
+            ->facebook()
+            ->twitter()
+            ->linkedin();
     }
 }

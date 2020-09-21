@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e422aaa0c96f8a5889832ae7e843bb4",
+    "content-hash": "015454503f25a22b8206b8580ae6a243",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1239,16 +1239,16 @@
         },
         {
             "name": "jorenvanhocht/laravel-share",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jorenvh/laravel-share.git",
-                "reference": "63b8c46e66e060e651e6d1647dfed2bb1409151e"
+                "reference": "1991e056fedd60a9e48e323b84a468a6335a7a2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jorenvh/laravel-share/zipball/63b8c46e66e060e651e6d1647dfed2bb1409151e",
-                "reference": "63b8c46e66e060e651e6d1647dfed2bb1409151e",
+                "url": "https://api.github.com/repos/jorenvh/laravel-share/zipball/1991e056fedd60a9e48e323b84a468a6335a7a2f",
+                "reference": "1991e056fedd60a9e48e323b84a468a6335a7a2f",
                 "shasum": ""
             },
             "require": {
@@ -1294,7 +1294,7 @@
                 "social links",
                 "social share links"
             ],
-            "time": "2020-09-11T19:22:28+00:00"
+            "time": "2020-09-19T13:41:44+00:00"
         },
         {
             "name": "laravel/framework",
