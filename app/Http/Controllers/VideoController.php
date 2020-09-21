@@ -36,4 +36,12 @@ class VideoController extends Controller
         $videoposts = $category->videoposts()->paginate(2);
         return view('pages.videolist', ['videoposts'  =>  $videoposts]);
     }
+
+    public function share()
+    {
+        Share::currentPage()
+            ->facebook()
+            ->twitter()
+            ->linkedin();
+    }
 }

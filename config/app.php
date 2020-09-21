@@ -167,6 +167,7 @@ return [
          */
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Jorenvh\Share\Providers\ShareServiceProvider::class,
         Mews\Captcha\CaptchaServiceProvider::class,
         /*
          * Application Service Providers...
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Form' => Collective\Html\FormFacade::class,
+        'Share' => Jorenvh\Share\ShareFacade::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
     ],
 
