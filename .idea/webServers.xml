@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6a1b1559-57a2-4cb1-b416-04dd1db603de" name="Shorter server" url="https://superngo.azurewebsites.net">
+        <fileTransfer host="ftp://waws-prod-db3-141.ftp.azurewebsites.windows.net/site/wwwroot" port="100">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="100" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

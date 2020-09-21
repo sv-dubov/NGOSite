@@ -47,10 +47,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-3"><label>Mobile Number</label><span> </span></div>
+                                <div class="col-sm-3"><label>Mobile Phone</label><span> </span></div>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control" id="phone" name="phone"
-                                           placeholder="Phone" value="{{old('phone')}}">
+                                    <input type="text" class="phone form-control" id="phone" name="phone" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -105,6 +104,8 @@
 @include('partials._footer')
 <!-- js files -->
 <script src="/js/front2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+<script src="/js/phone-mask.js"></script>
 <script type="text/javascript">
     $('#reload').click(function () {
         $.ajax({

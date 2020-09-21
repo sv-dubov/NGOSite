@@ -97,6 +97,10 @@ mix.scripts([
     'resources/assets/front2/js/carousel.js'
 ], 'public/js/carousel.js');
 
+mix.scripts([
+    'resources/assets/front2/js/phone-mask.js'
+], 'public/js/phone-mask.js');
+
 mix.copy('resources/assets/front2/fonts', 'public/fonts');
 mix.copy('resources/assets/front2/images', 'public/images');
 mix.copy('resources/assets/front2/webfonts', 'public/webfonts');
