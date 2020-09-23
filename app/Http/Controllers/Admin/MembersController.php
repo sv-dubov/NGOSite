@@ -24,7 +24,7 @@ class MembersController extends Controller
         $this->validate($request, [
             'name' =>'required',
             'position' => 'required',
-            'image' => 'nullable|image'
+            'image' => 'nullable|image|max:2048'
         ]);
 
         $member = Member::add($request->all());
@@ -43,7 +43,7 @@ class MembersController extends Controller
         $this->validate($request, [
             'name' =>'required',
             'position' => 'required',
-            'image' => 'nullable|image'
+            'image' => 'nullable|image|max:2048'
         ]);
 
         $member = Member::find($id);

@@ -14,10 +14,16 @@
                     @endif
                     <h3>My profile</h3>
                     @include('admin.errors')
-                    <br>
-                    <img src="{{$user->getImage()}}" alt="" class="profile-image">
+                    <br><img src="{{$user->getImage()}}" alt="" class="profile-image">
+                        <br>
+                        <br>
                     <form class="form-horizontal contact-form" role="form" method="post" action="/profile" enctype="multipart/form-data">
                         {{csrf_field()}}
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <input type="file" class="form-control" id="image" name="avatar">
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="col-md-8">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{$user->name}}">
@@ -32,11 +38,6 @@
                             <span class="asterisk_input"></span>
                             <div class="col-md-8">
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Confirm or change password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-8">
-                                <input type="file" class="form-control" id="image" name="avatar">
                             </div>
                         </div>
                         <div style="margin-top:10px;" class="row">

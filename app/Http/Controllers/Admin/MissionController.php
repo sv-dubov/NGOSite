@@ -24,7 +24,7 @@ class MissionController extends Controller
         $this->validate($request, [
             'title' =>'required',
             'description' =>'required',
-            'cover_image' => 'required|image'
+            'cover_image' => 'required|image|max:2048'
         ]);
 
         $mission = Mission::add($request->all());
@@ -43,7 +43,7 @@ class MissionController extends Controller
         $this->validate($request, [
             'title' =>'required',
             'description' =>'required',
-            'cover_image' => 'required|image'
+            'cover_image' => 'required|image|max:2048'
         ]);
 
         $mission = Mission::find($id);
