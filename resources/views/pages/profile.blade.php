@@ -12,7 +12,7 @@
                         {{session('status')}}
                     </div>
                     @endif
-                    <h3>My Profile</h3>
+                    <h3>My profile</h3>
                     @include('admin.errors')
                     <br><img src="{{$user->getImage()}}" alt="" class="profile-image">
                         <br>
